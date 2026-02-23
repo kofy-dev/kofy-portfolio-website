@@ -759,7 +759,7 @@ body.dark-mode h6 {
 body.dark-mode .card,body.dark-mode .navbar{
     background-color:var(--black);
 }
-.body.dark-mode .nav-links-container{
+body.dark-mode .nav-links-container{
     background-color:var(--black);
 }
 
