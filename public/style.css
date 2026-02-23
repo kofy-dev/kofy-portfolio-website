@@ -739,7 +739,7 @@ body.dark-mode {
   /* Override base colors */
   --white: #000; 
   --black: #fff;  
-  
+  --secondary-900: #fff;
   /* Set background color */
   background-color: var(--white);
  /* color:(--black);*/
@@ -752,7 +752,7 @@ body.dark-mode h3,
 body.dark-mode h4,
 body.dark-mode h5,
 body.dark-mode h6 {
-  color: var(--white);  /* White text */
+  color: var(--secondary-900);  /* White text */
 }
 
 /* Smooth transitions */
