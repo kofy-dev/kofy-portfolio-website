@@ -740,7 +740,7 @@ body.dark-mode {
   --black: #000;  
   --secondary-900: #fff;
   --secondary-400:#fff;
-  --secondary-500:#7048e8;
+  --secondary-500:#495057;
   /* Set background color */
   background-color: var(--black);
   color:var(--secondary-400);
@@ -760,8 +760,7 @@ body.dark-mode .card,body.dark-mode .navbar{
     background-color:var(--black);
     color: var(--secondary-500);
 }
-.body.darkmode .card-heading,.card-paragraph,.card-link{
-    
+
 
 /* Smooth transitions */
 body.dark-mode * {
