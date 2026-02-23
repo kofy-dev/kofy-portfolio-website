@@ -763,6 +763,13 @@ body.dark-mode .nav-links-container{
     background-color:var(--black);
 }
 
+body.dark-mode .card{
+    border-radius:var(--radius-sm);
+}
+
+body.dark-mode a.btn-primary-outline{
+    background-color:var(--black);
+}
 
 /* Smooth transitions */
 body.dark-mode * {
