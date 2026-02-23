@@ -741,6 +741,7 @@ body.dark-mode {
   --secondary-900: #fff;
   --secondary-400:#fff;
   --secondary-500:#495057;
+  --secondary-600:#404040;
   /* Set background color */
   background-color: var(--black);
   color:var(--secondary-400);
@@ -764,7 +765,7 @@ body.dark-mode .nav-links-container{
 }
 
 body.dark-mode .card{
-    border:var(--border-sm) solid var(--secondary-900);
+    border:var(--border-sm) solid var(--secondary-600);
 }
 
 body.dark-mode a.btn-primary-outline{
