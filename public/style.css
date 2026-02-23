@@ -780,7 +780,7 @@ body.dark-mode .footer-section{
     border-color: var(--secondary-600);
 }
 
-.body.dark-mode .nav-btn-container{
+body.dark-mode .nav-btn-container{
    border-color:var(--secondary-600);
 }
 
