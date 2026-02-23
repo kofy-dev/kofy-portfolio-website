@@ -767,7 +767,6 @@ align-items: center;
 /* Additional dark mode element styles */
 .dark-mode body {
   background-color: var(--black);
-  color: var(--secondary-700);
 }
 
 .dark-mode h1,
