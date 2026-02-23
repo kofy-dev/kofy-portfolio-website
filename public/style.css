@@ -764,7 +764,7 @@ body.dark-mode .nav-links-container{
 }
 
 body.dark-mode .card{
-    border-radius:none;
+    border:var(--border-sm) solid var(--secondary-900);
 }
 
 body.dark-mode a.btn-primary-outline{
