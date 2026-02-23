@@ -756,9 +756,8 @@ body.dark-mode h6 {
   color: var(--secondary-900);  /* White text */
 }
 
-body .dark-mode a.btn-primary{
-    color:var(--white);
-}
+body .dark-mode .btn{
+    color:var(--black);
 
 /* Smooth transitions */
 body.dark-mode * {
