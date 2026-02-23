@@ -772,6 +772,18 @@ body.dark-mode a.btn-primary-outline{
     background-color:var(--black);
 }
 
+body.dark-mode .navbar{
+   border-color:var(--secondary-600);
+}
+
+body.dark-mode .footer-section{
+    border-color: var(--secondary-600);
+}
+
+.body.dark-mode .nav-btn-container{
+   border-color:var(--secondary-600);
+}
+
 /* Smooth transitions */
 body.dark-mode * {
   transition: background-color 0.3s, color 0.3s, border-color 0.3s;
