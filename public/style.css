@@ -733,32 +733,28 @@ align-items: center;
 } 
 
 
-  /* ===== DARK MODE ===== */
-.dark-mode {
-  /* Override primary colors for dark mode */
   
-
-  /* Override secondary colors for dark mode */
-  
+/* ===== DARK MODE ===== */
+body.dark-mode {
   /* Override base colors */
-  --white: #ffffff;
-  --black: #000000;
+  --white: #121212;  /* Dark background */
+  --black: #ffffff;  /* White text */
+  
+  /* Set background color */
+  background-color: var(--white);
 }
 
-/* Additional dark mode element styles */
-body.dark-mode  {
-  background-color: var(--black);
+/* Headings in dark mode */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6 {
+  color: white!important;  /* White text */
 }
 
-
-body .dark-mode h1,
-body .dark-mode h2,
-body .dark-mode h3,
-body .dark-mode h4,
-body .dark-mode h5{
-    color: var(--white);
-}
-
-.dark-mode * {
+/* Smooth transitions */
+body.dark-mode * {
   transition: background-color 0.3s, color 0.3s, border-color 0.3s;
-}
+  }
