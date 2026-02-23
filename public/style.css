@@ -741,7 +741,7 @@ align-items: center;
   /* Override secondary colors for dark mode */
   
   /* Override base colors */
-  --white: #fff;
+  --white: #ffffff;
   --black: #000000;
 }
 
