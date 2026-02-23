@@ -751,6 +751,14 @@ body.dark-mode  {
 }
 
 
+body .darkmode h1,
+body .darkmode h2,
+body .darkmode h3,
+body .darkmode h4,
+body .darkmode h5{
+    color: var(--white);
+}
+
 .dark-mode * {
   transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
