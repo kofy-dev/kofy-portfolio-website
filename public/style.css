@@ -755,7 +755,7 @@ body.dark-mode h6 {
   color: var(--secondary-900);  /* White text */
 }
 
-body.dark-mode.card,body.dark-mode.navbar{
+body.dark-mode .card,body.dark-mode .navbar{
     background-color:var(--black);
 }
 
