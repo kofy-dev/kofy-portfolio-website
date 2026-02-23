@@ -741,7 +741,7 @@ body.dark-mode {
   --secondary-900: #fff;
   --secondary-400:#fff;
   /* Set background color */
-  background-color: var(--white);
+  background-color: var(--black);
   color:var(--secondary-400);
 }
 
