@@ -742,7 +742,7 @@ body.dark-mode {
   
   /* Set background color */
   background-color: var(--white);
-  color:(--black);
+ /* color:(--black);*/
 }
 
 /* Headings in dark mode */
