@@ -769,48 +769,6 @@ align-items: center;
   background-color: var(--black);
 }
 
-.dark-mode h1,
-.dark-mode h2,
-.dark-mode h3,
-.dark-mode h4,
-.dark-mode h5,
-.dark-mode h6 {
-  color: var(--secondary-900);
-}
-
-.dark-mode .card {
-  background-color: var(--secondary-50);
-  border-color: var(--secondary-200);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-}
-
-.dark-mode .navbar {
-  background-color: var(--secondary-50);
-  border-bottom-color: var(--secondary-300);
-}
-
-.dark-mode .forms-container {
-  background-color: var(--secondary-50);
-  border-color: var(--secondary-200);
-}
-
-.dark-mode .form-input,
-.dark-mode .text-input {
-  background-color: var(--secondary-100);
-  border-color: var(--secondary-400);
-  color: var(--secondary-800);
-}
-
-.dark-mode .btn-primary-outline {
-  background-color: transparent;
-  border-color: var(--primary-400);
-  color: var(--primary-400);
-}
-
-.dark-mode .icon-container,
-.dark-mode .social-link i {
-  color: var(--primary-400);
-}
 
 .dark-mode * {
   transition: background-color 0.3s, color 0.3s, border-color 0.3s;
