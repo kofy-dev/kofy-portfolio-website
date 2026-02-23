@@ -260,7 +260,7 @@ gap: var(--space-4);
 .navbar-right{
     display:flex;
     align-items:center;
-     gap:var(--space-8);
+     gap:var(--space-16);
      margin-left:auto;
 } 
 
