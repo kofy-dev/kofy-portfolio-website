@@ -736,29 +736,10 @@ align-items: center;
   /* ===== DARK MODE ===== */
 .dark-mode {
   /* Override primary colors for dark mode */
-  --primary-50: #2a1f3a;
-  --primary-100: #3a2b4a;
-  --primary-200: #4a3a5a;
-  --primary-300: #6b4a8a;
-  --primary-400: #8b5af0;
-  --primary-500: #a07bff;
-  --primary-600: #b392ff;
-  --primary-700: #c4a9ff;
-  --primary-800: #d5c0ff;
-  --primary-900: #e6d7ff;
+  
 
   /* Override secondary colors for dark mode */
-  --secondary-50: #1a1a1a;
-  --secondary-100: #2d2d2d;
-  --secondary-200: #404040;
-  --secondary-300: #595959;
-  --secondary-400: #737373;
-  --secondary-500: #8c8c8c;
-  --secondary-600: #a6a6a6;
-  --secondary-700: #bfbfbf;
-  --secondary-800: #d9d9d9;
-  --secondary-900: #f0f0f0;
-
+  
   /* Override base colors */
   --white: #121212;
   --black: #000000;
