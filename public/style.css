@@ -257,6 +257,12 @@ gap: var(--space-4);
    text-decoration:none;
 }
 
+.navbar-right{
+    display:flex;
+    align-items:center;
+     gap:var(--space-8);
+}
+
 .hamburger-btn {
 display: flex;
 flex-direction: column;
