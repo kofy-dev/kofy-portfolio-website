@@ -789,10 +789,12 @@ body.dark-mode .nav-btn-container{
 body.dark-mode .forms-container{
     background-color:var(--black);
     border-color:var(--secondary-500);
+    border-width: var(--border-sm);
 }
 
 body.dark-mode .form-label,body.dark-mode .form-input,{
     color:var(--secondary-400);
+  
 }
 
 /* Smooth transitions */
