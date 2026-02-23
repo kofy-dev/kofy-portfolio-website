@@ -737,11 +737,11 @@ align-items: center;
 /* ===== DARK MODE ===== */
 body.dark-mode {
   /* Override base colors */
-  --white: #ffffff; 
-  --black: #000000;  
+  --white: #000; 
+  --black: #fff;  
   
   /* Set background color */
-  background-color: var(--black);
+  background-color: var(--white);
 }
 
 /* Headings in dark mode */
