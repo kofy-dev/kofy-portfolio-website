@@ -737,8 +737,8 @@ align-items: center;
 /* ===== DARK MODE ===== */
 body.dark-mode {
   /* Override base colors */
-  --white: #121212;  /* Dark background */
-  --black: #ffffff;  /* White text */
+  --white: #fff;  /* Dark background */
+  --black: #000;  /* White text */
   
   /* Set background color */
   background-color: var(--white);
@@ -751,7 +751,7 @@ body.dark-mode h3,
 body.dark-mode h4,
 body.dark-mode h5,
 body.dark-mode h6 {
-  color: white!important;  /* White text */
+  color: var(--white);  /* White text */
 }
 
 /* Smooth transitions */
