@@ -743,7 +743,7 @@ body.dark-mode {
   --secondary-400:#fff;
   /* Set background color */
   background-color: var(--white);
-  color:(--secondary-400);
+  color:var(--secondary-400);
 }
 
 /* Headings in dark mode */
