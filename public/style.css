@@ -619,7 +619,7 @@ margin-bottom: var(--space-48);
 }
 .service-paragraph {
 font-size: var(--text-xl);
-padding-top: var(--space-32);
+margin-bottom: var(--space-32);
 }
 
 .service-card-link {
@@ -652,7 +652,7 @@ font-size: var(--text-xl);
   margin-bottom:var(--space-32);
 }
 
-. portfolio-heading{
+.portfolio-heading{
     margin-bottom:var(--space-48);
 }
 
