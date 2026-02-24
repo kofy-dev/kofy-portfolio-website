@@ -11,25 +11,19 @@
      }
 
 
-     
-  .hero-section{
+     .hero-section{
        min-height:80vh;
-  }
-
-     
-
-  
+     }
      
      .nav-links-container{
-       display: flex;
+        display: flex;
         flex-direction: row;
         align-items: center;
         box-shadow: none;
         height: auto;
         position:static;
         padding:0;
-        background-color:transparent;
-        
+        background-color:transparent; 
      }
      
 
@@ -42,7 +36,7 @@
      
      
      .nav-btn-container{
-        display: flex;
+         display: flex;
          flex-direction: row;
          justify-content: center;
          align-items: center;
@@ -63,14 +57,6 @@
          width:fit-content;
      }
 
-     
-
-
-
-
-
-
- 
      
      .resume-section .btn-primary{
            width:auto;
