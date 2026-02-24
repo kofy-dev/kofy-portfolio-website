@@ -53,7 +53,7 @@
      }
 
      .hero-img-container{
-           align-self:flex-start;
+           align-self:flex-start !important;
      }
      
      .hero-btn-container,.cta-btn-container{
