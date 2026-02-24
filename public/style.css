@@ -434,8 +434,9 @@ transform: translateY(-5px);
 /*HERO__SECTION*/
 
 .hero-section{
-  padding-top:150px;
+  padding-top:100x;
   min-height:70vh;
+  margin-bottom:var(--space-32);
 }
 
 .hero-container{
