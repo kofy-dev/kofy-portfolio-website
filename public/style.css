@@ -431,8 +431,8 @@ transform: translateY(-5px);
 /*HERO__SECTION*/
 
 .hero-section{
-  padding-top:100px;
-  min-height:100vh;
+  padding-top:200px;
+  /*min-height:100vh*/
 }
 
 .hero-container{
