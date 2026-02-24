@@ -48,17 +48,13 @@
          flex-shrink: 0;
      }
      
-     .hero-container,.about-container{
-       /* flex-wrap: nowrap !important;*/
-     }
+     
 
      .hero-img-container{
            align-self:flex-start !important;
      }
 
-     .hero-image{
-          align-self: flex-start;
-     }
+     
      
      .hero-btn-container,.cta-btn-container{
          flex-direction: row;
