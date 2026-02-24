@@ -261,7 +261,6 @@ gap: var(--space-4);
     display:flex;
     align-items:center;
      gap:var(--space-16);
-     margin-left:auto;
 } 
 
 .hamburger-btn {
