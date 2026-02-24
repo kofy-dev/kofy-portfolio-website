@@ -13,7 +13,7 @@
 
      
   .hero-section{
-       min-height:100vh;
+       min-height:80vh;
   }
 
      
@@ -94,6 +94,9 @@
 
 
 @media(min-width:60rem){
+     .hero-section{
+           min-height:100vh;
+     }
        .hero-container,.about-container{
             flex-wrap:nowrap;
        }
