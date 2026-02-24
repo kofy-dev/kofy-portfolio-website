@@ -55,6 +55,10 @@
      .hero-img-container{
            align-self:flex-start !important;
      }
+
+     .hero-image{
+          align-self: flex-start;
+     }
      
      .hero-btn-container,.cta-btn-container{
          flex-direction: row;
