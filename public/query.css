@@ -96,3 +96,9 @@
             flex-wrap:nowrap;
        }
 }
+
+@media(min-width:64rem){
+      .hero-section{
+           min-height:70vh;
+      }
+}
