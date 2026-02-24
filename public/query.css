@@ -12,7 +12,9 @@
 
 
      
-
+  .hero-section{
+       min-height:60vh;
+  }
 
      
 
@@ -97,8 +99,4 @@
        }
 }
 
-@media(min-width:64rem){
-      .hero-section{
-           min-height:90vh;
-      }
-}
+
