@@ -535,7 +535,7 @@ max-width:min(40rem,70vw);
 width:100%;
 display:flex;
 justify-content:center;
-align-items: center;
+align-items: start;
 aspect-ratio: 1;
 overflow:hidden;
 
