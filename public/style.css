@@ -534,7 +534,7 @@ width:100%;
 display:flex;
 justify-content:center;
 align-items: flex-start;
-aspect-ratio: 1;
+aspect-ratio: 16/9;
 overflow:hidden;
 
 border-radius:50%;
