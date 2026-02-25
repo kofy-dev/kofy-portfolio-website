@@ -15,6 +15,11 @@
        min-height:60vh;
      }
 
+     .hero-container{
+          max-width:700px;
+          margin: 0 auto;
+     }
+
      .hero-btn-container,.cta-btn-container{
          flex-direction: row;
          width:fit-content;
