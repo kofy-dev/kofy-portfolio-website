@@ -62,9 +62,7 @@
      }
 
 
-     .hero-container,.about-container{
-            flex-wrap:nowrap;
-     }
+     
 
      
      .resume-section .btn-primary{
