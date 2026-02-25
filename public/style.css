@@ -441,6 +441,7 @@ transform: translateY(-5px);
 
 .hero-container{
 display: flex;
+  flex-wrap:wrap;
 /*align-items:center;
 justify-content: center;*/
 gap:var(--space-24);
@@ -773,7 +774,7 @@ align-items: center;
 /* ===== DARK MODE ===== */
 body.dark-mode {
   /* Override base colors */
-  --black: #000;  
+  --black: #404040;  
   --secondary-900: #fff;
   --secondary-400:#fff;
   --secondary-500:#495057;
