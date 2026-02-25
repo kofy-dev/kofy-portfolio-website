@@ -466,7 +466,7 @@ margin-bottom: var(--space-32);
 .hero-paragraph{
 font-size:clamp(1.6rem ,2vw, 2rem);
 margin-bottom: var(--space-32);
-  max-width:55ch;
+  max-width:50ch;
 }
 
 /* Waving hand animation */
