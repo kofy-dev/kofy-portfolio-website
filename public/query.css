@@ -86,7 +86,7 @@
 @media(min-width:60rem){
      .hero-section{
           padding-top: 190px;
-          min-height:90vh;
+          min-height:100vh;
      }
        .hero-container,.about-container{
             flex-wrap:nowrap;
