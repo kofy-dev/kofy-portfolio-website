@@ -774,7 +774,7 @@ align-items: center;
 /* ===== DARK MODE ===== */
 body.dark-mode {
   /* Override base colors */
-  --black: #404040;  
+  --black: #121212;  
   --secondary-900: #fff;
   --secondary-400:#fff;
   --secondary-500:#495057;
