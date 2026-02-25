@@ -15,9 +15,7 @@
        min-height:80vh;
      }
 
-     .hero-paragraph,.hero-heading{
-          text-align:center;
-     }
+     
      
      .nav-links-container{
         display: flex;
@@ -61,6 +59,11 @@
      .hero-btn-container,.cta-btn-container{
          flex-direction: row;
          width:fit-content;
+     }
+
+
+     .hero-container,.about-container{
+            flex-wrap:nowrap;
      }
 
      
