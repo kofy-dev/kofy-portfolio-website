@@ -15,6 +15,18 @@
        min-height:60vh;
      }
 
+     .hero-btn-container,.cta-btn-container{
+         flex-direction: row;
+         width:fit-content;
+     }
+
+     .hero-paragraph{
+          max-width:45ch;
+     }
+
+     .about-paragraph{
+           max-width:45ch;
+     }
      
      
      .nav-links-container{
@@ -50,21 +62,6 @@
          flex-shrink: 0;
      }
      
-     
-
-     
-
-     
-     
-     .hero-btn-container,.cta-btn-container{
-         flex-direction: row;
-         width:fit-content;
-     }
-
-
-     
-
-     
      .resume-section .btn-primary{
            width:auto;
      }
@@ -89,6 +86,7 @@
 @media(min-width:60rem){
      .hero-section{
           padding-top: 190px;
+          min-height:80vh;
      }
        .hero-container,.about-container{
             flex-wrap:nowrap;
