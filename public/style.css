@@ -528,13 +528,13 @@ gap:var(--space-24);
 }
 
 .hero-img-container{
-max-width:min(40rem,70vw);
-  min-width: clamp(33rem,25vw,35rem);
+max-width:min(35rem,70vw);
+  min-width: clamp(30rem,25vw,35rem);
 width:100%;
 display:flex;
 justify-content:center;
 align-items: flex-start;
-aspect-ratio: 16/9;
+aspect-ratio: 16/3;
 overflow:hidden;
 
 border-radius:50%;
