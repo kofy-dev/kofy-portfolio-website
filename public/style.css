@@ -827,8 +827,9 @@ body.dark-mode .forms-container{
     border-width: var(--border-sm);
 }
 
-body .dark-mode .form-input{
+body.dark-mode .form-input{
     background-color:var(--black);
+    color:inherit;
 }
 
 body.dark-mode .form-label,body.dark-mode .form-input,{
