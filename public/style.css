@@ -780,7 +780,7 @@ align-items: center;
   --secondary-600: #404040;
 }
 
-.dark-mode body {
+.dark-mode {
   background-color: var(--black);
   color: var(--secondary-400);
 }
