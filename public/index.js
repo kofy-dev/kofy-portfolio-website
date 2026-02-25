@@ -60,20 +60,19 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 const darkModeToggle = document.getElementById('darkModeToggle');
-const body = document.body;
+const root = document.documentElement;
 
-const savedTheme = localStorage.getItem('theme');
-if (savedTheme === 'dark') {
-  body.classList.add('dark-mode');
+if (localStorage.getItem('theme') === 'dark') {
+  root.classList.add('dark-mode');
   darkModeToggle.textContent = '☀️';
 } else {
   darkModeToggle.textContent = '🌙';
 }
 
 darkModeToggle.addEventListener('click', () => {
-  body.classList.toggle('dark-mode');
+  root.classList.toggle('dark-mode');
   
-  if (body.classList.contains('dark-mode')) {
+  if (root.classList.contains('dark-mode')) {
     darkModeToggle.textContent = '☀️';
     localStorage.setItem('theme', 'dark');
   } else {
