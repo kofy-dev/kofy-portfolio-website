@@ -549,7 +549,7 @@ height:100%;
 
 /* ===== ABOUT SECTION ===== */
 .about-section{
-margin-bottom: var(--space-32);
+margin-bottom: var(--space-48);
 }
 .about-container {
 display: flex;
@@ -606,6 +606,8 @@ width: 90%;
 margin:0 auto;
 display:flex;
 flex-direction: column;
+  justify-content:center;
+  align-items:center;
 
 }
 
