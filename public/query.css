@@ -93,7 +93,7 @@
           min-height:100vh;
      }
        .hero-container,.about-container{
-            /*flex-wrap:nowrap;*/
+            flex-wrap:nowrap;
        }
 }
 
