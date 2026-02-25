@@ -802,7 +802,7 @@ body.dark-mode .nav-links-container{
 }
 
 body.dark-mode .card{
-    border:var(--border-sm) solid var(--secondary-600);
+    border:var(--border-sm) solid var(--secondary-400);
 }
 
 body.dark-mode a.btn-primary-outline{
@@ -810,7 +810,7 @@ body.dark-mode a.btn-primary-outline{
 }
 
 body.dark-mode .navbar{
-   border-color:var(--secondary-600);
+   border-color:var(--secondary-400);
 }
 
 body.dark-mode .footer-section{
