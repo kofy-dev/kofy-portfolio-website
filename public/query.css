@@ -15,6 +15,10 @@
        min-height:60vh;
      }
 
+     .hero-img-container{
+          margin-right:auto;
+     }
+
      
 
      .hero-btn-container,.cta-btn-container{
