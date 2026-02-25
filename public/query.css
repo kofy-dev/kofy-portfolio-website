@@ -69,6 +69,10 @@
          gap:var(--space-12);
          flex-shrink: 0;
      }
+
+     .resume-container{
+          padding:var(--space-24);
+     }
      
      .resume-section .btn-primary{
            width:auto;
