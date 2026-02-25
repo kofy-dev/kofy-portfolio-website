@@ -460,13 +460,12 @@ overflow: visible;
 
 .hero-heading{
   font-size:clamp(2.8rem, 6vw, 5.2rem);
-margin-bottom: var(--space-32);
+   margin-bottom: var(--space-32);
 }
 
 .hero-paragraph{
 font-size:clamp(1.6rem ,2vw, 2rem);
 margin-bottom: var(--space-32);
-  max-width:50ch;
 }
 
 /* Waving hand animation */
