@@ -532,8 +532,8 @@ max-width:min(40rem,70vw);
   min-width: clamp(33rem,25vw,35rem);
 width:100%;
 display:flex;
-justify-content:center;
-align-items: flex-start;
+/*justify-content:center;
+align-items: flex-start;*/
 aspect-ratio: 1;
 overflow:hidden;
 
@@ -564,8 +564,8 @@ width: 90%;
 
 .about-img-container {
 display: flex;
-justify-content: center;
-align-items: center;
+/*justify-content: center;
+align-items: center;*/
 width: 100%;
 max-width: 40rem;
  max-height:40rem;
