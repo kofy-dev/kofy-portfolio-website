@@ -441,7 +441,7 @@ transform: translateY(-5px);
 
 .hero-container{
 display: flex;
-flex-wrap:wrap;
+/*flex-wrap:wrap;*/
 /*align-items:center;
 justify-content: center;*/
 gap:var(--space-24);
