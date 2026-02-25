@@ -772,72 +772,66 @@ align-items: center;
 
   
 /* ===== DARK MODE ===== */
-body.dark-mode {
-  /* Override base colors */
+.dark-mode {
   --black: #1b1824;  
   --secondary-900: #ECEAF6;
-  --secondary-400:#C9C4D6;
-  --secondary-500:#495057;
-  --secondary-600:#404040;
-  /* Set background color */
+  --secondary-400: #C9C4D6;
+  --secondary-500: #495057;
+  --secondary-600: #404040;
+}
+
+.dark-mode body {
   background-color: var(--black);
-  color:var(--secondary-400);
+  color: var(--secondary-400);
 }
 
-/* Headings in dark mode */
-body.dark-mode h1,
-body.dark-mode h2,
-body.dark-mode h3,
-body.dark-mode h4,
-body.dark-mode h5,
-body.dark-mode h6 {
-  color: var(--secondary-900);  /* White text */
+/* Headings */
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4,
+.dark-mode h5,
+.dark-mode h6 {
+  color: var(--secondary-900);
 }
 
-body.dark-mode .card,body.dark-mode .navbar{
-    background-color:var(--black);
-}
-body.dark-mode .nav-links-container{
-    background-color:var(--black);
-}
-
-body.dark-mode .card{
-    border:var(--border-sm) solid var(--secondary-600);
+.dark-mode .card,
+.dark-mode .navbar,
+.dark-mode .nav-links-container {
+  background-color: var(--black);
 }
 
-body.dark-mode a.btn-primary-outline{
-    background-color:var(--black);
+.dark-mode .card {
+  border: var(--border-sm) solid var(--secondary-600);
 }
 
-body.dark-mode .navbar{
-   border-color:var(--secondary-600);
+.dark-mode a.btn-primary-outline {
+  background-color: var(--black);
 }
 
-body.dark-mode .footer-section{
-    border-color: var(--secondary-600);
+.dark-mode .navbar,
+.dark-mode .footer-section,
+.dark-mode .nav-btn-container {
+  border-color: var(--secondary-600);
 }
 
-body.dark-mode .nav-btn-container{
-   border-color:var(--secondary-600);
+.dark-mode .forms-container {
+  background-color: var(--black);
+  border-color: var(--secondary-500);
+  border-width: var(--border-sm);
 }
 
-body.dark-mode .forms-container{
-    background-color:var(--black);
-    border-color:var(--secondary-500);
-    border-width: var(--border-sm);
+.dark-mode .form-input,
+.dark-mode .text-input {
+  background-color: var(--black);
+  color: inherit;
 }
 
-body.dark-mode .form-input,body.dark-mode .text-input{
-    background-color:var(--black);
-    color:inherit;
-}
-
-body.dark-mode .form-label,body.dark-mode .form-input,{
-    color:var(--secondary-400);
-  
+.dark-mode .form-label {
+  color: var(--secondary-400);
 }
 
 /* Smooth transitions */
-body.dark-mode * {
+body * {
   transition: background-color 0.3s, color 0.3s, border-color 0.3s;
-  }
+}
