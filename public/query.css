@@ -16,7 +16,7 @@
      }
 
      .hero-img-container{
-          margin-right:auto;
+          margin-left:var(--space-32);
      }
 
      
