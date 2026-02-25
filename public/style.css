@@ -621,6 +621,7 @@ font-size:var(--text-3xl);
 margin-bottom:var(--space-12);
 font-size:var(--text-xl);
   tex-align:center;
+  max-width:60ch;
 }
 .resume-section .btn-primary{
 width:100%;
