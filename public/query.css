@@ -97,6 +97,11 @@
        .hero-container,.about-container{
             flex-wrap:nowrap;
        }
+
+     .hero-container,.about-container{
+           justify-content:center;
+            align-items:center;
+     }
 }
 
 
