@@ -80,7 +80,7 @@
   --radius-lg: clamp(0.6rem, 1.5vw, 1rem);    /* 6–10px */
   --radius-xl: clamp(0.8rem, 2vw, 1.2rem);    /* 8–12px */
 
-}
+} 
 
 /* BASE STYLES */
 html {
