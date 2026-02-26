@@ -112,10 +112,9 @@
             align-items:center;
      }
 
-     .hero-btn-container,.cta-btn-container{
-         flex-direction: row;
-         width:fit-content;
-          }
+     .hero-container ,.about-container{
+          flex-wrap:nowrap;
+     }
      
 
  
