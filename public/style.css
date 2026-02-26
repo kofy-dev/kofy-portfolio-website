@@ -741,7 +741,8 @@ font-size:var(--text-5xl);
 
 .footer-container {
 display: flex;
-flex-direction: column;
+flex-wrap:wrap;
+  justify-content:space-between;
 align-items: center;
 gap: var(--space-8);
 max-width: var(--container-width);
