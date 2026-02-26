@@ -563,10 +563,9 @@ width: 90%;
 .about-img-container {
 display: flex;
 justify-content:center;
-  align-items:center;
-width: (90%,400px);
-max-width: 40rem;
- max-height:40rem;
+align-items:center;
+  width:(90%,400px);
+max-width:400px;
 aspect-ratio: 1;
 overflow: hidden;
 border-radius: var(--radius-xl);
