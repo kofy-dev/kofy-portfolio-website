@@ -17,6 +17,10 @@
           padding-top:180px;
      }
 
+     .hero-container{
+           justify-content:center;
+     }
+
      
 
      .hero-paragraph{
