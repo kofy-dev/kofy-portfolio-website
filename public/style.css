@@ -768,7 +768,7 @@ align-items: center;
 } 
 
 
-.footer-links,.footer-description{
+.footer-container,.footer-description{
     flex: 1 1 250px;
     min-width:200px;
     text-align: center;
