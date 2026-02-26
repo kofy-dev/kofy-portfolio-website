@@ -15,20 +15,7 @@
        min-height:80vh;
           padding-top:180px;
      }
-
-     
-
-     
-
-     
-
-     .hero-img-container,.about-img-container{
-          margin-left:var(--space-32);
-     }
-
-     
-
-     
+  
 
      .hero-btn-container,.cta-btn-container{
          flex-direction: row;
