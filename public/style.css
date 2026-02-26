@@ -772,7 +772,7 @@ align-items: center;
 .dark-mode {
   --black: #1b1824;  
   --secondary-900: #ECEAF6;
-  --secondary-400: #C9C4D6;
+  --secondary-400: #afafaf;
   --secondary-500: #495057;
   --secondary-600: #404040;
 }
