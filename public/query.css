@@ -124,6 +124,10 @@
             text-align:left;
      }
 
+     .hero-btn-container{
+            justify-content:flex-start;
+     }
+
      .hero-container ,.about-container{
           flex-wrap:nowrap;
      }
