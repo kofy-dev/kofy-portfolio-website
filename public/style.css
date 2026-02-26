@@ -535,7 +535,6 @@ justify-content:center;
 align-items: flex-start;
 aspect-ratio: 1;
 overflow:hidden;
-
 border-radius:50%;
 }
 
@@ -565,7 +564,7 @@ width: 90%;
 display: flex;
 justify-content:center;
   align-items:center;
-width: 100%;
+width: (90%,400px);
 max-width: 40rem;
  max-height:40rem;
 aspect-ratio: 1;
