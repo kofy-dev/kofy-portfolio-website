@@ -757,6 +757,7 @@ font-size: var(--text-sm);
 .social-link-container {
 display: flex;
 gap: var(--space-12);
+  justify-content:center;
 }
 
 .social-link i {
