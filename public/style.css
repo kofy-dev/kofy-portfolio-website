@@ -453,7 +453,9 @@ overflow: visible;
 }
 
 
-
+.hero-container > *{
+  flex: 1 1 400px;
+}
 
 
 
