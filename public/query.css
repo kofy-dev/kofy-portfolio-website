@@ -84,10 +84,11 @@
         margin-bottom: var(--space-24);
      }
      
-     
-    .footer-container{
+     .footer-container{
+          flex-direction:row;
         justify-content: space-between;
      }
+    
 }
 
 @media(min-width:48rem) and (max-width:63.9375rem){
@@ -127,6 +128,8 @@
      .about-img-container{
           flex: 0 0 350px;
      }
+
+     
      
 }
 
