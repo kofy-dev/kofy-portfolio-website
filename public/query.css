@@ -104,8 +104,8 @@
      }
 
  
-  .hero-img-container {
-    width: 350px;  /* Fixed size in row layout */
+  .hero-img-container ,.about-img-container{
+    width: 400px;  /* Fixed size in row layout */
       
   }
      
