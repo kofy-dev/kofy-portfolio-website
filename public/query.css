@@ -104,10 +104,14 @@
      }
 
  
-  .hero-img-container ,.about-img-container{
+  .hero-img-container {
     width: 400px;  /* Fixed size in row layout */
       
   }
+
+     .about-img-container{
+          flex: 0 0 350px;
+     }
      
 }
 
