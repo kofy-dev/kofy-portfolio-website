@@ -16,6 +16,11 @@
           padding-top:180px;
      }
 
+     .hero-container{
+          max-width:700px;
+          margin:0 auto;
+     }
+
      .hero-paragraph{
           max-width:46ch;
      }
