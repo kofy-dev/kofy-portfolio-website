@@ -1,4 +1,4 @@
-@media(min-width:48rem) and (max-width){
+@media(min-width:48rem) and (max-width:63){
      .hero-container{
           max-width:600px;
           margin:0 auto;
