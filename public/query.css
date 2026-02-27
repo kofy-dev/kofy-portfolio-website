@@ -96,7 +96,7 @@
     padding: 0;      
           }
      
-     .service.card {
+     .service-container.card {
           flex: unset;            
            width: 100%;            
             scroll-snap-align: none;
