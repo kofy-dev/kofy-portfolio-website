@@ -456,9 +456,6 @@ overflow: visible;
 }
 
 
-.hero-container > *{
-  flex: 1 1 400px;
-}
 
 
 
@@ -663,7 +660,7 @@ text-align: center; font-size: var(--text-xl);
 .work-section{
 margin-bottom: var(--space-64);
 }
-work-container {
+.work-container {
   display: flex;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
