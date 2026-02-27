@@ -38,8 +38,8 @@
      .hero-btn-container,.cta-btn-container{
          flex-direction: row;
          
-         /* justify-content:center;
-          align-items:center;*/
+          justify-content:center;
+         /* align-items:center;*/
      }
 
      
