@@ -72,7 +72,17 @@
    max-width: var(--container-width-xl);
   margin: 0 auto;
   width: 90%;
+          overflow: visible;      /* Remove scrolling */
+    scroll-snap-type: none;  /* Disable snap */
+    padding: 0;      
           }
+       .work-container .card {
+    flex: unset;            /* Remove flex properties */
+    width: 100%;            /* Let grid control width */
+    scroll-snap-align: none;
+  }
+}
+```
      
 
      .resume-container{
