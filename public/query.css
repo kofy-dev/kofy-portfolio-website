@@ -27,7 +27,11 @@
      
 
      .hero-paragraph{
-       /*   max-width:46ch;*/
+       font-size: var(--text-3xl);
+     }
+
+     .hero-heading{
+           font-size:var(--text-4xl);
      }
   
 
