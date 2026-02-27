@@ -635,7 +635,16 @@ justify-items:center;
 gap: var(--space-32);
 max-width: var(--container-width-xl);
 margin: 0 auto;
-width: 90%;
+width: 100%;
+}
+.service-container::-webkit-scrollbar {
+  display: none;
+}
+
+.service-container .card {
+  flex: 0 0 280px;        /* Fixed card width for swiping */
+  scroll-snap-align: start;
+  margin: 0;
 }
 
 .service-heading,
