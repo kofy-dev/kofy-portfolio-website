@@ -21,6 +21,11 @@
           padding-left:150px;
      }
 
+
+     .hero-btn-container,.cta-btn-container{
+             flex-direction:row;
+     }
+
      
      .nav-links-container{
         display: flex;
