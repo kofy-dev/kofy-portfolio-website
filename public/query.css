@@ -27,7 +27,7 @@
      
 
      .hero-paragraph{
-       font-size: var(--text-3xl);
+       font-size: clamp(3rem,5vh,6rem);
      }
 
      .hero-heading{
