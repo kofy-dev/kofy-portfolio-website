@@ -14,7 +14,6 @@
 
      .hero-section{
        min-height:80vh;
-       padding-top:180px;
      }
 
      .hero-container,.about-container{
@@ -95,7 +94,6 @@
 
 @media(min-width:64rem){
      .hero-section{
-          padding-top: 190px;
           min-height:100vh;
      }
        
