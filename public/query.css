@@ -17,22 +17,22 @@
           padding-top:180px;
      }
 
-     .hero-container{
+    /* .hero-container{
            justify-content:center;
           align-items:center;
           text-align:center;
           
-     }
+     }*/
 
      
 
-     .hero-paragraph{
+  /*   .hero-paragraph{
        font-size: clamp(3rem,5vh,6rem);
-     }
+     }*/
 
-     .hero-heading{
+    /* .hero-heading{
            font-size:var(--text-4xl);
-     }
+     }*/
   
 
      .hero-btn-container,.cta-btn-container{
@@ -128,9 +128,9 @@
             text-align:left;
      }
 
-     .hero-btn-container{
+   /*  .hero-btn-container{
             justify-content:flex-start;
-     }
+     }*/
 
      .hero-container ,.about-container{
           flex-wrap:nowrap;
