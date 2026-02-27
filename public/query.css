@@ -17,6 +17,10 @@
        padding-top:180px;
      }
 
+     .hero-container{
+          padding-left:150px;
+     }
+
      
      .nav-links-container{
         display: flex;
