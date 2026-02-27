@@ -629,14 +629,16 @@ margin-bottom: var(--space-64);
 }
 
 .service-container {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-justify-items:center;
-gap: var(--space-32);
-max-width: var(--container-width-xl);
-margin: 0 auto;
-width: 100%;
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: var(--space-16);
+  padding: var(--space-16) var(--space-8);
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;  /* Hide scrollbar Firefox */
+  width: 100%;
 }
+
 .service-container::-webkit-scrollbar {
   display: none;
 }
