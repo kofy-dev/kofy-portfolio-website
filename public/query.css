@@ -42,6 +42,10 @@
          /* align-items:center;*/
      }
 
+     .hero-btn-container{
+           justify-content:flex-start;
+     }
+
      
 
      
