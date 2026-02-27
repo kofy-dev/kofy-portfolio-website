@@ -18,7 +18,8 @@
      }
 
      .hero-container{
-          padding-left:150px;
+          max-width:800px;
+          margin:  0 auto;
      }
 
 
