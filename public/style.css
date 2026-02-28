@@ -843,7 +843,7 @@ align-items: center;
 
 .dark-mode .forms-container {
   background-color: var(--black);
-  border-color: var(--secondary-500);
+  border-color: var(--secondary-300);
   border-width: var(--border-sm);
 }
 
