@@ -652,9 +652,9 @@ margin-bottom: var(--space-64);
 /* Dots container — visible on mobile */
 .carousel-dots {
   display: flex;
-/*  justify-content: center;*/
-  gap: 8px;
-  margin-top: 16px;
+ justify-content: center;
+  gap:var(--space-8);
+  margin-top: var(--space-16);
 }
 
 /* Individual dots */
