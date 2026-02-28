@@ -799,16 +799,12 @@ align-items: center;
 
   
 /* ===== DARK MODE ===== */
-.dark-mode {
-  --black: #121212;  
-  --secondary-900: #e0e0e0;
-  --secondary-400: #afafaf;
-  --secondary-500: #b0b0b0;
-  --secondary-600: #404040;
-}
+/*.dark-mode {
+   
+}*/
 
 .dark-mode {
-  background-color: var(--black);
+  background-color: var(--secondary-900);
   color: var(--secondary-400);
 }
 
