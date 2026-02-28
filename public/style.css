@@ -827,7 +827,7 @@ align-items: center;
 }
 
 .dark-mode .card {
-  border: var(--border-sm) solid var(--secondary-600);
+  border: var(--border-sm) solid var(--black);
 }
 
 .dark-mode a.btn-primary-outline {
