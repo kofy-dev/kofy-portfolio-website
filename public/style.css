@@ -649,7 +649,7 @@ margin-bottom: var(--space-64);
   margin: 0;
 }
 
- Dots container — visible on mobile */
+/* Dots container — visible on mobile */
 .carousel-dots {
   display: flex;
   justify-content: center;
