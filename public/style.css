@@ -437,7 +437,7 @@ transform: translateY(-5px);
 /*HERO__SECTION*/
 
 .hero-section{
-padding-top: clamp(19rem, 12vh, 26rem);
+padding-top: clamp(8rem, 12vh, 13rem);
   min-height:70vh;
   margin-bottom:var(--space-48);
 }
