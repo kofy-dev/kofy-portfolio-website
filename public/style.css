@@ -850,6 +850,7 @@ align-items: center;
 .dark-mode .form-input,
 .dark-mode .text-input {
   background-color: var(--black);
+  border-color:var(--secondary-300);
   color: inherit;
 }
 
