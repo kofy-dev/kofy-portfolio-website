@@ -81,42 +81,56 @@ darkModeToggle.addEventListener('click', () => {
   }
 });
 
-    document.addEventListener('DOMContentLoaded', function() {
-  const workContainer = document.querySelector('.work-container');
-  const dotsContainer = document.querySelector('.carousel-dots');
-  const cards = document.querySelectorAll('.work-container .card');
+
+
+   document.addEventListener('DOMContentLoaded', function() {
+  // Setup Services Carousel
+  setupCarousel('.service-container', '.service-dots');
   
-  // Clear and create dots
+  // Setup Work Carousel
+  setupCarousel('.work-container', '.work-dots');
+});
+
+function setupCarousel(containerSelector, dotsSelector) {
+  const container = document.querySelector(containerSelector);
+  const dotsContainer = document.querySelector(dotsSelector);
+  
+  if (!container || !dotsContainer) return;
+  
+  const cards = container.querySelectorAll('.card');
+  if (cards.length === 0) return;
+  
+  // Create dots
   dotsContainer.innerHTML = '';
   cards.forEach((_, index) => {
     const dot = document.createElement('span');
     dot.classList.add('dot');
     if (index === 0) dot.classList.add('active');
     dot.dataset.index = index;
-    dot.setAttribute('aria-label', `Go to card ${index + 1}`);
     dotsContainer.appendChild(dot);
   });
   
-  const dots = document.querySelectorAll('.dot');
-  const cardWidth = 296; // 280px card + 16px gap
+  const dots = dotsContainer.querySelectorAll('.dot');
+  const cardWidth = 296; // 280px + 16px gap
   
-  // Update active dot on scroll
-  workContainer.addEventListener('scroll', () => {
-    const scrollPosition = workContainer.scrollLeft;
+  // Update dots on scroll
+  container.addEventListener('scroll', () => {
+    const scrollPosition = container.scrollLeft;
     const activeIndex = Math.round(scrollPosition / cardWidth);
     
-    dots.forEach((dot, index) => {
-      dot.classList.toggle('active', index === activeIndex);
+    dots.forEach((dot, i) => {
+      dot.classList.toggle('active', i === activeIndex);
     });
   });
   
-  // Click dot to scroll
-  dots.forEach((dot, index) => {
+  // Click dots to scroll
+  dots.forEach((dot) => {
     dot.addEventListener('click', () => {
-      workContainer.scrollTo({
+      const index = parseInt(dot.dataset.index);
+      container.scrollTo({
         left: index * cardWidth,
         behavior: 'smooth'
       });
     });
   });
-});
+}                    
