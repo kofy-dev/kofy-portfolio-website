@@ -806,7 +806,7 @@ align-items: center;
 }
 
 .dark-mode {
-  background-color: var(--secondary-800);
+  background-color: var(--black);
   color: var(--secondary-400);
 }
 
