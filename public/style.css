@@ -800,6 +800,7 @@ align-items: center;
   
 /* ===== DARK MODE ===== */
 .dark-mode {
+  --secondary-300:#333;
    --secondary-400:#afafaf;
    --secondary-900:#ddd;
    --black:#0b0d0e;
@@ -827,7 +828,7 @@ align-items: center;
 }
 
 .dark-mode .card {
-  border: var(--border-sm) solid var(--black);
+  border: var(--border-sm) solid var(--secondary-300);
 }
 
 .dark-mode a.btn-primary-outline {
@@ -837,7 +838,7 @@ align-items: center;
 .dark-mode .navbar,
 .dark-mode .footer-section,
 .dark-mode .nav-btn-container {
-  border-color: var(--secondary-600);
+  border-color: var(--secondary-300);
 }
 
 .dark-mode .forms-container {
