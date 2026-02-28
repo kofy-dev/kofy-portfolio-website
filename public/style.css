@@ -649,6 +649,31 @@ margin-bottom: var(--space-64);
   margin: 0;
 }
 
+ Dots container — visible on mobile */
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+/* Individual dots */
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #ccc;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dot.active {
+  background-color: var(--primary-500);
+  width: 24px;
+  border-radius: 4px;
+}
+
+
 .service-heading,
 .service-paragraph {
 text-align: center;
