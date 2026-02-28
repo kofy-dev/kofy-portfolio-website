@@ -801,6 +801,7 @@ align-items: center;
 /* ===== DARK MODE ===== */
 .dark-mode {
    --secondary-400:#E0E0E0;
+   --secondary-900:#FAFAFA;
 }
 
 .dark-mode {
