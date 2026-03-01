@@ -126,7 +126,9 @@ ul,ol { list-style: none; }
 a:link,a:visited { text-decoration: none; color: inherit; }
 a:hover,a:active { text-decoration: underline solid var(--primary-300); }
 
-/* BUTTONS */
+/*COMPONENTS*/
+
+/* BUTTONS-COMPONENTS */
 .btn {
 font-size: var(--text-2xl);
 font-weight: var(--font-weight-medium);
@@ -168,6 +170,9 @@ background-color: var(--primary-600);
 border-color: var(--primary-700);
 }
 
+
+/*CARD-COMPONENTS*/
+
 .card{
 padding: var(--space-8) var(--space-16);
 border: var(--border-xl) solid var(--white);
@@ -204,7 +209,7 @@ a.card-link{
 text-decoration: underline solid var(--primary-600) 2px;
 }
 
-/*Floating-icon*/
+/*FLOATING-ICON-COMPONENTS*/
 a.chart-icon{
 position: fixed;
 bottom: 20px;
@@ -231,7 +236,9 @@ background-color:#128C7E;
 text-decoration: none;
 }
 
-/* NAVBAR */
+/* NAVBAR-COMPONENTS */
+
+/*NAVBAR*/
 .navbar {
 display: flex;
 justify-content: space-between;
@@ -246,6 +253,7 @@ border-bottom: 1px solid #e5e7eb;
 box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
+/*NAVBAR-LOGO*/
 a.brand-logo {
 font-family: var(--font-merriweather);
 font-weight: var(--font-weight-bold);
@@ -266,6 +274,8 @@ gap: var(--space-4);
     gap:var(--space-16);
 } 
 
+
+/*NAVBAR-BTNS*/
 .hamburger-btn {
 display: flex;
 flex-direction: column;
@@ -278,6 +288,7 @@ cursor: pointer;
 z-index: 1001;
 }
 
+/*NAVBAR-LINE*/
 .hamburger-line {
 width: 100%;
 height: 3px;
@@ -294,6 +305,7 @@ transform: rotate(45deg) translate(6px,6px);
 transform: rotate(-45deg) translate(7px,-6px);
 }
 
+/*NAVBAR-LINKS-CONTAINER*/
 .nav-links-container {
 display: none;
 position: absolute;
@@ -314,6 +326,7 @@ overflow-y: auto;
 display: flex;
 }
 
+/*NAVBAR-LINKS*/
 .nav-links {
 display: block;
 margin-bottom: 0.2em;
@@ -322,7 +335,7 @@ font-size: var(--text-xl);
 text-align: center;
 }
 
-/* Buttons in Mobile Menu */
+/* NAVBAR-BTNS-CONTAINER*/
 .nav-btn-container {
 display: flex;
 flex-direction: column;
@@ -333,7 +346,7 @@ padding-top: 1rem;
 border-top: 1px solid #e5e7eb;
 }
 
-/* Theme toggle button */
+/* NAVBAR-TOGGLE-BTN */
 
 .theme-toggle {
   background: transparent;
@@ -355,18 +368,21 @@ border-top: 1px solid #e5e7eb;
 .theme-toggle:hover {
   background-color: var(--secondary-100);
 }
-/* Dark mode toggle text color */
+/* NAVBAR-BTN-COLOR */
 .dark-mode .theme-toggle {
   color: var(--primary-400);
 }
 
 
   /*FORMS-COMPONENTS*/
+
+/*FORMS-TITLE*/
 .form-description{
    font-size:var(--text-3xl);
   margin-bottom:var(--space-16);
 }
 
+/*FORMS-CONTAINER*/
 .forms-container{
    background-color:var(--white);
    padding:var(--space-16)  var(--space-24);
@@ -387,6 +403,8 @@ transform: translateY(-5px);
      padding:var(--space-16);
   }
 
+
+/*FORMS-LABEL*/
 .form-label{
    display:block;
    font-weight:var(--font-weight-medium);
