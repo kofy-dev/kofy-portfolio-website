@@ -95,12 +95,15 @@ function setupCarousel(containerSelector, dotsSelector) {
   const container = document.querySelector(containerSelector);
   const dotsContainer = document.querySelector(dotsSelector);
   
-  if (!container || !dotsContainer) return;
+  if (!container || !dotsContainer) {
+    console.log('Missing:', containerSelector, dotsSelector); // Debug
+    return;
+  }
   
   const cards = container.querySelectorAll('.card');
   if (cards.length === 0) return;
   
-  // Create dots
+  // Clear and create dots
   dotsContainer.innerHTML = '';
   cards.forEach((_, index) => {
     const dot = document.createElement('span');
@@ -113,7 +116,7 @@ function setupCarousel(containerSelector, dotsSelector) {
   const dots = dotsContainer.querySelectorAll('.dot');
   const cardWidth = 296; // 280px + 16px gap
   
-  // Update dots on scroll
+  // Update active dot on scroll
   container.addEventListener('scroll', () => {
     const scrollPosition = container.scrollLeft;
     const activeIndex = Math.round(scrollPosition / cardWidth);
@@ -123,7 +126,7 @@ function setupCarousel(containerSelector, dotsSelector) {
     });
   });
   
-  // Click dots to scroll
+  // Click dot to scroll
   dots.forEach((dot) => {
     dot.addEventListener('click', () => {
       const index = parseInt(dot.dataset.index);
@@ -133,4 +136,4 @@ function setupCarousel(containerSelector, dotsSelector) {
       });
     });
   });
-}                    
+}
