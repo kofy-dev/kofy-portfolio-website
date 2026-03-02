@@ -446,6 +446,7 @@ transform: translateY(-5px);
 /*CAROUSEL-COMPONENTS*/
 .carousel-track{
   display: flex;
+  align-items:flex-start;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   gap: var(--space-16);
