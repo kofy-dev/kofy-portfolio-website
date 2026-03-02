@@ -83,6 +83,10 @@
             scroll-snap-align: none;
         }
 
+          .carousel-indicators{
+                display:none;
+          }
+
      
      
      
