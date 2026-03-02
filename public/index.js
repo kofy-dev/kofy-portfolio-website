@@ -98,75 +98,54 @@ darkModeToggle.addEventListener('click', () => {
   }
 });
 
-/* ========================================
-   CAROUSEL / SLIDER for Cards (Mobile Only)
-   ======================================== */
 
-document.addEventListener('DOMContentLoaded', function() {
-  // Initialize both carousels
-  setupCarousel('.service-container', '.service-dots');
-  setupCarousel('.work-container', '.work-dots');
-});
+document.addEventListener('DOMContentLoaded', function () {
+  const carousels = document.querySelectorAll('.carousel-track');
 
-/**
- * Sets up a horizontal scrolling carousel with dot navigation
- * @param {string} containerSelector - CSS selector for the card container
- * @param {string} dotsSelector - CSS selector for the dots container
- */
-function setupCarousel(containerSelector, dotsSelector) {
-  // Get elements
-  const container = document.querySelector(containerSelector);
-  const dotsContainer = document.querySelector(dotsSelector);
-  
-  // Exit if elements not found
-  if (!container || !dotsContainer) {
-    console.log('Missing:', containerSelector, dotsSelector); // Debug
-    return;
-  }
-  
-  // Get all cards in this container
-  const cards = container.querySelectorAll('.card');
-  if (cards.length === 0) return;
-  
-  /* ----------------------------------------
-     Create navigation dots
-     ---------------------------------------- */
-  dotsContainer.innerHTML = ''; // Clear existing dots
-  
-  cards.forEach((_, index) => {
-    const dot = document.createElement('span');
-    dot.classList.add('dot');
-    if (index === 0) dot.classList.add('active'); // First dot active by default
-    dot.dataset.index = index; // Store card index
-    dotsContainer.appendChild(dot);
-  });
-  
-  const dots = dotsContainer.querySelectorAll('.dot');
-  const cardWidth = 296; // Card width (280px) + gap (16px)
-  
-  /* ----------------------------------------
-     Update active dot on scroll
-     ---------------------------------------- */
-  container.addEventListener('scroll', () => {
-    const scrollPosition = container.scrollLeft;
-    const activeIndex = Math.round(scrollPosition / cardWidth);
-    
-    dots.forEach((dot, i) => {
-      dot.classList.toggle('active', i === activeIndex);
+  carousels.forEach((carousel) => {
+    const dotsContainer = carousel.nextElementSibling;
+
+    if (!dotsContainer) return;
+
+    const cards = carousel.querySelectorAll('.card');
+    if (!cards.length) return;
+
+    dotsContainer.innerHTML = '';
+
+    // Create dots
+    cards.forEach((_, index) => {
+      const dot = document.createElement('span');
+      dot.classList.add('carousel-indicator');
+      if (index === 0) dot.classList.add('active');
+
+      dot.addEventListener('click', () => {
+        cards[index].scrollIntoView({
+          behavior: 'smooth',
+          inline: 'start',
+          block: 'nearest'
+        });
+      });
+
+      dotsContainer.appendChild(dot);
     });
-  });
-  
-  /* ----------------------------------------
-     Click dot to scroll to corresponding card
-     ---------------------------------------- */
-  dots.forEach((dot) => {
-    dot.addEventListener('click', () => {
-      const index = parseInt(dot.dataset.index);
-      container.scrollTo({
-        left: index * cardWidth,
-        behavior: 'smooth' // Smooth scrolling animation
+
+    const dots = dotsContainer.querySelectorAll('.carousel-indicator');
+
+    // Update active dot on scroll
+    carousel.addEventListener('scroll', () => {
+      cards.forEach((card, index) => {
+        const rect = card.getBoundingClientRect();
+        const containerRect = carousel.getBoundingClientRect();
+
+        if (
+          rect.left >= containerRect.left - 10 &&
+          rect.left < containerRect.left + containerRect.width / 2
+        ) {
+          dots.forEach(dot => dot.classList.remove('active'));
+          dots[index].classList.add('active');
+        }
       });
     });
   });
-       }
+});
   
