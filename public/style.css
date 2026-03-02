@@ -492,11 +492,11 @@ overflow: visible;
 .hero-paragraph{
 font-size:clamp(1.6rem ,2vw, 2rem);
 margin-bottom: var(--space-32);
+}
   .hero-heading {
 word-wrap: break-word;
 overflow-wrap: break-word;
   }
-}
 
 
 /*HERO__DYNAMIC__TEXT*/
@@ -613,7 +613,7 @@ object-fit: cover;
 border-radius: var(--radius-xl);
 }
 
-/*ABOUT-HEADING $ ABOUT-PARAGRAPH-SHARED-STYLES*/
+/*ABOUT-HEADING & ABOUT-PARAGRAPH-SHARED-STYLES*/
 .about-heading,
 .about-paragraph {
 margin-bottom: var(--space-16);
@@ -738,9 +738,12 @@ text-align: center; font-size: var(--text-xl);
 }
 
 /* ===== WORK / PORTFOLIO SECTION ===== */
+/*WORK-MAIN-SECTION*/
 .work-section{
 margin-bottom: var(--space-64);
 }
+
+/*WORK-CONTAINER*/
 .work-container {
   display: flex;
   overflow-x: auto;
@@ -769,19 +772,23 @@ margin-bottom: var(--space-64);
 .card-link {
 text-align: center;
 }
+
+/*WORK-PARAGRAPH*/
 .portfolio-paragraph {
 font-size: var(--text-xl);
   margin-bottom:var(--space-16);
 }
-
+/*WORK-HEADING*/
 .portfolio-heading{
     margin-bottom:var(--space-24);
 }
 
 /*CTA__SECTION*/
+/*CTA-MAIN-SECTION*/
 .cta-section{
 margin-bottom: var(--space-32);
 }
+/*CTA-CONTAINER*/
 .cta-container{
 display: flex;
 flex-direction: column;
@@ -793,27 +800,30 @@ margin: 0 auto;
 width:90%;
 }
 
+/*CTA-BTN-CONTAINER*/
 .cta-btn-container{
 display:flex;
 gap:var(--space-16);
 flex-direction:column;
 width:100%;
 }
-
+/*CTA-PARAGRAPH*/
 .cta-paragraph{
 font-size:var(--text-3xl);
 text-align:center;
 }
-
+/*CTA-HEADING*/
 .cta-heading{
 font-size:var(--text-5xl);
 }
 
 /*CONTACT SECTION*/
+/*CTA-MAIN-SECTION*/
 .contact-section{
    padding-top:70px;
 }
 
+/*CTA-CONTAINER*/
 .contact-container{
    display:flex;
    justify-content:center;
@@ -826,6 +836,7 @@ font-size:var(--text-5xl);
 }
 
 /* ===== FOOTER ===== */
+/*FOOTER-MAIN-SECTION*/
 .footer-section{
  margin-bottom: var(--space-48);
  border-top:1px solid  #e5e7eb;
@@ -833,7 +844,7 @@ font-size:var(--text-5xl);
 }
 
 
-
+/*FOOTER-CONTAINER*/
 .footer-container {
 display: flex;
  flex-direction:column;
@@ -845,16 +856,19 @@ margin: 0 auto;
 width: 90%;
 }
 
+/*FOOTER-DESCRIPTION*/
 .footer-description{
 font-size: var(--text-sm);
 }
 
+/*FOOTER-LINKS-CONTAINER*/
 .social-link-container {
 display: flex;
 gap: var(--space-12);
   justify-content:center;
 }
 
+/*FOOTER-LINKS*/
 .social-link i {
 font-size: var(--text-4xl);
 color: var(--primary-500);
