@@ -168,4 +168,5 @@ function setupCarousel(containerSelector, dotsSelector) {
       });
     });
   });
-      }
+       }
+  
