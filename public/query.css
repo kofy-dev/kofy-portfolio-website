@@ -124,28 +124,10 @@
      .hero-section{
           min-height:100vh;
      }
-       
-
      
-
-   
-
      .hero-container ,.about-container{
           flex-wrap:nowrap;
-     }
-     
-
- 
-  .hero-img-container {
-    width: 400px;  
-      
-  }
-
-     .about-img-container{
-          flex: 0 0 350px;
-     }
-
-     
+     } 
      
 }
 
