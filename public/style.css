@@ -459,12 +459,12 @@ transform: translateY(-5px);
   display: none;
 }
 
-.carousel-track .card {
+.carousel-item .card {
   flex: 0 0 280px;        /* Fixed card width for swiping */
   scroll-snap-align: start;
   margin: 0;
                      }
-.carousel-dots {
+.carousel-indicators {
   display: flex;
  justify-content: center;
   gap:var(--space-8);
@@ -472,7 +472,7 @@ transform: translateY(-5px);
 }
 
 /* Individual dots */
-.dot {
+.carousel-indicator {
   width: 8px;
   height: 8px;
   border-radius: 50%;
@@ -481,7 +481,7 @@ transform: translateY(-5px);
   transition: all 0.3s ease;
 }
 
-.dot.active {
+.carousel-indicator.active {
   background-color: var(--primary-500);
   width: 24px;
   border-radius: 4px;
