@@ -76,7 +76,7 @@
     scroll-snap-type: none;  
     padding: 0;      
           }
-     
+      
      . carousel-track.card {
           flex: unset;            
            width: 100%;            
