@@ -460,8 +460,8 @@ transform: translateY(-5px);
   display: none;
 }
 
-.carousel-item .card {
-  flex: 0 0 400px;        /* Fixed card width for swiping */
+.carousel-track .card {
+  flex: 0 0 280px;        /* Fixed card width for swiping */
   scroll-snap-align: start;
   margin: 0;
                      }
