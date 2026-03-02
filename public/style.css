@@ -444,7 +444,7 @@ transform: translateY(-5px);
    margin-bottom:var(--space-24);
 }
 /*CAROUSEL-COMPONENTS*/
-.carousel {
+.carousel-track{
   display: flex;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
@@ -455,11 +455,11 @@ transform: translateY(-5px);
   width: 100%;
 }
 
-.carousel::-webkit-scrollbar {
+.carousel-track::-webkit-scrollbar {
   display: none;
 }
 
-.carousel .card {
+.carousel-track .card {
   flex: 0 0 280px;        /* Fixed card width for swiping */
   scroll-snap-align: start;
   margin: 0;
