@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const carousels = document.querySelectorAll('.carousel-track');
 
   carousels.forEach((carousel) => {
-    const dotsContainer = carousel.nextElementSibling;
+     const dotsContainer = carousel.parentElement.querySelector('.carousel-indicators');
 
     if (!dotsContainer) return;
 
