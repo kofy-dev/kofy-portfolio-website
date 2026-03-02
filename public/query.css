@@ -16,10 +16,10 @@
        min-height:80vh;
      }
 
-     .hero-container,.about-container{
+    /* .hero-container,.about-container{
           max-width:var(--container-width-lg);
           margin:  0 auto;
-     }
+     }*/
 
 
      .hero-btn-container,.cta-btn-container{
