@@ -724,9 +724,12 @@ margin-bottom: var(--space-16);
 }
 
 /*SERVICE-LINK*/
-.service-card-link {
-margin-top: var(--space-12);
+.service-card-link,.service-heading,.service-paragraph {
 text-align: center; font-size: var(--text-xl);
+}
+
+.service-card-link{
+   margin-top:var(--space-12);
 }
 
 /* ===== WORK / PORTFOLIO SECTION ===== */
