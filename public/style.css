@@ -513,7 +513,7 @@ transform: translateY(-5px);
 /*HERO-CONTAINER*/
 .hero-container{
 display: flex;
-  flex-wrap:wrap;
+  flex-direction:column;
 /*align-items:center;
 justify-content: center;*/
 gap:var(--space-24);
@@ -636,7 +636,7 @@ margin-bottom: var(--space-48);
 /*ABOUT__CONTAINER*/
 .about-container {
 display: flex;
-flex-wrap:wrap;
+flex-direction:column;
 /* justify-content:center;
   align-items:center;*/
 gap: var(--space-24);
