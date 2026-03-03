@@ -545,6 +545,10 @@ word-wrap: break-word;
 overflow-wrap: break-word;
   }
 
+.hero-heading,.hero-paragraph{
+   text-align:center;
+}
+
 
 /*HERO__DYNAMIC__TEXT*/
 #dynamic-text {
