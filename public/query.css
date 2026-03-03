@@ -67,9 +67,9 @@
 		flex-shrink: 0;
 	}
 
-	.hero-section {
+	/*.hero-section {
 		min-height: 100vh;
-	}
+	}*/
 
 	.hero-heading,.hero-paragraph{
 		 text-align:left;
