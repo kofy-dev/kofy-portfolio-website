@@ -501,7 +501,7 @@ transform: translateY(-5px);
 
 /*HERO-SECTION*/
 .hero-section{
-padding-top: clamp(8rem, 12vw, 13rem);
+  padding-block: clamp(4rem, 8vw, 6rem);
 min-height:70vh;
   margin-bottom:var(--space-48);
 }
