@@ -525,8 +525,8 @@ overflow: visible;
 }
 
 .hero-content{
-   max-width:600px;
-   flex: 1 1 600px;
+   max-width:400px;
+   flex: 1 1 400px;
 }
 
 
