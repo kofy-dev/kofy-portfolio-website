@@ -80,6 +80,10 @@
 		flex-direction: row;
 	}
 
+	.hero-container{
+  padding-bottom: clamp(4rem, 8vw, 8rem) 0;
+	}
+
 	.hero-btn-container{
 		 justify-content:flex-start;
 	}
