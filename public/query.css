@@ -70,6 +70,10 @@
 		min-height: 100vh;
 	}
 
+	.hero-heading,.hero-paragraph{
+		 text-align:left;
+	}
+
 	.hero-container,
 	.about-container {
 		flex-direction: row;
