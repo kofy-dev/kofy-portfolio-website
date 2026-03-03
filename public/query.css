@@ -79,6 +79,10 @@
 		flex-direction: row;
 	}
 
+	.hero-btn-container{
+		 justify-content:flex-start;
+	}
+
 
 	.footer-container {
 		flex-direction: row;
