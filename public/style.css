@@ -644,6 +644,11 @@ margin: 0 auto;
 width: 90%;
 }
 
+.about-content{
+   flex:1 1 500px;
+   max-width:500px;
+}
+
 /*ABOUT-IMG-CONTAINER*/
 .about-img-container {
 display: flex;
