@@ -524,6 +524,10 @@ overflow: visible;
 
 }
 
+.hero-content{
+   max-width:600px;
+}
+
 
 
 
