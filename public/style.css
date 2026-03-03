@@ -654,7 +654,7 @@ width: 90%;
 display: flex;
 justify-content:center;
 align-items:center;
-width:min(90%,600px);
+width:min(90%,500px);
 aspect-ratio: 1;
 overflow: hidden;
 border-radius: var(--radius-xl);
