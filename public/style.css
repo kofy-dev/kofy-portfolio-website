@@ -656,7 +656,7 @@ display: flex;
 justify-content:center;
 align-items:center;
 width:100%;
-max-width:500px;
+max-width:450px;
 aspect-ratio: 1;
 overflow: hidden;
 border-radius: var(--radius-xl);
