@@ -581,7 +581,7 @@ gap:var(--space-24);
 /*HERO__IMG__CONTAINER*/
 .hero-img-container{
 width:100%
-   max-width:500px;
+   max-width:400px;
 display:flex;
 justify-content:center;
 align-items: flex-start;
