@@ -526,6 +526,7 @@ overflow: visible;
 
 .hero-content{
    max-width:600px;
+   flex: 1 1 600px;
 }
 
 
