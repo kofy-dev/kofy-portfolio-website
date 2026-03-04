@@ -572,9 +572,8 @@ margin-left: 2px;
 /*HERO__BTN__CONTAINER*/
 .hero-btn-container{
 display:flex;
-  flex-wrap:wrap;
   justify-content:center;
-/*flex-direction:column;*/
+flex-direction:column;
 gap:var(--space-24);
 }
 
@@ -717,6 +716,10 @@ margin-bottom:var(--space-12);
 font-size:var(--text-xl);
 }
 
+.resume.btn-primary{
+   width:100%;
+}
+
 /* ===== SERVICE SECTION ===== */
 
 /*SERVICE-MAIN-SECTION*/
@@ -793,7 +796,11 @@ width:90%;
 .cta-btn-container{
 display:flex;
 gap:var(--space-16);
-flex-wrap:wrap;
+flex-direction:columns;
+}
+
+.cta-btn-container.btn{
+   width:100%;
 }
 /*CTA-PARAGRAPH*/
 .cta-paragraph{
