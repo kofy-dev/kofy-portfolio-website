@@ -24,6 +24,13 @@
 		display: none;
 	}
 
+	.hero-container{
+		 text-align:left;
+		 justify-content:flex-start;
+		 align-items:flex-start 
+		;
+	}
+
 }
 
 
