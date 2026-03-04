@@ -910,6 +910,7 @@ text-decoration:none;
 
 .dark-mode .card,
 .dark-mode .navbar,
+.dark-mode .navbar-container
 .dark-mode .nav-links-container {
   background-color: var(--black);
 }
