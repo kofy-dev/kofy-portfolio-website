@@ -716,7 +716,7 @@ margin-bottom:var(--space-12);
 font-size:var(--text-xl);
 }
 
-.resume.btn-primary{
+.resume-section.btn-primary{
    width:100%;
 }
 
@@ -799,7 +799,7 @@ gap:var(--space-16);
 flex-direction:columns;
 }
 
-.cta-btn-container.btn{
+.cta-btn-container .btn{
    width:100%;
 }
 /*CTA-PARAGRAPH*/
