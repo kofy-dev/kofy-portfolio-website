@@ -43,7 +43,7 @@
 		 width:fit-content;
 	}
 
-	cta-btn-container{
+	.cta-btn-container{
 		 flex-direction:row;
 	}
 
