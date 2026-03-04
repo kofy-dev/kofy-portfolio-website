@@ -785,7 +785,7 @@ margin-bottom: var(--space-32);
 .cta-container{
 display: flex;
 flex-direction: column;
-justify-content: center!
+justify-content: center;
 gap:var(--space-16);
 max-width: var(--container-width-lg);
 margin: 0 auto;
@@ -812,7 +812,7 @@ text-align:center;
 font-size:var(--text-5xl);
   text-align:center;
 }
-
+ 
 /*CONTACT SECTION*/
 /*CTA-MAIN-SECTION*/
 .contact-section{
