@@ -45,7 +45,7 @@
 
 	.cta-btn-container{
 		 flex-direction:row;
-		width:fit-content;
+		
 		justify-content: center;
 	}
 
