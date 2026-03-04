@@ -797,11 +797,12 @@ width:90%;
 .cta-btn-container{
 display:flex;
 gap:var(--space-16);
-flex-direction:columns;
+flex-direction:column;
 }
 
-.cta-btn-container .btn{
+.cta-btn-container.btn{
    width:100%;
+  display:block;
 }
 /*CTA-PARAGRAPH*/
 .cta-paragraph{
