@@ -27,7 +27,7 @@
 }
 
 
-@media(min-width:64rem) {
+@media(min-width:62rem) {
 	.hamburger-btn {
 		display: none;
 	}
