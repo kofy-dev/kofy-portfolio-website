@@ -515,8 +515,9 @@ display: flex;
   flex-direction:column;
 align-items:center;
 justify-content: center;
+  text-align:center;
 gap:var(--space-24);
-max-width:var(--container-width-2xl);
+max-width:var(--container-width-xl);
 margin:0 auto;
 width:90%;
 overflow: visible;
@@ -545,9 +546,7 @@ word-wrap: break-word;
 overflow-wrap: break-word;
   }
 
-.hero-heading,.hero-paragraph{
-   text-align:center;
-}
+
 
 
 /*HERO__DYNAMIC__TEXT*/
@@ -847,7 +846,7 @@ width: 90%;
 
 /*FOOTER-DESCRIPTION*/
 .footer-description{
-font-size: var(--text-sm);
+font-size: var(--text-md);
 }
 
 /*FOOTER-LINKS-CONTAINER*/
@@ -858,12 +857,13 @@ gap: var(--space-12);
 }
 
 /*FOOTER-LINKS*/
-.social-link i {
+.social-links  {
 font-size: var(--text-4xl);
 color: var(--primary-500);
-display: flex;
+display: inline-flex;
 justify-content: center;
 align-items: center;
+text-decoration:none;
 } 
 
 
