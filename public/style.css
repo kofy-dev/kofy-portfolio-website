@@ -800,7 +800,7 @@ gap:var(--space-16);
 flex-direction:column;
 }
 
-.cta-btn-container .btn{
+.cta-btn-container .btn-primary{
    width:100%;
   display:block;
 }
