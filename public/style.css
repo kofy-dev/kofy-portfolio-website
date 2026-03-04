@@ -242,13 +242,13 @@ text-decoration: none;
 /* NAVBAR-COMPONENTS */
 
 /*NAVBAR*/
-.navbar-container{
-  position: fixed;
-top: 0;
-width: 100%;
+.navbar{
+  width:90%;
+  margin: 0 auto;
+  max-width:var(--container-width-xl);
 }
    
-.navbar {
+.navbar-container{
 display: flex;
 justify-content: space-between;
 align-items: center;
@@ -258,9 +258,10 @@ z-index: 1000;
 border-bottom: 1px solid #e5e7eb;
 box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 height:var(--navbar-height);
-  width:90%;
-  margin: 0 auto;
-  max-width:var(--container-width-xl);
+  position: fixed;
+top: 0;
+width: 100%;
+  
 }
 
 /*NAVBAR-LOGO*/
