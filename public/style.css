@@ -716,7 +716,7 @@ margin-bottom:var(--space-12);
 font-size:var(--text-xl);
 }
 
-.resume-section.btn-primary{
+.resume-btn-container.btn-primary{
    width:100%;
 }
 
