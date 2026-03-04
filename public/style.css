@@ -716,7 +716,7 @@ margin-bottom:var(--space-12);
 font-size:var(--text-xl);
 }
 
-.resume-btn-container.btn-primary{
+.resume-btn-container .btn-primary{
   display:block;
    width:100%;
 }
@@ -800,7 +800,7 @@ gap:var(--space-16);
 flex-direction:column;
 }
 
-.cta-btn-container.btn{
+.cta-btn-container .btn{
    width:100%;
   display:block;
 }
