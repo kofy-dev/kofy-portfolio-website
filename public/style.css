@@ -802,6 +802,7 @@ flex-direction:column;
 
 .cta-btn-container .btn-primary{
    width:100%;
+  align-self:flex-start;
 }
 /*CTA-PARAGRAPH*/
 .cta-paragraph{
