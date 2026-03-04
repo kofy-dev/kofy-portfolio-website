@@ -34,6 +34,10 @@
 		 justify-content:flex-start;
 	}
 
+	.about-container{
+		 align-items:flex-start;
+	}
+
 }
 
 
