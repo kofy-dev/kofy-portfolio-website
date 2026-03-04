@@ -39,6 +39,14 @@
 		 align-items:flex-start;
 	}
 
+	.resume-btn-container{
+		 width:fit-content;
+	}
+
+	cta-btn-container{
+		 flex-direction:row;
+	}
+
 }
 
 
