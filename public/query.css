@@ -14,7 +14,7 @@
 		padding: 0;
 	}
 
-	. carousel-track.card {
+	.carousel-track.card {
 		flex: unset;
 		width: 100%;
 		scroll-snap-align: none;
@@ -26,7 +26,6 @@
 
 	.hero-container{
 		 text-align:left;
-		 justify-content:flex-start;
 		 align-items:flex-start 
 		;
 	}
