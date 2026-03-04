@@ -528,14 +528,14 @@ overflow: visible;
 
 /*HERO-HEADING*/
 .hero-heading{
-  font-size:clamp(2.8rem, 6vw, 5.2rem);
+  font-size:clamp(2.8rem, 5vw, 4.2rem);
    margin-bottom: var(--space-32);
 }
 
 
 /*HERO-PARAGRAPH*/
 .hero-paragraph{
-font-size:clamp(1.6rem ,2vw, 2rem);
+font-size:clamp(1.4rem ,2vw, 2rem);
 margin-bottom: var(--space-32);
 }
   .hero-heading {
