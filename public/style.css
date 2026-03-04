@@ -785,8 +785,7 @@ margin-bottom: var(--space-32);
 .cta-container{
 display: flex;
 flex-direction: column;
-justify-content: center;
-align-items: center;
+justify-content: center!
 gap:var(--space-16);
 max-width: var(--container-width-lg);
 margin: 0 auto;
@@ -802,7 +801,6 @@ flex-direction:column;
 
 .cta-btn-container .btn-primary{
    width:100%;
-  align-self:flex-start;
 }
 /*CTA-PARAGRAPH*/
 .cta-paragraph{
@@ -812,6 +810,7 @@ text-align:center;
 /*CTA-HEADING*/
 .cta-heading{
 font-size:var(--text-5xl);
+  text-align:center;
 }
 
 /*CONTACT SECTION*/
