@@ -194,13 +194,20 @@ border-color: var(--primary-700);
 
 .card{
 padding: var(--space-8) var(--space-16);
-border: var(--border-xl) solid var(--white);
 border-radius: var(--radius-md);
 background-color: var(--white);
+ background: rgba(255, 255, 255, 0.7); 
+  /* Add a border that is slightly darker than white */
+  border: 1px solid rgba(0, 0, 0, 0.08); 
+  /* Use a more professional shadow */
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.06);
+  
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
 transition: all 0.2s ease-in-out;
-box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 max-width: 400px;
 }
+
 .card:hover{
 background: var(--white);
 box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
