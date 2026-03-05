@@ -45,7 +45,6 @@
 --container-width-xl:120rem;
 --container-width-2xl:128rem;
 --container-width-3xl:138rem;
---navbar-height:80px;
 
 /* COLORS */
 --primary-50: #f3f0ff;
@@ -107,7 +106,6 @@ font-weight: var(--font-weight-normal);
 line-height: var(--line-height-normal);
 color: var(--secondary-700);
 font-size: var(--text-lg);
-padding-top:var(--navbar-height);
 }
 
 h1,h2,h3,h4,h5,h6{
