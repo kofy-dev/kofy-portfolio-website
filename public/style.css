@@ -923,7 +923,7 @@ text-decoration:none;
   background-color: var(--black);
 }
 
-.dark-mode .navbar,
+.dark-mode .navbar-container,
 .dark-mode .footer-section,
 .dark-mode .nav-btn-container {
   border-color: var(--secondary-300);
