@@ -411,10 +411,9 @@ border-top: 1px solid #e5e7eb;
 
 /*FORMS-CONTAINER*/
 .forms-container{
-   background-color:var(--white);
    padding:var(--space-16)  var(--space-24);
    border-radius:var(--radius-md);
-   border:2px solid var(--white);
+   border:2px solid rgba(255, 255, 255, 0.3);;
    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   transition: all 0.2s ease-in-out;
   background: rgba(255, 255, 255, 0.05); /* Very light tint */
@@ -423,7 +422,6 @@ border-top: 1px solid #e5e7eb;
 }
 
 .forms-container:hover{
-   background-color:var(--white);
   box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
 transform: translateY(-5px);
 }
@@ -458,6 +456,7 @@ transform: translateY(-5px);
    border-radius:var(--radius-md);
    border: 2px solid var(--secondary-700);
   color:var(--secondary-700);
+  background: rgba(255, 255, 255, 0.5);
 }
 
 
