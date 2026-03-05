@@ -107,6 +107,10 @@ line-height: var(--line-height-normal);
 color: var(--secondary-700);
 font-size: var(--text-lg);
   padding-top:var(--space-48);
+  /* A very soft, clean gradient */
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  min-height: 100vh;
+  
 }
 
 h1,h2,h3,h4,h5,h6{
