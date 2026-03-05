@@ -10,6 +10,17 @@ const navMenu = document.querySelector('.nav-links-container');
 hamburgerBtn.addEventListener('click', () => {
   hamburgerBtn.classList.toggle('active');      // Animate hamburger icon
   navMenu.classList.toggle('active');           // Show/hide menu
+  
+  // 🔥 NEW: Change icon between ☰ and ✕
+  const icon = hamburgerBtn.querySelector('i');
+  if (navMenu.classList.contains('active')) {
+    icon.classList.remove('fa-bars');
+    icon.classList.add('fa-times');
+  } else {
+    icon.classList.remove('fa-times');
+    icon.classList.add('fa-bars');
+  }
+  
   // Prevent body scroll when menu is open
   document.body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : '';
 });
@@ -20,6 +31,12 @@ navLinks.forEach(link => {
   link.addEventListener('click', () => {
     hamburgerBtn.classList.remove('active');     // Reset hamburger icon
     navMenu.classList.remove('active');          // Hide menu
+    
+    // 🔥 NEW: Reset icon to bars
+    const icon = hamburgerBtn.querySelector('i');
+    icon.classList.remove('fa-times');
+    icon.classList.add('fa-bars');
+    
     document.body.style.overflow = '';           // Restore scrolling
   });
 });
