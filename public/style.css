@@ -295,6 +295,7 @@ border: none;
 background: transparent;
 cursor: pointer;
 z-index: 1001;
+color:var(--primary-400);
 }
 
 
