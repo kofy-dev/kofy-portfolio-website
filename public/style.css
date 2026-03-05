@@ -888,7 +888,7 @@ text-decoration:none;
 /* ===== DARK MODE ===== */
 .dark-mode {
   --secondary-300:#333;
-   --secondary-400:#afafaf;
+   --secondary-400:#FAFAFA;
    --secondary-900:#ddd;
    --black:#0b0d0e;
 }
