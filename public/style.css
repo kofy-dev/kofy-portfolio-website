@@ -297,7 +297,7 @@ background: transparent;
 cursor: pointer;
 z-index: 1001;
 color:var(--primary-400);
-font-size:var(--text-2xl);
+font-size:var(--text-3xl);
 }
 
 
