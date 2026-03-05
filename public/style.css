@@ -824,12 +824,17 @@ font-size:var(--text-5xl);
 .contact-container{
    display:flex;
    justify-content:center;
-  flex-wrap:wrap;
+   flex-wrap:wrap;
     align-items:center;
     min-height:100vh;
     margin:0 auto;
     width:90%;
     max-width:var(--container-width-lg);
+}
+
+.contact-heading{
+   text-align:center;
+  font-size:clamp(2.8rem, 5vw, 4.2rem);
 }
 
 /* ===== FOOTER ===== */
