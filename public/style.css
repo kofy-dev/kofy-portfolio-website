@@ -142,6 +142,7 @@ border-radius: var(--radius-lg);
 padding: var(--space-12) var(--space-16);
 cursor: pointer;
 transition: background-color 0.2s, transform 0.2s;
+transition: background-color 0.2s, transform 0.2s, box-shadow 0.2s;
 }
 
 .btn:hover { text-decoration: none; }
@@ -154,24 +155,35 @@ color: var(--white);
 color: var(--white);
 background-color: var(--primary-600);
 border: var(--border-sm) solid var(--primary-600);
+box-shadow: 0 4px 14px 0 rgba(111, 66, 193, 0.3); 
 }
 
 .btn-primary:hover {
 background-color: var(--primary-700);
 border-color: var(--primary-700);
+transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(111, 66, 193, 0.4);
 }
 
 a.btn-primary-outline {
 color: var(--primary-500);
 background-color: var(--white);
 border: var(--border-sm) solid var(--primary-500);
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .btn-primary-outline:hover {
 color: var(--white);
 background-color: var(--primary-600);
 border-color: var(--primary-700);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(111, 66, 193, 0.2);
 }
+
+
+
+
+
 
 
 /*CARD-COMPONENTS*/
