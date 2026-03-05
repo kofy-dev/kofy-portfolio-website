@@ -286,9 +286,10 @@ gap: var(--space-4);
 
 /*NAVBAR-BTNS*/
 .hamburger-btn {
-display: flex;
+display: inline-flex;
 flex-direction: column;
-justify-content: space-between;
+justify-content: center;
+align-items:center;
 width: 25px;
 height: 21px;
 border: none;
@@ -296,6 +297,7 @@ background: transparent;
 cursor: pointer;
 z-index: 1001;
 color:var(--primary-400);
+font-size:var(--text-xl);
 }
 
 
