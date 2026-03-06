@@ -920,6 +920,10 @@ text-decoration:none;
     background-color:var(--white);
     border-color:var(--border-color);
  }
+
+dark-mode .btn-primary{
+      color: var(--secondary-400);
+}
  
 
 
