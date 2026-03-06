@@ -108,7 +108,7 @@ color: var(--secondary-700);
 font-size: var(--text-lg);
   padding-top:var(--space-48);
   /* A very soft, clean gradient */
-  background:var(--white);
+  background-color:var(--white);
 }
 
 h1,h2,h3,h4,h5,h6{
