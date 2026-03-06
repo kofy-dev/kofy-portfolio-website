@@ -889,7 +889,7 @@ font-size: var(--text-md);
 .social-link-container {
 display: flex;
 gap: var(--space-12);
-  justify-content:center;
+justify-content:center;
 }
 
 /*FOOTER-LINKS*/
@@ -907,69 +907,6 @@ text-decoration:none;
 
 
   
-/* ===== DARK MODE ===== */
-.dark-mode {
-  --secondary-300:#333;
-   --secondary-400:#FAFAFA;
-   --secondary-900:#ddd;
-   --black:#0b0d0e;
-}
 
-.dark-mode {
-  background-color:var(--black) !important;
-  color: var(--secondary-400);
-}
 
-/* Headings */
-.dark-mode h1,
-.dark-mode h2,
-.dark-mode h3,
-.dark-mode h4,
-.dark-mode h5,
-.dark-mode h6 {
-  color: var(--secondary-900);
-}
 
-.dark-mode .card,
-.dark-mode .navbar,
-.dark-mode .navbar-container,
-.dark-mode .nav-links-container {
-  background-color: var(--black);
-}
-
-.dark-mode .card {
-  border: var(--border-sm) solid var(--secondary-300);
-}
-
-.dark-mode a.btn-primary-outline {
-  background-color: var(--black);
-}
-
-.dark-mode .navbar-container,
-.dark-mode .footer-section,
-.dark-mode .nav-btn-container {
-  border-color: var(--secondary-300);
-}
-
-.dark-mode .forms-container {
-  background-color: var(--black);
-  border-color: var(--secondary-300);
-  border-width: var(--border-sm);
-}
-
-.dark-mode .form-input,
-.dark-mode .text-input {
-  background-color: var(--black);
-  border-color:var(--secondary-300);
-  color: inherit;
-}
-
-.dark-mode .form-label {
-  color: var(--secondary-400);
-}
-
-/* Smooth transitions */
-body * {
-  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
-  }
-  
