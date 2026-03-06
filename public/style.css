@@ -894,7 +894,7 @@ align-items: center;
 text-decoration:none;
 } 
 
-dark-mode{  
+.dark-mode{  
 --background-color:#121212;
 --secondary-700:#B0B0B0;
 --secondary-400:#E0E0E0;
@@ -910,8 +910,8 @@ dark-mode{
 color:var(--secondary-400);
 }
 
-.dark-mode .navbar-container
-.dark-mode .form-container
+.dark-mode .navbar-container,
+.dark-mode .form-container,
 .dark-mode .form-input,
 .dark-mode .text-area,
 .dark-mode .footer-section{
