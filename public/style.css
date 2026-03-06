@@ -913,7 +913,7 @@ color:var(--secondary-400);
 .dark-mode .navbar-container,
 .dark-mode .form-container,
 .dark-mode .form-input,
-.dark-mode .text-area,
+.dark-mode .text-input,
 .dark-mode .footer-section{
 background-color:var(--card-bg);
 border-color:var(--border-color);
