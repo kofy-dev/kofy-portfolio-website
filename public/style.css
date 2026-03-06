@@ -920,7 +920,7 @@ border-color:var(--border-color);
 }
 
 .dark-mode a.btn-primary{
-color: var(--secondary-400);
+ color:var(--secondary-400);
 }
 
 .dark-mode btn-primary-outline:hover{
