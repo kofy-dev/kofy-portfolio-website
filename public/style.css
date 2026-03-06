@@ -911,8 +911,8 @@ color:var(--secondary-400);
 }
 
 .dark-mode .navbar-container
-,.dark-mode .form-container
-,.dark-mode .form-input,
+.dark-mode .form-container
+.dark-mode .form-input,
 .dark-mode .text-area,
 .dark-mode .footer-section{
 background-color:var(--white);
@@ -925,7 +925,7 @@ color: var(--secondary-400);
 
 .dark-mode btn-primary-outline:hover{
 color:var(--secondary-400)
-}This is Maje changes
+}
 
  
 
