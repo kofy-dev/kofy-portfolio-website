@@ -921,10 +921,13 @@ text-decoration:none;
 }
 
 
-.dark-mode .navbar-container,.dark-mode .form-container ,.dark-mode .form-input,.dark-mode .text-area{
+.dark-mode .navbar-container,.dark-mode .form-container ,.dark-mode .form-input,.dark-mode .text-area
+.dark-mode .footer-section{
     background-color:var(--white);
     border-color:var(--border-color);
  }
+
+
  
 
 
