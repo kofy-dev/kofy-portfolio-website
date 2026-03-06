@@ -915,7 +915,7 @@ text-decoration:none;
    --black:#0b0d0e;
 }
 
-.dark-mode {
+.dark-mode body {
   background-color:var(--black) !important;
   color: var(--secondary-400);
 }
