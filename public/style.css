@@ -906,8 +906,8 @@ text-decoration:none;
 
 .dark-mode{
     --background-color:#121212;
-    --secondary-700:#E0E0E0;
-    --secondary-400:#B0B0B0;
+    --secondary-700:#B0B0B0;
+    --secondary-400:#E0E0E0;
 }
 
 .dark-mode h1,
