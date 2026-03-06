@@ -193,23 +193,16 @@ border-color: var(--primary-700);
 .card{
 padding: var(--space-8) var(--space-16);
 border-radius: var(--radius-md);
- background: rgba(255, 255, 255, 0.7); 
-  /* Add a border that is slightly darker than white */
-  border: 1px solid rgba(0, 0, 0, 0.08); 
-  border-top: 1px solid rgba(255, 255, 255, 0.5); /* Adds a "glassy" highlight */
-  /* Use a more professional shadow */
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.06);
-  
-  backdrop-filter: blur(15px);
-  -webkit-backdrop-filter: blur(15px);
+background-color:(--white);
+border:1px solid var(--white);
+box-shadow: 0 4px 8px #dddddd; 
 transition: all 0.2s ease-in-out;
 max-width: 400px;
 }
 
 .card:hover{
 background: var(--white);
-box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-transform: translateY(-5px);
+box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); transform: translateY(-5px);
 }
 
 .card-heading{
