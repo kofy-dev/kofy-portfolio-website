@@ -197,12 +197,10 @@ background-color:(--white);
 border:1px solid var(--white);
 box-shadow: 0 4px 8px #dddddd; 
 transition: all 0.2s ease-in-out;
-max-width: 400px;
-}
 
 .card:hover{
-background: var(--white);
-box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); transform: translateY(-5px);
+  box-shadow: 0 16px 32px #aaaaaa;
+  transform: translateY(-4px);
 }
 
 .card-heading{
