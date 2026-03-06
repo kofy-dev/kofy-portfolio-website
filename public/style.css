@@ -908,8 +908,8 @@ text-decoration:none;
     --background-color:#121212;
     --secondary-700:#B0B0B0;
     --secondary-400:#E0E0E0;
-    --white:#444444;
-    border-color:#444444;
+    --white:#1a1a1a;
+    --boder-color:#444444;   
 }
 
 .dark-mode h1,
@@ -920,10 +920,12 @@ text-decoration:none;
     color:var(--secondary-400);
 }
 
-.dark-mode .navbar-container,.dark-mode .form-container{
+
+.dark-mode .navbar-container,.dark-mode .form-container ,.dark-mode .form-input,.dark-mode .text-area{
     background-color:var(--white);
     border-color:var(--border-color);
-}
+ }
+ 
 
 
 
