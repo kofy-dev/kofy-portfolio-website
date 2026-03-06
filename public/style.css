@@ -909,7 +909,14 @@ text-decoration:none;
     --secondary-700:#E0E0E0;
     --secondary-400:#B0B0B0;
 }
-   
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4,
+.dark-mode h5,{
+    color:var(--secondary-400);
+}
 
 
 
