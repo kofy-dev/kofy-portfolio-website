@@ -903,13 +903,12 @@ text-decoration:none;
 } 
 
 
-
 .dark-mode{
     --background-color:#121212;
     --secondary-700:#B0B0B0;
     --secondary-400:#E0E0E0;
     --white:#1a1a1a;
-    --boder-color:#444444;   
+    --border-color:#444444;   
 }
 
 .dark-mode h1,
@@ -921,11 +920,15 @@ text-decoration:none;
 }
 
 
-.dark-mode .navbar-container,.dark-mode .form-container ,.dark-mode .form-input,.dark-mode .text-area
+.dark-mode .navbar-container
+,.dark-mode .form-container 
+,.dark-mode .form-input,
+.dark-mode .text-area,
 .dark-mode .footer-section{
     background-color:var(--white);
     border-color:var(--border-color);
  }
+ 
 
 
  
