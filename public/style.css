@@ -898,7 +898,7 @@ text-decoration:none;
 --background-color:#121212;
 --secondary-700:#B0B0B0;
 --secondary-400:#E0E0E0;
---white:#1a1a1a;
+--card-bg:#1a1a1a;
 --border-color:#444444;
 }
 
@@ -915,7 +915,7 @@ color:var(--secondary-400);
 .dark-mode .form-input,
 .dark-mode .text-area,
 .dark-mode .footer-section{
-background-color:var(--white);
+background-color:var(--card-bg);
 border-color:var(--border-color);
 }
 
@@ -924,7 +924,7 @@ color: var(--secondary-400);
 }
 
 .dark-mode btn-primary-outline:hover{
-color:var(--secondary-400)
+color:var(--secondary-400);
 }
 
  
