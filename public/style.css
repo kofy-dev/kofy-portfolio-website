@@ -908,6 +908,8 @@ text-decoration:none;
     --background-color:#121212;
     --secondary-700:#B0B0B0;
     --secondary-400:#E0E0E0;
+    --white:#444444;
+    border-color:#444444;
 }
 
 .dark-mode h1,
@@ -916,6 +918,11 @@ text-decoration:none;
 .dark-mode h4,
 .dark-mode h5{
     color:var(--secondary-400);
+}
+
+.dark-mode .navbar-container,.dark-mode .form-container{
+    background-color:var(--white);
+    border-color:var(--border-color);
 }
 
 
