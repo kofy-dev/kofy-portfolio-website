@@ -921,10 +921,14 @@ text-decoration:none;
     border-color:var(--border-color);
  }
 
-dark-mode a.btn-primary{
+.dark-mode a.btn-primary{
       color: var(--secondary-400);
 }
- 
+
+
+.dark-mode btn-primary-outline:hover{
+     color:var(--secondary-400)
+}
 
 
  
