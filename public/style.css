@@ -197,7 +197,8 @@ background-color:(--white);
 border:1px solid var(--white);
 box-shadow: 0 4px 8px #dddddd; 
 transition: all 0.2s ease-in-out;
-
+  
+}
 .card:hover{
   box-shadow: 0 16px 32px #aaaaaa;
   transform: translateY(-4px);
