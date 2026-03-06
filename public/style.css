@@ -904,6 +904,62 @@ text-decoration:none;
 
 
 
+/* ===== DARK MODE ===== */
+.dark-mode{
+  background-color:#0b0d0e;
+  color:#b5b5b5;
+}
+
+/* Headings */
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4,
+.dark-mode h5,
+.dark-mode h6{
+  color:#e5e5e5;
+}
+
+/* Navbar */
+.dark-mode .navbar,
+.dark-mode .nav-links-container{
+  background-color:#0b0d0e;
+  border-color:#2a2a2a;
+}
+
+/* Cards */
+.dark-mode .card{
+  background-color:#151718;
+  border-color:#2a2a2a;
+}
+
+/* Buttons */
+.dark-mode .btn-primary-outline{
+  background-color:transparent;
+}
+
+/* Footer */
+.dark-mode .footer-section{
+  border-color:#2a2a2a;
+}
+
+/* Forms */
+.dark-mode .forms-container{
+  background-color:#151718;
+  border:1px solid #2a2a2a;
+}
+
+.dark-mode .form-input,
+.dark-mode .text-input{
+  background-color:#0b0d0e;
+  border-color:#2a2a2a;
+  color:#e5e5e5;
+}
+
+/* Smooth transition */
+body *{
+  transition:background-color .3s,color .3s,border-color .3s;
+  }
 
 
   
