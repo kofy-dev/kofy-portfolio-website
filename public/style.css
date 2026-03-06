@@ -407,14 +407,13 @@ border-top: 1px solid #e5e7eb;
    padding:var(--space-16)  var(--space-24);
    border-radius:var(--radius-md);
    background-color:var(--white);
-  transition: all 0.2s ease-in-out;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1)
-  transition: all 0.2s ease-in-out;
-  border:1px solid var(--white);
+  transition: transform all 0.2s ease ,box-shadow 0.2s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.8);
+  border:1px solid var(--primary-50);
 }
 
 .forms-container:hover{
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2)
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15)
   transform: translateY(-4px);
 }
    
