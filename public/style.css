@@ -916,7 +916,7 @@ text-decoration:none;
 }
 
 .dark-mode {
-  background-color:var(--black);
+  background-color:var(--black) !important;
   color: var(--secondary-400);
 }
 
