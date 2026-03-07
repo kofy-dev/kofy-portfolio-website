@@ -72,10 +72,10 @@
 --white: #ffffff;
 --black: #000000;
 
---heading-text:#212529;
---text-color:#495057;
---body-background:#fff;
---surface-color:#fff;
+--heading-color:var(--secondary-900);
+--text-color:var(--secondary-700);
+--body-background:var(--white);
+--surface-color:var(--white);
 
 /* BORDER */
 --border-sm: 1px;
