@@ -72,9 +72,10 @@
 --white: #ffffff;
 --black: #000000;
 
---heading-color:#212529;
+--heading-text:#212529;
 --text-color:#495057;
---body-background:#ffffff;
+--body-background:#fff;
+--surface-color:#fff;
 
 /* BORDER */
 --border-sm: 1px;
