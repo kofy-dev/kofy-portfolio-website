@@ -902,31 +902,7 @@ text-decoration:none;
   --border-color:#444444;  
 }  
 
-.dark-mode h1,
-.dark-mode h2,
-.dark-mode h3,
-.dark-mode h4,
-.dark-mode h5{
-  color: var(--secondary-400);
-}
 
-.dark-mode .navbar-container,
-.dark-mode .form-container,
-.dark-mode .form-input,
-.dark-mode .text-input,
-.dark-mode .footer-section{
-  background-color: var(--card-bg);
-  border-color: var(--border-color);
-}
-
-.dark-mode a.btn-primary{
-  color: white;
-}
-
-.dark-mode .btn-primary-outline:hover{
-  color: var(--secondary-400);
-}
- 
  
 
 
