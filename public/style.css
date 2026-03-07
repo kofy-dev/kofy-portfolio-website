@@ -894,20 +894,20 @@ align-items: center;
 text-decoration:none;
 } 
 
-.dark-mode{  
---background-color:#121212;
---secondary-700:#B0B0B0;
---secondary-400:#E0E0E0;
---card-bg:#1a1a1a;
---border-color:#444444;
-}
+.dark-mode{    
+  --background-color:#121212;  
+  --secondary-700:#B0B0B0;  
+  --secondary-400:#E0E0E0;  
+  --card-bg:#1a1a1a;  
+  --border-color:#444444;  
+}  
 
 .dark-mode h1,
 .dark-mode h2,
 .dark-mode h3,
 .dark-mode h4,
 .dark-mode h5{
-color:var(--secondary-400);
+  color: var(--secondary-400);
 }
 
 .dark-mode .navbar-container,
@@ -915,18 +915,18 @@ color:var(--secondary-400);
 .dark-mode .form-input,
 .dark-mode .text-input,
 .dark-mode .footer-section{
-background-color:var(--card-bg);
-border-color:var(--border-color);
+  background-color: var(--card-bg);
+  border-color: var(--border-color);
 }
 
 .dark-mode a.btn-primary{
- color:var(--secondary-400);
+  color: white;
 }
 
-.dark-mode btn-primary-outline:hover{
-color:var(--secondary-400);
+.dark-mode .btn-primary-outline:hover{
+  color: var(--secondary-400);
 }
-
+ 
  
 
 
