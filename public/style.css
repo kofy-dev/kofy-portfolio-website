@@ -76,6 +76,9 @@
 --text-color:var(--secondary-700);
 --body-background:var(--white);
 --surface-color:var(--white);
+--btn-primary-bg:var(--primary-600);
+--btn-primary-text:var(--white);
+
 
 /* BORDER */
 --border-sm: 1px;
