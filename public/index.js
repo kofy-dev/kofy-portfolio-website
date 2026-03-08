@@ -35,41 +35,41 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+
   /* ==========================================
-     2. DARK MODE TOGGLE (HTML ROOT ELEMENT)
-     ========================================== */
-  const themeToggleBtn = document.getElementById('darkModeToggle');
-  const rootElement = document.documentElement; // This targets the <html> tag
+   DARK MODE TOGGLE (Matching data-theme="dark")
+   ========================================== */
+const themeToggleBtn = document.getElementById('darkModeToggle');
+const rootElement = document.documentElement; // This is your <html> tag
 
-  if (themeToggleBtn) {
-    // Check if the user already has a saved preference
+if (themeToggleBtn) {
+    // 1. Sync on page load
     const savedTheme = localStorage.getItem('theme');
-
-    // If they previously chose dark mode, set the attribute on the HTML tag
-    if (savedTheme === 'darkmode') {
-      rootElement.setAttribute('dark-theme', 'darkmode');
-      themeToggleBtn.textContent = '☀️'; 
+    
+    // Check if there is a saved preference OR if the HTML already has the attribute
+    if (savedTheme === 'dark' || (savedTheme === null && rootElement.getAttribute('data-theme') === 'dark')) {
+        rootElement.setAttribute('data-theme', 'dark');
+        themeToggleBtn.textContent = '☀️';
     } else {
-      themeToggleBtn.textContent = '🌙'; 
+        rootElement.removeAttribute('data-theme');
+        themeToggleBtn.textContent = '🌙';
     }
 
-    // Listen for clicks on the toggle button
+    // 2. The Toggle Logic
     themeToggleBtn.addEventListener('click', () => {
-      // Check if the html tag currently has the dark-theme attribute
-      const isDarkMode = rootElement.getAttribute('dark-theme') === 'darkmode';
+        // Check the current attribute value
+        const currentTheme = rootElement.getAttribute('data-theme');
 
-      if (isDarkMode) {
-        // Switch to Light Mode: Remove the attribute and save
-        rootElement.removeAttribute('dark-theme');
-        localStorage.setItem('theme', 'light');
-        themeToggleBtn.textContent = '🌙';
-      } else {
-        // Switch to Dark Mode: Add the attribute and save
-        rootElement.setAttribute('dark-theme', 'darkmode');
-        localStorage.setItem('theme', 'darkmode');
-        themeToggleBtn.textContent = '☀️';
-      }
+        if (currentTheme === 'dark') {
+            // SWITCH TO LIGHT MODE
+            rootElement.removeAttribute('data-theme');
+            localStorage.setItem('theme', 'light');
+            themeToggleBtn.textContent = '🌙';
+        } else {
+            // SWITCH TO DARK MODE
+            rootElement.setAttribute('data-theme', 'dark');
+            localStorage.setItem('theme', 'dark');
+            themeToggleBtn.textContent = '☀️';
+        }
     });
-  }
-
-});
+}
