@@ -79,6 +79,7 @@
   --text-color: var(--secondary-700);
   --body-background: var(--white);
   --surface-color: var(--white);
+  --border-color:var(--secondary-100);
 
   /* Primary Button */
   --btn-primary-bg: var(--primary-600);
@@ -227,7 +228,7 @@ border-color: var(--btn-outline-primary-border);
 padding: var(--space-8) var(--space-16);
 border-radius: var(--radius-md);
 background-color:(--surface-color);
-border:1px solid var(--surface-color);
+border:1px solid var(--border-color);
 box-shadow: 0 4px 8px #dddddd; 
 transition: all 0.2s ease-in-out;
   
@@ -396,7 +397,7 @@ gap: 0.75rem;
 width: 100%;
 margin-top: 1rem;
 padding-top: 1rem;
-border-top: 1px solid #e5e7eb;
+border-top: 1px solid var(--border-color);
 }
 
 /* NAVBAR-TOGGLE-BTN */
@@ -442,7 +443,7 @@ border-top: 1px solid #e5e7eb;
    background-color:var(--surface-color);
   transition: transform all 0.2s ease ,box-shadow 0.2s ease;
   box-shadow: 0 2px 5px rgba(0,0,0,0.8);
-  border:1px solid var(--primary-50);
+  border:1px solid var(--border-color);
 }
 
 .forms-container:hover{
@@ -888,7 +889,7 @@ font-size:var(--text-5xl);
 /*FOOTER-MAIN-SECTION*/
 .footer-section{
  margin-bottom: var(--space-48);
- border-top:1px solid  #e5e7eb;
+ border-top:1px solid  var(--border-color;
  padding-top:30px;
 }
 
