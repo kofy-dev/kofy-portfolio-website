@@ -180,15 +180,15 @@ color: var(--white);
 }
 
 .btn-primary {
-color: var(--white);
-background-color: var(--primary-600);
-border: var(--border-sm) solid var(--primary-600);
+color: var(--btn-primary-text);
+background-color: var(--btn-primary-bg);
+border: var(--border-sm) solid var(--btn-primary-border);
 box-shadow: 0 4px 14px 0 rgba(111, 66, 193, 0.3); 
 }
 
 .btn-primary:hover {
-background-color: var(--primary-700);
-border-color: var(--primary-700);
+background-color: var(--btn-primary-hover-bg);
+border-color: var(--btn-primary-border-hover);
 transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(111, 66, 193, 0.4);
 }
