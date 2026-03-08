@@ -115,8 +115,8 @@
 
 [data-theme="dark"] {
     --body-background:var(--secondary-900);
-    --text-color:var(--;
-    --heading-color:#E0E0E0;
+    --text-color:var(--secondary-200);
+    --heading-color:var(--secondary-50);;
     --surface-color:#444444;
  }
 
