@@ -119,7 +119,7 @@
     --text-color:var(--secondary-200);
     --heading-color:var(--secondary-50);
     --surface-color:var(--secondary-900);
-    --border-color:var(--secondary-50);
+    --border-color:var(--secondary-500);
  }
 
 /* BASE STYLES */
@@ -141,7 +141,7 @@ font-weight: var(--font-weight-normal);
 line-height: var(--line-height-normal);
 color: var(--text-color);
 font-size: var(--text-lg);
-  padding-top:var(--space-48);
+padding-top:var(--space-48);
   /* A very soft, clean gradient */
   background-color:var(--body-background);
 }
