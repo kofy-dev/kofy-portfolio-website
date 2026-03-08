@@ -1,5 +1,5 @@
   :root {
-/* TYPOGRAPHY */
+    /* TYPOGRAPHY */
   --text-sm: clamp(0.8rem, 1vw, 0.9rem);
   --text-base: clamp(0.95rem, 1.5vw, 1.1rem);
   --text-lg: clamp(1.1rem, 2vw, 1.3rem);
@@ -101,7 +101,7 @@
 
     /*FORM-INPUTS*/
     --input-bg:var(--white);
-    --input-place-holder:var(--secondary-900);
+    --input-place-holder:var(--secondary-700);
 
 /* BORDER */
 --border-sm: 1px;
@@ -110,7 +110,6 @@
 --border-xl: 4px;
 
 /* BORDER-RADIUS */
-
   --radius-sm: clamp(0.2rem, 0.5vw, 0.4rem);  /* 2–4px */
   --radius-md: clamp(0.4rem, 1vw, 0.8rem);    /* 4–8px */
   --radius-lg: clamp(0.6rem, 1.5vw, 1rem);    /* 6–10px */
