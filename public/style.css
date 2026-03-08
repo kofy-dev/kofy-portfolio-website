@@ -75,7 +75,7 @@
 
     
     /* Text & Surfaces */
-    --heading-color:var(--secondary-900);
+  --heading-color:var(--secondary-900);
   --text-color: var(--secondary-700);
   --body-background: var(--white);
   --surface-color: var(--white);
@@ -112,6 +112,13 @@
   --radius-xl: clamp(0.8rem, 2vw, 1.2rem);    /* 8–12px */
 
 } 
+
+[data-theme="dark"] {
+    --body-background:#121212;
+    --text-color:#B0B0B0;
+    --heading-color:#E0E0E0;
+    --surface-color:#444444;
+ }
 
 /* BASE STYLES */
 html {
@@ -920,13 +927,7 @@ align-items: center;
 text-decoration:none;
 } 
 
-.dark-mode{    
-  --background-color:#121212;  
-  --secondary-700:#B0B0B0;  
-  --secondary-400:#E0E0E0;  
-  --card-bg:#1a1a1a;  
-  --border-color:#444444;  
-}  
+
 
 
  
