@@ -130,11 +130,11 @@ body {
 font-family: var(--font-poppins);
 font-weight: var(--font-weight-normal);
 line-height: var(--line-height-normal);
-color: var(--secondary-700);
+color: var(--text-color);
 font-size: var(--text-lg);
   padding-top:var(--space-48);
   /* A very soft, clean gradient */
-  background-color:var(--white);
+  background-color:var(--body-background);
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -142,7 +142,7 @@ font-family: var(--font-merriweather);
 font-weight: var(--font-weight-medium);
 line-height: var(--line-height-tight);
 letter-spacing: var(--letter-spacing-tight);
-color: var(--secondary-900);
+color: var(--heading-color);
 }
 
 h1 { font-size: var(--text-5xl); }
@@ -219,8 +219,8 @@ border-color: var(--primary-700);
 .card{
 padding: var(--space-8) var(--space-16);
 border-radius: var(--radius-md);
-background-color:(--white);
-border:1px solid var(--white);
+background-color:(--surface-color);
+border:1px solid var(--surface-color);
 box-shadow: 0 4px 8px #dddddd; 
 transition: all 0.2s ease-in-out;
   
@@ -432,7 +432,7 @@ border-top: 1px solid #e5e7eb;
 .forms-container{
    padding:var(--space-16)  var(--space-24);
    border-radius:var(--radius-md);
-   background-color:var(--white);
+   background-color:var(--surface-color);
   transition: transform all 0.2s ease ,box-shadow 0.2s ease;
   box-shadow: 0 2px 5px rgba(0,0,0,0.8);
   border:1px solid var(--primary-50);
