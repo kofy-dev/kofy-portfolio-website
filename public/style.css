@@ -72,25 +72,30 @@
 --white: #ffffff;
 --black: #000000;
 
---heading-color:var(--secondary-900);
---text-color:var(--secondary-700);
---body-background:var(--white);
---surface-color:var(--white);
-    
---btn-primary-bg:var(--primary-600);
---btn-primary-text:var(--white);
---btn-primary-border:var(--primary-600);
---btn-primary-hover:var(--primary-700);
---btn-border-hover:var(--primary-700);
 
---btn-p-outline-bg:var(--primary-500);
---btn-p-outline-text:var(--white);
---btn-p-outline-border:var(--white);
+    
+    /* Text & Surfaces */
+    --heading-color:var(--secondary-900);
+  --text-color: var(--secondary-700);
+  --body-background: var(--white);
+  --surface-color: var(--white);
 
---btn-p-outline-hover:var(--primary-700);
---btn-p-outline-border-hover:var(--primary-700);
-    
-    
+  /* Primary Button */
+  --btn-primary-bg: var(--primary-600);
+  --btn-primary-text: var(--white);
+  --btn-primary-border: var(--primary-600);
+
+  --btn-primary-hover-bg: var(--primary-700);
+  --btn-primary-hover-border: var(--primary-700);
+
+  /* Primary Outline Button */
+  --btn-primary-outline-bg: var(--white);
+  --btn-primary-outline-text: var(--primary-600);
+  --btn-primary-outline-border: var(--primary-600);
+
+  --btn-primary-outline-hover-bg: var(--primary-700);
+  --btn-primary-outline-hover-border: var(--primary-700);
+  --btn-primary-outline-hover-text: var(--white);
 
 
 /* BORDER */
