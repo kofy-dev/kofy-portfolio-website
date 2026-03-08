@@ -77,11 +77,19 @@
 --body-background:var(--white);
 --surface-color:var(--white);
     
---primary-bg:var(--primary-600);
---primary-text:var(--white);
---primary-border:var(--primary-600);
---primary-hover:var(--primary-700);
---border-hover:var(--primary-700);
+--btn-primary-bg:var(--primary-600);
+--btn-primary-text:var(--white);
+--btn-primary-border:var(--primary-600);
+--btn-primary-hover:var(--primary-700);
+--btn-border-hover:var(--primary-700);
+
+--btn-p-outline-bg:var(--primary-500);
+--btn-p-outline-text:var(--white);
+--btn-p-outline-border:var(--white);
+
+--btn-p-outline-hover:var(--primary-700);
+--btn-p-outline-border-hover:var(--primary-700);
+    
     
 
 
