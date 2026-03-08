@@ -1,63 +1,73 @@
-// Wait for the HTML to fully load before running our script
 document.addEventListener('DOMContentLoaded', () => {
 
   /* ==========================================
-     1. NAVBAR TOGGLE (HAMBURGER MENU)
+     1. NAVBAR HAMBURGER (FONT AWESOME SWAP)
      ========================================== */
   const hamburgerBtn = document.querySelector('.hamburger-btn');
   const navLinksContainer = document.querySelector('.nav-links-container');
-  const navLinks = document.querySelectorAll('.nav-links');
+  // Get the FontAwesome <i> tag inside the button
+  const menuIcon = hamburgerBtn.querySelector('i'); 
 
-  // When the hamburger button is clicked
-  if (hamburgerBtn) {
+  if (hamburgerBtn && menuIcon) {
     hamburgerBtn.addEventListener('click', () => {
-      // Toggle the 'active' class on the button (for the X animation)
-      hamburgerBtn.classList.toggle('active');
-      // Toggle the 'active' class on the menu container (to show/hide it)
+      // Toggle the menu visibility
       navLinksContainer.classList.toggle('active');
+
+      // Swap the FontAwesome icon between 'bars' and 'X'
+      if (menuIcon.classList.contains('fa-bars')) {
+        menuIcon.classList.remove('fa-bars');
+        menuIcon.classList.add('fa-xmark'); // Use 'fa-times' if you are on FontAwesome 5
+      } else {
+        menuIcon.classList.remove('fa-xmark');
+        menuIcon.classList.add('fa-bars');
+      }
     });
   }
 
-  // Optional but recommended: Close the menu when a link is clicked
+  // Close the menu automatically when a link is clicked
+  const navLinks = document.querySelectorAll('.nav-links');
   navLinks.forEach(link => {
     link.addEventListener('click', () => {
-      hamburgerBtn.classList.remove('active');
       navLinksContainer.classList.remove('active');
+      // Reset the icon back to bars
+      menuIcon.classList.remove('fa-xmark');
+      menuIcon.classList.add('fa-bars');
     });
   });
 
   /* ==========================================
-     2. DARK MODE TOGGLE & LOCAL STORAGE
+     2. DARK MODE TOGGLE (HTML ROOT ELEMENT)
      ========================================== */
   const themeToggleBtn = document.getElementById('darkModeToggle');
-  const body = document.body;
+  const rootElement = document.documentElement; // This targets the <html> tag
 
   if (themeToggleBtn) {
-    // Check if the user already has a saved preference in their browser
-    const currentTheme = localStorage.getItem('theme');
+    // Check if the user already has a saved preference
+    const savedTheme = localStorage.getItem('theme');
 
-    // If they previously chose dark mode, apply it immediately on page load
-    if (currentTheme === 'dark') {
-      body.classList.add('dark-mode');
-      themeToggleBtn.textContent = '☀️'; // Change icon to Sun
+    // If they previously chose dark mode, set the attribute on the HTML tag
+    if (savedTheme === 'darkmode') {
+      rootElement.setAttribute('dark-theme', 'darkmode');
+      themeToggleBtn.textContent = '☀️'; 
     } else {
-      themeToggleBtn.textContent = '🌙'; // Default icon is Moon
+      themeToggleBtn.textContent = '🌙'; 
     }
 
-    // Listen for clicks on the theme toggle button
+    // Listen for clicks on the toggle button
     themeToggleBtn.addEventListener('click', () => {
-      // Toggle the 'dark-mode' class on the body
-      body.classList.toggle('dark-mode');
+      // Check if the html tag currently has the dark-theme attribute
+      const isDarkMode = rootElement.getAttribute('dark-theme') === 'darkmode';
 
-      // Check if the body now has the dark-mode class
-      if (body.classList.contains('dark-mode')) {
-        // Save preference as 'dark' and update icon
-        localStorage.setItem('theme', 'dark');
-        themeToggleBtn.textContent = '☀️';
-      } else {
-        // Save preference as 'light' and update icon
+      if (isDarkMode) {
+        // Switch to Light Mode: Remove the attribute and save
+        rootElement.removeAttribute('dark-theme');
         localStorage.setItem('theme', 'light');
         themeToggleBtn.textContent = '🌙';
+      } else {
+        // Switch to Dark Mode: Add the attribute and save
+        rootElement.setAttribute('dark-theme', 'darkmode');
+        localStorage.setItem('theme', 'darkmode');
+        themeToggleBtn.textContent = '☀️';
       }
     });
   }
