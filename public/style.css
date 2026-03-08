@@ -99,6 +99,10 @@
   --btn-primary-outline-hover-text: var(--white);
 
 
+    /*FORM-INPUTS*/
+    --input-bg:var(--white);
+    --input-text:var(--secondary-900);
+
 /* BORDER */
 --border-sm: 1px;
 --border-base: 2px;
@@ -121,6 +125,8 @@
     --surface-color:var(--secondary-900);
     --border-color:var(--secondary-700);
     --btn-primary-outline-bg:transparent;
+    --input-bg:var(--secondary-500);
+    --input-text:var(--secondary-700);
  }
 
 /* BASE STYLES */
@@ -481,8 +487,9 @@ border-top: 1px solid var(--border-color);
     justify-content:center;
    align-items:center;
    border-radius:var(--radius-md);
- border:2px solid var(--secondary-300);
-  color:var(--secondary-700);
+  border:2px solid var(--border-color);
+  color:var(--input-text);
+  background-color:var(--input-bg);
 }
 
 
