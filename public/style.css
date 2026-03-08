@@ -102,6 +102,7 @@
     /*FORM-INPUTS*/
     --input-bg:var(--white);
     --input-text:var(--secondary-900);
+    --input-place-holder:var(--secondary-400);
 
 /* BORDER */
 --border-sm: 1px;
@@ -127,6 +128,7 @@
     --btn-primary-outline-bg:transparent;
     --input-bg:var(--secondary-900);
     --input-text:var(--secondary-400);
+    --input-place-holder:var(--secondary-400);
  }
 
 /* BASE STYLES */
@@ -490,6 +492,11 @@ border-top: 1px solid var(--border-color);
   border:2px solid var(--border-color);
   color:var(--input-text);
   background-color:var(--input-bg);
+}
+
+.form-input::place-holder,
+.text-input::place-holder{
+    color:var(--input-place-holder);
 }
 
 
