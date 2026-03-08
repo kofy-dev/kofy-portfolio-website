@@ -114,8 +114,8 @@
 } 
 
 [data-theme="dark"] {
-    --body-background:#121212;
-    --text-color:#B0B0B0;
+    --body-background:var(--secondary-900);
+    --text-color:var(--;
     --heading-color:#E0E0E0;
     --surface-color:#444444;
  }
