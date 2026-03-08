@@ -120,6 +120,7 @@
     --heading-color:var(--secondary-50);
     --surface-color:var(--secondary-900);
     --border-color:var(--secondary-700);
+    --btn-primary-outline-bg:transparent;
  }
 
 /* BASE STYLES */
