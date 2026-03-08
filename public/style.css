@@ -1,4 +1,4 @@
-  :root {
+   :root {
     /* TYPOGRAPHY */
   --text-sm: clamp(0.8rem, 1vw, 0.9rem);
   --text-base: clamp(0.95rem, 1.5vw, 1.1rem);
