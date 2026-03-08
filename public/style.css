@@ -101,8 +101,7 @@
 
     /*FORM-INPUTS*/
     --input-bg:var(--white);
-    --input-text:var(--secondary-900);
-    --input-place-holder:var(--secondary-400);
+    --input-place-holder:var(--secondary-700);
 
 /* BORDER */
 --border-sm: 1px;
@@ -490,7 +489,7 @@ border-top: 1px solid var(--border-color);
    align-items:center;
    border-radius:var(--radius-md);
   border:2px solid var(--border-color);
-  color:var(--input-text);
+  color:inherit;
   background-color:var(--input-bg);
 }
 
