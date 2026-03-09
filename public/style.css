@@ -120,8 +120,8 @@
 
 [data-theme="dark"] {
     --body-background:var(--secondary-900);
-    --text-color:var(--secondary-50);
-    --heading-color:var(--secondary-300);
+    --text-color:var(--secondary-300);
+    --heading-color:var(--secondary-200);
     --surface-color:var(--secondary-800);
     --border-color:var(--secondary-700);
     --btn-primary-outline-bg:transparent;
