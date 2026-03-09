@@ -236,7 +236,7 @@ border-color: var(--btn-outline-primary-border);
 .card{
 padding: var(--space-8) var(--space-16);
 border-radius: var(--radius-md);
-background-color:(--navbar-bg);
+background-color:(--surface-color);
 border:1px solid var(--border-color);
 box-shadow: 0 4px 8px #dddddd; 
 transition: all 0.2s ease-in-out;
@@ -308,7 +308,7 @@ text-decoration: none;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
   top: 0;
   z-index: 1000;
-  background-color: var(--surface-color); 
+  background-color: var(--navbar-bg); 
 }
    
 .navbar{
