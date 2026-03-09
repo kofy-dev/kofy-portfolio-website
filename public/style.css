@@ -119,8 +119,8 @@
 } 
 
 [data-theme="dark"] {
-    --body-background:var(--secondary-900);
-    --text-color:var(--secondary-300);
+    --body-background:var(--secondary-700);
+    --text-color:var(--secondary-100);
     --heading-color:var(--secondary-200);
     --surface-color:var(--secondary-800);
     --border-color:var(--secondary-700);
