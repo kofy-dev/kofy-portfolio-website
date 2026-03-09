@@ -138,7 +138,7 @@
     --surface-color:var(--secondary-500);
    
    /*BORDER-COLOR*/
-    --border-color:var(--secondary-100);
+    --border-color:var(--secondary-500);
    
    /*BTNS*/
     --btn-primary-outline-bg:transparent;
@@ -339,6 +339,7 @@ text-decoration: none;
   background-color: var(--navbar-bg); 
  box-shadow:var(--navbar-shadow);
    backdrop-filter: blur(10px)
+   border:2px solid var(--border-color);
 }
    
 .navbar{
