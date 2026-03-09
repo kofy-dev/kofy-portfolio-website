@@ -58,7 +58,16 @@
   --radius-lg: clamp(0.6rem, 1.5vw, 1rem);    /* 6–10px */
   --radius-xl: clamp(0.8rem, 2vw, 1.2rem);    /* 8–12px */
 
-/* COLORS */
+
+      
+/* Recommended: Copy this neutral scale (shadcn/Tailwind neutral-inspired) */
+
+
+
+
+    
+    
+/* Your primary purple - unchanged */
 --primary-50: #f3f0ff;
 --primary-100: #e5dbff;
 --primary-200: #d0bfff;
@@ -69,96 +78,77 @@
 --primary-700: #7048e8;
 --primary-800: #6741d9;
 --primary-900: #5f3dc4;
-      
-/* Recommended: Copy this neutral scale (shadcn/Tailwind neutral-inspired) */
---neutral-50:  #fafafa;    /* Light mode subtle bg, hover */
---neutral-100: #f5f5f5;    /* Very light surfaces */
---neutral-200: #e5e5e5;    /* Borders, dividers */
---neutral-300: #d4d4d4;    /* Muted borders, disabled states */
---neutral-400: #a3a3a3;    /* Placeholder, icons */
---neutral-500: #737373;    /* Secondary text */
---neutral-600: #525252;    /* Stronger muted in light */
---neutral-700: #404040;    /* Dark gray text in light / muted in dark */
---neutral-800: #262626;    /* Dark mode surfaces */
---neutral-900: #171717;    /* Near-black dark bg / strong text */
---neutral-950: #0f0f0f;    /* Deepest dark mode bg – recommended over pure black */
 
+/* Neutral scale - good choice */
+--neutral-50:  #fafafa;
+--neutral-100: #f5f5f5;
+--neutral-200: #e5e5e5;
+--neutral-300: #d4d4d4;
+--neutral-400: #a3a3a3;
+--neutral-500: #737373;
+--neutral-600: #525252;
+--neutral-700: #404040;
+--neutral-800: #262626;
+--neutral-900: #171717;
+--neutral-950: #0f0f0f;
 
+--white: #ffffff;
+--black: #000000;
 
+/* TEXT */
+--text-heading: var(--neutral-900);     /* strongest for titles */
+--text-body:    var(--neutral-700);
+--text-placeholder: var(--neutral-400);
 
-    
-    /*TEXT*/
-  --text-secondary:var(--neutral-900);
-  --text-primary: var(--neutral-700);
-  --text-placeholder:var(--neutral-400);
-   /*SURFACES*/
-  --bg-page: var(--neutral-50);
-  --surface-color: var(--neutral-50);
-      
-   /*BORDER-COLOR*/
-  --border-color:var(--neutral-200);
-      
-  /* Primary Button */
-  --btn-primary-bg: var(--primary-600);
-  --btn-primary-text: var(--white);
-  --btn-primary-border: var(--primary-600);
-  --btn-primary-hover-bg: var(--primary-700);
-  --btn-primary-hover-border: var(--primary-700);
+/* SURFACES */
+--bg-page: var(--neutral-50);
+--surface-color: var(--neutral-50);
 
-  /* Primary Outline Button */
-  --btn-primary-outline-bg: var(--white);
-  --btn-primary-outline-text: var(--primary-600);
-  --btn-primary-outline-border: var(--primary-600);
-  --btn-primary-outline-hover-bg: var(--primary-700);
-  --btn-primary-outline-hover-border: var(--primary-700);
-  --btn-primary-outline-hover-text: var(--white);
-      
-    
-   /*NAVBAR*/
-   --navbar-bg: rgba(255,255,255,0.95);
-   --navbar-shadow: 0 2px 8px rgba(0,0,0,0.4);
-      
-    /*CARDS*/
-   --card-shadow: 0 4px 12px rgba(0,0,0,0.08);
+/* BORDER */
+--border-color: var(--neutral-200);
 
-   /*FORM-INPUTS*/
-   --input-bg:var(--neutral-400);
-   
-} 
+/* Primary Button - unchanged, good */
+--btn-primary-bg: var(--primary-600);
+--btn-primary-text: var(--white);
+--btn-primary-border: var(--primary-600);
+--btn-primary-hover-bg: var(--primary-700);
+--btn-primary-hover-border: var(--primary-700);
+
+/* Primary Outline Button - unchanged */
+--btn-primary-outline-bg: var(--white);
+--btn-primary-outline-text: var(--primary-600);
+--btn-primary-outline-border: var(--primary-600);
+--btn-primary-outline-hover-bg: var(--primary-700);
+--btn-primary-outline-hover-border: var(--primary-700);
+--btn-primary-outline-hover-text: var(--white);
+
+/* NAVBAR & CARDS - good */
+--navbar-bg: rgba(255,255,255,0.95);
+--navbar-shadow: 0 2px 8px rgba(0,0,0,0.4);
+--card-shadow: 0 4px 12px rgba(0,0,0,0.08);
+
+/* FORM INPUTS */
+--input-bg: var(--neutral-50);          /* light & clean */
+   }
 
 [data-theme="dark"] {
-   /*BACKGROUND*/
-    --bg-page:var(--secondary-900);
-   
-   /*TEXT-COLOR*/ 
-    --text-primary:var(--neutral-200);
-   
-   /*HEADING-COLOR*/
-    --text-secondary:var(--neutral-100);
-   
-   /*SURFAC-COLOR*/
-    --surface-color:var(--neutral-900);
-   
-   /*BORDER-COLOR*/
-    --border-color:var(--secondary-700);
-   
-   /*BTNS*/
-    --btn-primary-outline-bg:transparent;
-   
-   /*FORM-INPUT*/
-    --input-bg:var(--neutral-800);
-    --input-text:var(--secondary-400);
-    --input-place-holder:var(--neutral-500);
-   
-  /*NAVBAR*/
-   --navbar-bg: rgba(33,33,33,0.85);
-   --navbar-shadow: 0 4px 15px rgba(0,0,0,0.35);
-   
-  /*CARDS*/
+  --bg-page: var(--neutral-950);
+  --text-heading: var(--neutral-100);
+  --text-body: var(--neutral-200);
+  --surface-color: var(--neutral-900);
+  --border-color: var(--neutral-700);
+  
+  --btn-primary-outline-bg: transparent;
+  
+  --input-bg: var(--neutral-800);
+  --input-text: var(--neutral-100);       /* FIXED: readable text */
+  --input-place-holder: var(--neutral-400); /* better contrast */
+  
+  --navbar-bg: rgba(15,15,15,0.85);       /* matches neutral-950 feel */
+  --navbar-shadow: 0 4px 15px rgba(0,0,0,0.35);
+  
   --card-shadow: 0 4px 12px rgba(0,0,0,0.35);
-   
- }
-
+   }
 
 
 
@@ -179,7 +169,7 @@ body {
 font-family: var(--font-poppins);
 font-weight: var(--font-weight-normal);
 line-height: var(--line-height-normal);
-color: var(--text-primary);
+color: var(--text-body);
 font-size: var(--text-lg);
 padding-top:var(--space-48);
 background-color:var(--bg-page);
@@ -190,7 +180,7 @@ font-family: var(--font-merriweather);
 font-weight: var(--font-weight-medium);
 line-height: var(--line-height-tight);
 letter-spacing: var(--letter-spacing-tight);
-color: var(--text-secondary);
+color: var(--text-heading);
 }
 
 h1 { font-size: var(--text-5xl); }
