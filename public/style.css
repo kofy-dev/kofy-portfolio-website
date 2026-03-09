@@ -92,7 +92,7 @@
   --text-primary: var(--neutral-700);
   --text-placeholder:var(--neutral-400);
    /*SURFACES*/
-  --bg-page: var(--50);
+  --bg-page: var(--neutral-50);
   --surface-color: var(--neutral-50);
       
    /*BORDER-COLOR*/
