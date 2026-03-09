@@ -82,6 +82,7 @@
   --border-color:var(--secondary-100);
   --navbar-bg:var(--white);
   --card-bg:var(--white);
+  --form-bg:var(--white);
   /* Primary Button */
   --btn-primary-bg: var(--primary-600);
   --btn-primary-text: var(--white);
@@ -125,6 +126,7 @@
     --surface-color:var(--secondary-900);
     --navbar-bg:var(--secondary-800);
     --card-bg:var(--secondary-900);
+   --form-bg:var(--secondary-900);
     --border-color:var(--secondary-700);
     --btn-primary-outline-bg:transparent;
     --input-bg:var(--secondary-900);
