@@ -140,6 +140,10 @@
     --input-bg:var(--secondary-400);
     --input-text:var(--secondary-400);
     --input-place-holder:var(--secondary-400);
+   
+  /*NAVBAR*/
+   --navbar-bg: rgba(33,33,33,0.85);
+   --navbar-shadow: 0 4px 15px rgba(0,0,0,0.35);
  }
 
 
