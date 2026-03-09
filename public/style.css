@@ -70,31 +70,33 @@
 --primary-800: #6741d9;
 --primary-900: #5f3dc4;
       
-/*LIGHT-MODE*/
- --secondary-50:#212529;
---secondary-100:#495057;
+/* Recommended: Copy this neutral scale (shadcn/Tailwind neutral-inspired) */
+--neutral-50:  #fafafa;    /* Light mode subtle bg, hover */
+--neutral-100: #f5f5f5;    /* Very light surfaces */
+--neutral-200: #e5e5e5;    /* Borders, dividers */
+--neutral-300: #d4d4d4;    /* Muted borders, disabled states */
+--neutral-400: #a3a3a3;    /* Placeholder, icons */
+--neutral-500: #737373;    /* Secondary text */
+--neutral-600: #525252;    /* Stronger muted in light */
+--neutral-700: #404040;    /* Dark gray text in light / muted in dark */
+--neutral-800: #262626;    /* Dark mode surfaces */
+--neutral-900: #171717;    /* Near-black dark bg / strong text */
+--neutral-950: #0f0f0f;    /* Deepest dark mode bg – recommended over pure black */
 
-/*DARK-MODE*/
- --secondary-200:#121212; 
- --secondary-300:#E0E0E0;
- --secondary-400:#B0B0B0;
- --Ssecondary-500:#444444;
 
-  --white: #ffffff;
-  --black: #000000;
 
 
     
     /*TEXT*/
-  --heading-color:var(--secondary-50);
-  --text-color: var(--secondary-100);
-
+  --text-secondary:var(--neutral-900);
+  --text-primary: var(--neutral-700);
+  --text-placeholder:var(--neutral-400);
    /*SURFACES*/
-  --bg-page: var(--white);
-  --surface-color: var(--white);
+  --bg-page: var(--50);
+  --surface-color: var(--neutral-50);
       
    /*BORDER-COLOR*/
-  --border-color:var(--secondary-200);
+  --border-color:var(--neutral-200);
       
   /* Primary Button */
   --btn-primary-bg: var(--primary-600);
@@ -120,33 +122,33 @@
    --card-shadow: 0 4px 12px rgba(0,0,0,0.08);
 
    /*FORM-INPUTS*/
-   --input-bg:var(--white);
-   --input-place-holder:var(--secondary-700);
+   --input-bg:var(--neutral-400);
+   
 } 
 
 [data-theme="dark"] {
    /*BACKGROUND*/
-    --bg-page:var(--secondary-200);
+    --bg-page:var(--secondary-950);
    
    /*TEXT-COLOR*/ 
-    --text-color:var(--secondary-300);
+    --text-primary:var(--neutral-200);
    
    /*HEADING-COLOR*/
-    --heading-color:var(--secondary-400);
+    --text-secondary:var(--neutral-100);
    
    /*SURFAC-COLOR*/
-    --surface-color:var(--secondary-500);
+    --surface-color:var(--neutral-900);
    
    /*BORDER-COLOR*/
-    --border-color:var(--secondary-500);
+    --border-color:var(--secondary-700);
    
    /*BTNS*/
     --btn-primary-outline-bg:transparent;
    
    /*FORM-INPUT*/
-    --input-bg:var(--secondary-400);
+    --input-bg:var(--neutral-800);
     --input-text:var(--secondary-400);
-    --input-place-holder:var(--secondary-400);
+    --input-place-holder:var(--neutral-500);
    
   /*NAVBAR*/
    --navbar-bg: rgba(33,33,33,0.85);
@@ -177,7 +179,7 @@ body {
 font-family: var(--font-poppins);
 font-weight: var(--font-weight-normal);
 line-height: var(--line-height-normal);
-color: var(--text-color);
+color: var(--text-primary);
 font-size: var(--text-lg);
 padding-top:var(--space-48);
 background-color:var(--bg-page);
@@ -188,7 +190,7 @@ font-family: var(--font-merriweather);
 font-weight: var(--font-weight-medium);
 line-height: var(--line-height-tight);
 letter-spacing: var(--letter-spacing-tight);
-color: var(--heading-color);
+color: var(--text-secondary);
 }
 
 h1 { font-size: var(--text-5xl); }
