@@ -128,7 +128,7 @@
 
 [data-theme="dark"] {
    /*BACKGROUND*/
-    --bg-page:var(--secondary-950);
+    --bg-page:var(--secondary-900);
    
    /*TEXT-COLOR*/ 
     --text-primary:var(--neutral-200);
