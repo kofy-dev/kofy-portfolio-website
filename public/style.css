@@ -132,7 +132,7 @@
 
 [data-theme="dark"] {
     --body-background:var(--secondary-900);
-    --text-color:var(--secondary-200);
+    --text-color:var(--secondary-300);
     --heading-color:var(--secondary-50);
     --surface-color:var(--secondary-900);
     --navbar-bg:var(--secondary-900);
