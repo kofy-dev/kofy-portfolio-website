@@ -120,7 +120,7 @@
 } 
 
 [data-theme="dark"] {
-    --body-background:var(--secondary-900);
+    --body-background:var(--secondary-800);
     --text-color:var(--secondary-200);
     --heading-color:var(--secondary-50);
     --surface-color:var(--secondary-900);
