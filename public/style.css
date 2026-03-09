@@ -180,8 +180,7 @@ line-height: var(--line-height-normal);
 color: var(--text-color);
 font-size: var(--text-lg);
 padding-top:var(--space-48);
-  /* A very soft, clean gradient */
-  background-color:var(--bg-page);
+background-color:var(--bg-page);
 }
 
 h1,h2,h3,h4,h5,h6{
