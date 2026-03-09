@@ -59,29 +59,28 @@
 --primary-900: #5f3dc4;
 
 
+ --secondary-50:  #f0fdfa;
+  --secondary-100: #ccfbf1;
+  --secondary-200: #99f6e4;
+  --secondary-300: #5eead4;
+  --secondary-400: #2dd4bf;
+  --secondary-500: #14b8a6; /* Main Secondary Color */
+  --secondary-600: #0d9488;
+  --secondary-700: #0f766e;
+  --secondary-800: #115e59;
+  --secondary-900: #134e4a;
 
---secondary-50: #F7F7F7; 
---secondary-100: #E0E0E0;
---secondary-200: #B0B0B0; 
---secondary-300: #888888;
---secondary-400: #616161; 
---secondary-500: #424242; 
---secondary-600: #333333;
---secondary-700: #212121;
---secondary-800: #1A1A1A;
---secondary-900: #121212;
-
---white: #ffffff;
---black: #000000;
+  --white: #ffffff;
+  --black: #000000;
 
 
     
     /* Text & Surfaces */
   --heading-color:var(--secondary-900);
   --text-color: var(--secondary-700);
-  --body-background: var(--white);
+  --bg-page: var(--50);
   --surface-color: var(--white);
-  --border-color:var(--secondary-100);
+  --border-color:var(--secondary-200);
   /* Primary Button */
   --btn-primary-bg: var(--primary-600);
   --btn-primary-text: var(--white);
@@ -119,9 +118,9 @@
 } 
 
 [data-theme="dark"] {
-    --body-background:var(--secondary-700);
-    --text-color:var(--secondary-100);
-    --heading-color:var(--secondary-200);
+    --bg-page:var(--secondary-50);
+    --text-color:var(--secondary-300);
+    --heading-color:var(--secondary-50);
     --surface-color:var(--secondary-800);
     --border-color:var(--secondary-700);
     --btn-primary-outline-bg:transparent;
@@ -129,6 +128,9 @@
     --input-text:var(--secondary-400);
     --input-place-holder:var(--secondary-400);
  }
+
+
+
 
 /* BASE STYLES */
 html {
@@ -151,7 +153,7 @@ color: var(--text-color);
 font-size: var(--text-lg);
 padding-top:var(--space-48);
   /* A very soft, clean gradient */
-  background-color:var(--body-background);
+  background-color:var(--b-page);
 }
 
 h1,h2,h3,h4,h5,h6{
