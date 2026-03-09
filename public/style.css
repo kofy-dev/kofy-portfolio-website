@@ -87,7 +87,7 @@
     
     /* Text & Surfaces */
   --heading-color:var(--secondary-900);
-  --text-color: var(--secondary-50);
+  --text-color: var(--secondary-700);
   --body-background: var(--white);
   --surface-color: var(--white);
   --border-color:var(--secondary-100);
@@ -132,7 +132,7 @@
 
 [data-theme="dark"] {
     --body-background:var(--secondary-900);
-    --text-color:var(--secondary-300);
+    --text-color:var(--secondary-50);
     --heading-color:var(--secondary-50);
     --surface-color:var(--secondary-900);
     --navbar-bg:var(--secondary-900);
