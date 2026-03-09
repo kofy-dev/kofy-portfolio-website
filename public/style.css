@@ -46,6 +46,18 @@
 --container-width-2xl:128rem;
 --container-width-3xl:138rem;
 
+      /* BORDER */
+--border-sm: 1px;
+--border-base: 2px;
+--border-lg: 3px;
+--border-xl: 4px;
+
+/* BORDER-RADIUS */
+  --radius-sm: clamp(0.2rem, 0.5vw, 0.4rem);  /* 2–4px */
+  --radius-md: clamp(0.4rem, 1vw, 0.8rem);    /* 4–8px */
+  --radius-lg: clamp(0.6rem, 1.5vw, 1rem);    /* 6–10px */
+  --radius-xl: clamp(0.8rem, 2vw, 1.2rem);    /* 8–12px */
+
 /* COLORS */
 --primary-50: #f3f0ff;
 --primary-100: #e5dbff;
@@ -59,8 +71,8 @@
 --primary-900: #5f3dc4;
       
 /*LIGHT-MODE*/
-   --secondary-50:#212529;
-   --secondary-100:#495057;
+ --secondary-50:#212529;
+--secondary-100:#495057;
 
 /*DARK-MODE*/
  --secondary-200:#121212; 
@@ -73,11 +85,15 @@
 
 
     
-    /* Text & Surfaces */
+    /*TEXT*/
   --heading-color:var(--secondary-50);
   --text-color: var(--secondary-100);
+
+   /*SURFACES*/
   --bg-page: var(--white);
   --surface-color: var(--white);
+      
+   /*BORDER-COLOR*/
   --border-color:var(--secondary-200);
       
   /* Primary Button */
@@ -95,26 +111,17 @@
   --btn-primary-outline-hover-border: var(--primary-700);
   --btn-primary-outline-hover-text: var(--white);
       
-      /*NAVBAR*/
-    --navbar-bg: rgba(255,255,255,0.95);
-    --navbar-shadow: 0 2px 8px rgba(0,0,0,0.4);
+    
+   /*NAVBAR*/
+   --navbar-bg: rgba(255,255,255,0.95);
+   --navbar-shadow: 0 2px 8px rgba(0,0,0,0.4);
+      
+    /*CARDS*/
+   --card-shadow: 0 4px 12px rgba(0,0,0,0.08);
 
-    /*FORM-INPUTS*/
-    --input-bg:var(--white);
-    --input-place-holder:var(--secondary-700);
-
-/* BORDER */
---border-sm: 1px;
---border-base: 2px;
---border-lg: 3px;
---border-xl: 4px;
-
-/* BORDER-RADIUS */
-  --radius-sm: clamp(0.2rem, 0.5vw, 0.4rem);  /* 2–4px */
-  --radius-md: clamp(0.4rem, 1vw, 0.8rem);    /* 4–8px */
-  --radius-lg: clamp(0.6rem, 1.5vw, 1rem);    /* 6–10px */
-  --radius-xl: clamp(0.8rem, 2vw, 1.2rem);    /* 8–12px */
-
+   /*FORM-INPUTS*/
+   --input-bg:var(--white);
+   --input-place-holder:var(--secondary-700);
 } 
 
 [data-theme="dark"] {
@@ -144,6 +151,10 @@
   /*NAVBAR*/
    --navbar-bg: rgba(33,33,33,0.85);
    --navbar-shadow: 0 4px 15px rgba(0,0,0,0.35);
+   
+  /*CARDS*/
+  --card-shadow: 0 4px 12px rgba(0,0,0,0.35);
+   
  }
 
 
@@ -257,7 +268,7 @@ padding: var(--space-8) var(--space-16);
 border-radius: var(--radius-md);
 background-color:(--surface-color);
 border:1px solid var(--border-color);
-box-shadow: 0 4px 8px #dddddd; 
+box-shadow: var(--card-shadow);
 transition: all 0.2s ease-in-out;
   
 }
