@@ -118,12 +118,25 @@
 } 
 
 [data-theme="dark"] {
+   /*BACKGROUND*/
     --bg-page:var(--secondary-200);
+   
+   /*TEXT-COLOR*/
     --text-color:var(--secondary-300);
+   
+   /*HEADING-COLOR*/
     --heading-color:var(--secondary-400);
+   
+   /*SURFAC-COLOR*/
     --surface-color:var(--secondary-500);
+   
+   /*BORDER-COLOR*/
     --border-color:var(--secondary-400);
+   
+   /*BTNS*/
     --btn-primary-outline-bg:transparent;
+   
+   /*FORM-INPUT*/
     --input-bg:var(--secondary-400);
     --input-text:var(--secondary-400);
     --input-place-holder:var(--secondary-400);
