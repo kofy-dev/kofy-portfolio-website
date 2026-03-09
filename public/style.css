@@ -80,7 +80,7 @@
   --body-background: var(--white);
   --surface-color: var(--white);
   --border-color:var(--secondary-100);
-
+  --navbar-bg:var(--white);
   /* Primary Button */
   --btn-primary-bg: var(--primary-600);
   --btn-primary-text: var(--white);
@@ -122,6 +122,7 @@
     --text-color:var(--secondary-200);
     --heading-color:var(--secondary-50);
     --surface-color:var(--secondary-900);
+   --navbar-bg:var(--secondary-800);
     --border-color:var(--secondary-700);
     --btn-primary-outline-bg:transparent;
     --input-bg:var(--secondary-900);
@@ -235,7 +236,7 @@ border-color: var(--btn-outline-primary-border);
 .card{
 padding: var(--space-8) var(--space-16);
 border-radius: var(--radius-md);
-background-color:(--surface-color);
+background-color:(--navbar-bg);
 border:1px solid var(--border-color);
 box-shadow: 0 4px 8px #dddddd; 
 transition: all 0.2s ease-in-out;
