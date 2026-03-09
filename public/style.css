@@ -59,6 +59,8 @@
 --primary-900: #5f3dc4;
       
 /*LIGHT-MODE*/
+   --secondary-50:#212529;
+   --secondary-100:#495057;
 
 /*DARK-MODE*/
  --secondary-200:#121212; 
@@ -72,9 +74,9 @@
 
     
     /* Text & Surfaces */
-  --heading-color:var(--secondary-900);
-  --text-color: var(--secondary-700);
-  --bg-page: var(--50);
+  --heading-color:var(--secondary-50);
+  --text-color: var(--secondary-100);
+  --bg-page: var(--white);
   --surface-color: var(--white);
   --border-color:var(--secondary-200);
   /* Primary Button */
