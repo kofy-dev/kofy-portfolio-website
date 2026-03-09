@@ -926,7 +926,7 @@ font-size:var(--text-5xl);
 /*FOOTER-MAIN-SECTION*/
 .footer-section{
  margin-bottom: var(--space-48);
- border-top:1px solid  var(--border-color;
+ border-top:1px solid  var(--border-color);
  padding-top:30px;
 }
 
