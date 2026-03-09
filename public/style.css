@@ -133,11 +133,8 @@
 [data-theme="dark"] {
     --body-background:var(--secondary-900);
     --text-color:var(--secondary-50);
-    --heading-color:var(--secondary-50);
-    --surface-color:var(--secondary-900);
-    --navbar-bg:var(--secondary-900);
-    --card-bg:var(--secondary-800);
-   --form-bg:var(--secondary-800);
+    --heading-color:var(--secondary-300);
+    --surface-color:var(--secondary-800);
     --border-color:var(--secondary-700);
     --btn-primary-outline-bg:transparent;
     --input-bg:var(--secondary-900);
@@ -251,7 +248,7 @@ border-color: var(--btn-outline-primary-border);
 .card{
 padding: var(--space-8) var(--space-16);
 border-radius: var(--radius-md);
-background-color:(--card-bg);
+background-color:(--surface-color);
 border:1px solid var(--border-color);
 box-shadow: 0 4px 8px #dddddd; 
 transition: all 0.2s ease-in-out;
@@ -323,7 +320,7 @@ text-decoration: none;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
   top: 0;
   z-index: 1000;
-  background-color: var(--navbar-bg); 
+  background-color: var(--surface-color); 
 }
    
 .navbar{
@@ -464,7 +461,7 @@ border-top: 1px solid var(--border-color);
 .forms-container{
    padding:var(--space-16)  var(--space-24);
    border-radius:var(--radius-md);
-   background-color:var(--form-bg);
+   background-color:var(--surface-bg);
   transition: transform all 0.2s ease ,box-shadow 0.2s ease;
   box-shadow: 0 2px 5px rgba(0,0,0,0.8);
   border:1px solid var(--border-color);
