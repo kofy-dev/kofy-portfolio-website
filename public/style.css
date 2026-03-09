@@ -123,9 +123,12 @@
 --btn-primary-outline-hover-text: var(--white);
 
 /* NAVBAR & CARDS - good */
---navbar-bg: rgba(255,255,255,0.95);
---navbar-shadow: 0 2px 8px rgba(0,0,0,0.4);
---card-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  --navbar-bg: rgba(255, 255, 255, 0.25);          /* Lower opacity for more "glass" feel */
+  --navbar-backdrop: blur(12px);                   /* Frosted effect - adjust 8px–16px */
+  --navbar-border: 1px solid rgba(255, 255, 255, 0.18);  /* Subtle white rim */
+  --navbar-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);  /* Soft drop shadow */
+  --navbar-text: var(--text-body);
+  --card-shadow: 0 4px 12px rgba(0,0,0,0.08);
 
 /* FORM INPUTS */
 --input-bg: var(--neutral-50);          /* light & clean */
@@ -144,11 +147,18 @@
   --input-text: var(--neutral-100);       /* FIXED: readable text */
   --input-place-holder: var(--neutral-400); /* better contrast */
   
-  --navbar-bg: rgba(15,15,15,0.85);       /* matches neutral-950 feel */
-  --navbar-shadow: 0 4px 15px rgba(0,0,0,0.35);
+  
+  --navbar-bg: rgba(30, 30, 30, 0.35);             /* Darker tint, higher opacity for visibility */
+  --navbar-backdrop: blur(16px);                   /* Slightly more blur in dark for depth */
+  --navbar-border: 1px solid rgba(255, 255, 255, 0.08);  /* Very faint white rim */
+  --navbar-shadow: 0 8px 32px rgba(0, 0, 0, 0.35); /* Stronger shadow for lift on dark bg */
+  --navbar-text: var(--neutral-100);
   
   --card-shadow: 0 4px 12px rgba(0,0,0,0.35);
    }
+
+
+
 
 
 
@@ -327,10 +337,11 @@ text-decoration: none;
  z-index: 1000;
   top: 0;
   z-index: 1000;
-  background-color: var(--navbar-bg); 
- box-shadow:var(--navbar-shadow);
-   backdrop-filter: blur(10px)
-   border:2px solid var(--border-color);
+   background: var(--navbar-bg);
+  backdrop-filter: var(--navbar-backdrop);
+  -webkit-backdrop-filter: var(--navbar-backdrop);  /* Safari support */
+  border-bottom: var(--navbar-border);
+  box-shadow: var(--navbar-shadow);
 }
    
 .navbar{
