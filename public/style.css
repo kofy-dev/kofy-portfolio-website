@@ -79,11 +79,11 @@
   --bg-page: var(--white);
   --surface-color: var(--white);
   --border-color:var(--secondary-200);
+      
   /* Primary Button */
   --btn-primary-bg: var(--primary-600);
   --btn-primary-text: var(--white);
   --btn-primary-border: var(--primary-600);
-
   --btn-primary-hover-bg: var(--primary-700);
   --btn-primary-hover-border: var(--primary-700);
 
@@ -91,11 +91,13 @@
   --btn-primary-outline-bg: var(--white);
   --btn-primary-outline-text: var(--primary-600);
   --btn-primary-outline-border: var(--primary-600);
-
   --btn-primary-outline-hover-bg: var(--primary-700);
   --btn-primary-outline-hover-border: var(--primary-700);
   --btn-primary-outline-hover-text: var(--white);
-
+      
+      /*NAVBAR*/
+    --navbar-bg: rgba(33,33,33,0.85);
+    --navbar-shadow: 0 4px 15px rgba(0,0,0,0.35);
 
     /*FORM-INPUTS*/
     --input-bg:var(--white);
