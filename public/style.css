@@ -87,7 +87,7 @@
     
     /* Text & Surfaces */
   --heading-color:var(--secondary-900);
-  --text-color: var(--secondary-700);
+  --text-color: var(--secondary-50);
   --body-background: var(--white);
   --surface-color: var(--white);
   --border-color:var(--secondary-100);
