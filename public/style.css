@@ -354,10 +354,9 @@ a {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  width: 40px;
-  height: 40px;
   z-index: 1000;
   background-color: #25D366;
+   padding:var(--space-12);
   color: white;
   border-radius: 50%;
   display: flex;
