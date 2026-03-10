@@ -382,32 +382,9 @@ color:var(--primary-500);
 text-decoration: underline solid var(--primary-600) 2px;
 }
 
-/*FLOATING-ICON-COMPONENTS*/
-.chart-icon{
-position: fixed;
-bottom: 20px;
-right: 20px;
-width:30px;
-height:30px;
-z-index: 1000;
-background-color: #25D366;
-color: var(--white);
-border-radius: 50%;
-display: flex;
-align-items: center;
-justify-content: center;
-font-size: var(--text-4xl);
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-transition: transform 0.3s ease, background-color 0.3s ease;
-padding:var(--space-8);
-}
 
-.chart-icon:hover{
-color: #25D366;
-transform: scale(1.1);
-background-color:#128C7E;
-text-decoration: none;
-}
+
+
 
 /* NAVBAR-COMPONENTS */
 
