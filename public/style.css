@@ -283,6 +283,34 @@ a {
   opacity: 0.7;
 }
 
+/*FORMS-LABEL*/
+.form-label{
+   display:block;
+   font-weight:var(--font-weight-medium);
+   font-size:var(--text-3xl);
+   margin-bottom:var(--space-12);
+}
+
+.form-description{
+   font-size:var(--text-3xl);
+  margin-bottom:var(--space-16);
+}
+
+  .forms-container .btn-primary{
+     width:100%;
+     padding:var(--space-16);
+  }
+
+   /*FORMS-INPUT*/
+      .text-input{
+           margin-bottom:var(--space-16);
+      }
+
+ .form-group{
+   margin-bottom:var(--space-24);
+ }
+
+
 /* ==========================================================================
    CARDS & FORMS
    ========================================================================== */
@@ -535,42 +563,19 @@ border-top: 1px solid var(--border-color);
   /*FORMS-COMPONENTS*/
 
 /*FORMS-TITLE*/
-.form-description{
-   font-size:var(--text-3xl);
-  margin-bottom:var(--space-16);
-}
+
 
 
 
 
    
-  .forms-container .btn-primary{
-     width:100%;
-     padding:var(--space-16);
-  }
-
-
-/*FORMS-LABEL*/
-.form-label{
-   display:block;
-   font-weight:var(--font-weight-medium);
-   font-size:var(--text-3xl);
-   margin-bottom:var(--space-12);
-}
-
-/*FORMS-INPUT*/
-.text-input{
-   margin-bottom:var(--space-16);
-}
 
 
 
 
     
 
-.form-group{
-   margin-bottom:var(--space-24);
-}
+
 /*CAROUSEL-COMPONENTS*/
 .carousel-track{
   display: flex;
@@ -959,6 +964,7 @@ font-size:var(--text-5xl);
    text-align:center;
   font-size:clamp(2.8rem, 5vw, 4.2rem);
 }
+
 
 /* ===== FOOTER ===== */
 /*FOOTER-MAIN-SECTION*/
