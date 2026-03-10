@@ -209,7 +209,7 @@ a:hover,a:active { text-decoration: underline solid var(--primary-300); }
 /*COMPONENTS*/
 
 /* BUTTONS-COMPONENTS */
-.btn
+.btn,
 .text-input,
 .form-input{
 font-size: var(--text-2xl);
