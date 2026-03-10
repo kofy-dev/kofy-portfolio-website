@@ -354,8 +354,8 @@ a {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   z-index: 1000;
   background-color: #25D366;
   color: white;
@@ -363,7 +363,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: var(--text-xl);
+  font-size: var(--text-2xl);
   box-shadow: var(--floating-action-shadow);
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
