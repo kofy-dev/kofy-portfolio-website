@@ -138,14 +138,14 @@
   --bg-page: var(--neutral-950);
   --text-heading: var(--neutral-100);
   --text-body: var(--neutral-200);
+  --text-place-holder:var(--neutral-400
   --surface-color: var(--neutral-900);
   --border-color: var(--neutral-700);
   
   --btn-primary-outline-bg: transparent;
   
   --input-bg: var(--neutral-800);
-  --input-text: var(--neutral-100);       /* FIXED: readable text */
-  --input-place-holder: var(--neutral-400); /* better contrast */
+  --input-text: var(--neutral-100);       /* better contrast */
   
   
   --navbar-bg: rgba(30, 30, 30, 0.35);             /* Darker tint, higher opacity for visibility */
