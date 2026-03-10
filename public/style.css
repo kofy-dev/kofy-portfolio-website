@@ -291,20 +291,30 @@ a {
    margin-bottom:var(--space-12);
 }
 
+
 .form-description{
    font-size:var(--text-3xl);
   margin-bottom:var(--space-16);
 }
 
-  .form-container .btn-primary{
+  .form-container .btn-primary,
+  .form-container, .form-input,
+   .form-container .text-input{
      width:100%;
      padding:var(--space-16);
   }
 
-   /*FORMS-INPUT*/
-      .text-input{
+
+.form-container .btn-primary{
+    padding:var(--space-16);
+}
+
+
+   
+     
+.text-input{
            margin-bottom:var(--space-16);
-      }
+  }
 
  .form-group{
    margin-bottom:var(--space-24);
