@@ -194,23 +194,7 @@
   --nav-menu-shadow:  var(--darkL-nav-menu-shadow);
 
 
-:root {
-  /* ... all your existing variables ... */
 
-  /* Mobile menu – theme-specific values */
-  --light-nav-menu-bg:      rgba(255, 255, 255, 0.45);
-  --light-nav-menu-backdrop: blur(20px);
-  --light-nav-menu-border:  1px solid rgba(0, 0, 0, 0.08);
-  --light-nav-menu-shadow:  0 16px 48px rgba(0, 0, 0, 0.25);
-
-  --dark-nav-menu-bg:       rgba(30, 30, 30, 0.65);
-  --dark-nav-menu-backdrop: blur(20px);
-  --dark-nav-menu-border:   1px solid rgba(255, 255, 255, 0.10);
-  --dark-nav-menu-shadow:   0 16px 48px rgba(0, 0, 0, 0.45);
-
-  /* Default to light mode */
-  
-   }
 
 
 /* ==========================================================================
@@ -551,8 +535,8 @@ flex-direction: column;
 padding: var(--space-12) var(--space-16);
 gap: var(--space-4);
  background: var(--nav-menu-bg);
-  backdrop-filter: var(--navbar-menu-backdrop);
-  -webkit-backdrop-filter: var(--navbar-backdrop);  /* Safari support */
+  backdrop-filter: var(--nav-menu-backdrop);
+  -webkit-backdrop-filter: var(--nav-menu-backdrop);  /* Safari support */
   border-bottom: var(--nav-menu-border);
   box-shadow: var(--nav-menu-shadow);
 z-index: 999;
