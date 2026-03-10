@@ -138,7 +138,7 @@
   --bg-page: var(--neutral-950);
   --text-heading: var(--neutral-100);
   --text-body: var(--neutral-200);
-  --text-place-holder:var(--neutral-400
+  --text-place-holder:var(--neutral-400);
   --surface-color: var(--neutral-900);
   --border-color: var(--neutral-700);
   
@@ -976,6 +976,3 @@ text-decoration:none;
 
 
  
-
-
-
