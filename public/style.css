@@ -159,7 +159,41 @@
 
 
 
+/* Generic reusable card – solid & elevated */
+.card {
+  background-color: var(--surface-color);          /* neutral light/dark flip */
+  border: 1px solid var(--border-color);
+  border-radius: 16px;                             /* generous modern rounding */
+  padding: 1.5rem 1.25rem;
+  box-shadow: var(--card-shadow);                  /* your var – soft light / stronger dark */
+  transition: 
+    transform 0.25s ease,
+    box-shadow 0.3s ease,
+    border-color 0.2s ease;
+  overflow: hidden;                                /* keeps images clean */
+}
 
+/* Hover/focus interaction – feels alive */
+.card:hover,
+.card:focus-within {                               /* good for form focus too */
+  transform: translateY(-6px);                     /* gentle lift */
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);    /* light mode */
+  border-color: var(--primary-400);                /* subtle purple hint */
+}
+
+[data-theme="dark"] .card:hover,
+[data-theme="dark"] .card:focus-within {
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.55);     /* visible on dark bg */
+  border-color: var(--primary-500);
+}
+
+/* For project cards specifically (if needed extra) */
+.project-card .thumbnail {
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);     /* subtle inner depth */
+}
 
 
 /* BASE STYLES */
@@ -264,19 +298,29 @@ border-color: var(--btn-outline-primary-border);
 
 /*CARD-COMPONENTS*/
 
-.card{
-padding: var(--space-8) var(--space-16);
-border-radius: var(--radius-md);
-background-color:(--surface-color);
-border:1px solid var(--border-color);
-box-shadow: var(--card-shadow);
-transition: all 0.2s ease-in-out;
-  
+.card,.form-container{
+background-color: var(--surface-color);          /* neutral light/dark flip */
+  border: 1px solid var(--border-color);
+  border-radius: 16px;                             /* generous modern rounding */
+  padding: 1.5rem 1.25rem;
+  box-shadow: var(--card-shadow);                  /* your var – soft light / stronger dark */
+  transition: 
+    transform 0.25s ease,
+    box-shadow 0.3s ease,
+    border-color 0.2s ease;
+  overflow: hidden;
 }
-.card:hover{
-  box-shadow: 0 16px 32px #aaaaaa;
-  transform: translateY(-4px);
+
+
+
+.card:hover,
+.card:focus-within,
+.form-container:hover{                               /* good for form focus too */
+  transform: translateY(-6px);                     /* gentle lift */
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);    /* light mode */
+  border-color: var(--primary-400);                /* subtle purple hint */
 }
+
 
 .card-heading{
 margin-bottom:var(--space-8);
