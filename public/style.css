@@ -134,6 +134,11 @@
   --button-shadow:        0 4px 14px rgba(121, 80, 242, 0.25);
   --button-shadow-hover:  0 8px 24px rgba(121, 80, 242, 0.35);
   --floating-action-shadow: var(--shadow-xl);
+
+   --light-nav-menu-bg:      rgba(255, 255, 255, 0.45);
+  --light-nav-menu-backdrop: blur(20px);
+  --light-nav-menu-border:  1px solid rgba(0, 0, 0, 0.08);
+  --light-nav-menu-shadow:  0 16px 48px rgba(0, 0, 0, 0.25);
 }
 
 /* Dark mode */
@@ -168,7 +173,34 @@
 
   --button-shadow:        0 4px 14px rgba(121, 80, 242, 0.20);
   --button-shadow-hover:  0 8px 24px rgba(121, 80, 242, 0.30);
+
+   --dark-nav-menu-bg:       rgba(30, 30, 30, 0.65);
+  --dark-nav-menu-backdrop: blur(20px);
+  --dark-nav-menu-border:   1px solid rgba(255, 255, 255, 0.10);
+  --dark-nav-menu-shadow:   0 16px 48px rgba(0, 0, 0, 0.45);
 }
+
+:root {
+  /* ... all your existing variables ... */
+
+  /* Mobile menu – theme-specific values */
+  --light-nav-menu-bg:      rgba(255, 255, 255, 0.45);
+  --light-nav-menu-backdrop: blur(20px);
+  --light-nav-menu-border:  1px solid rgba(0, 0, 0, 0.08);
+  --light-nav-menu-shadow:  0 16px 48px rgba(0, 0, 0, 0.25);
+
+  --dark-nav-menu-bg:       rgba(30, 30, 30, 0.65);
+  --dark-nav-menu-backdrop: blur(20px);
+  --dark-nav-menu-border:   1px solid rgba(255, 255, 255, 0.10);
+  --dark-nav-menu-shadow:   0 16px 48px rgba(0, 0, 0, 0.45);
+
+  /* Default to light mode */
+  --nav-menu-bg:      var(--light-nav-menu-bg);
+  --nav-menu-backdrop: var(--light-nav-menu-backdrop);
+  --nav-menu-border:  var(--light-nav-menu-border);
+  --nav-menu-shadow:  var(--light-nav-menu-shadow);
+   }
+
 
 /* ==========================================================================
    BASE STYLES
@@ -507,11 +539,11 @@ width: 100%;
 flex-direction: column;
 padding: var(--space-12) var(--space-16);
 gap: var(--space-4);
- background: var(--navbar-bg);
-  backdrop-filter: var(--navbar-backdrop);
+ background: var(--nav-menu-bg);
+  backdrop-filter: var(--navbar-menu-backdrop);
   -webkit-backdrop-filter: var(--navbar-backdrop);  /* Safari support */
-  border-bottom: var(--navbar-border);
-  box-shadow: var(--navbar-shadow);
+  border-bottom: var(--nav-menu-border);
+  box-shadow: var(--nav-menu-shadow);
 z-index: 999;
 max-height: calc(100vh - 70px);
 overflow-y: auto;
