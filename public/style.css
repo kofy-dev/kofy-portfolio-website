@@ -296,7 +296,7 @@ a {
   margin-bottom:var(--space-16);
 }
 
-  .forms-container .btn-primary{
+  .form-container .btn-primary{
      width:100%;
      padding:var(--space-16);
   }
