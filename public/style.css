@@ -60,6 +60,7 @@
   --radius-xl: clamp(0.8rem, 2vw,   1.2rem);
 
   /* COLORS */
+   
   /* Primary */
   --primary-50:  #f3f0ff;
   --primary-100: #e5dbff;
@@ -194,7 +195,7 @@
   --nav-menu-shadow:  var(--darkL-nav-menu-shadow);
 
 
-
+}
 
 
 /* ==========================================================================
