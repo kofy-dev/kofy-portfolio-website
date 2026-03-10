@@ -88,6 +88,31 @@
   --white: #ffffff;
   --black: #000000;
 
+   /* ── SHADOW TOKENS ── */
+  --shadow-xs: 0 1px 2px rgba(0,0,0,0.06);
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
+  --shadow-lg: 0 10px 25px rgba(0,0,0,0.10);
+  --shadow-xl: 0 16px 40px rgba(0,0,0,0.14);
+   
+
+     /* Dark mode shadows – stronger for visibility */
+  --shadow-xs: 0 1px 3px rgba(0,0,0,0.30);
+  --shadow-sm: 0 2px 6px rgba(0,0,0,0.35);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.40);
+  --shadow-lg: 0 10px 25px rgba(0,0,0,0.45);
+  --shadow-xl: 0 16px 40px rgba(0,0,0,0.55);
+
+   --light-nav-menu-bg:      rgba(255, 255, 255, 0.45);
+  --light-nav-menu-backdrop: blur(20px);
+  --light-nav-menu-border:  1px solid rgba(0, 0, 0, 0.08);
+  --light-nav-menu-shadow:  0 16px 48px rgba(0, 0, 0, 0.25);
+
+   --dark-nav-menu-bg:       rgba(30, 30, 30, 0.65);
+  --dark-nav-menu-backdrop: blur(20px);
+  --dark-nav-menu-border:   1px solid rgba(255, 255, 255, 0.10);
+  --dark-nav-menu-shadow:   0 16px 48px rgba(0, 0, 0, 0.45);
+
   /* Semantic colors */
   --text-heading:     var(--neutral-900);
   --text-body:        var(--neutral-700);
@@ -120,13 +145,7 @@
   /* Form inputs */
   --input-bg: var(--neutral-50);
 
-  /* ── SHADOW TOKENS ── */
-  --shadow-xs: 0 1px 2px rgba(0,0,0,0.06);
-  --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
-  --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
-  --shadow-lg: 0 10px 25px rgba(0,0,0,0.10);
-  --shadow-xl: 0 16px 40px rgba(0,0,0,0.14);
-
+  
   /* Semantic shadows */
   --card-shadow:          var(--shadow-md);
   --card-shadow-hover:    var(--shadow-xl);
@@ -135,10 +154,10 @@
   --button-shadow-hover:  0 8px 24px rgba(121, 80, 242, 0.35);
   --floating-action-shadow: var(--shadow-xl);
 
-   --light-nav-menu-bg:      rgba(255, 255, 255, 0.45);
-  --light-nav-menu-backdrop: blur(20px);
-  --light-nav-menu-border:  1px solid rgba(0, 0, 0, 0.08);
-  --light-nav-menu-shadow:  0 16px 48px rgba(0, 0, 0, 0.25);
+   --nav-menu-bg:      var(--light-nav-menu-bg);
+  --nav-menu-backdrop: var(--light-nav-menu-backdrop);
+  --nav-menu-border:  var(--light-nav-menu-border);
+  --nav-menu-shadow:  var(--light-nav-menu-shadow);
 }
 
 /* Dark mode */
@@ -159,12 +178,7 @@
   --navbar-border:  1px solid rgba(255, 255, 255, 0.08);
   --navbar-text:    var(--neutral-100);
 
-  /* Dark mode shadows – stronger for visibility */
-  --shadow-xs: 0 1px 3px rgba(0,0,0,0.30);
-  --shadow-sm: 0 2px 6px rgba(0,0,0,0.35);
-  --shadow-md: 0 4px 12px rgba(0,0,0,0.40);
-  --shadow-lg: 0 10px 25px rgba(0,0,0,0.45);
-  --shadow-xl: 0 16px 40px rgba(0,0,0,0.55);
+
 
   --card-shadow:          var(--shadow-md);
   --card-shadow-hover:    var(--shadow-xl);
@@ -174,11 +188,11 @@
   --button-shadow:        0 4px 14px rgba(121, 80, 242, 0.20);
   --button-shadow-hover:  0 8px 24px rgba(121, 80, 242, 0.30);
 
-   --dark-nav-menu-bg:       rgba(30, 30, 30, 0.65);
-  --dark-nav-menu-backdrop: blur(20px);
-  --dark-nav-menu-border:   1px solid rgba(255, 255, 255, 0.10);
-  --dark-nav-menu-shadow:   0 16px 48px rgba(0, 0, 0, 0.45);
-}
+   --nav-menu-bg:      var(--dark-nav-menu-bg);
+  --nav-menu-backdrop: var(--dark-nav-menu-backdrop);
+  --nav-menu-border:  var(--dark-nav-menu-border);
+  --nav-menu-shadow:  var(--darkL-nav-menu-shadow);
+
 
 :root {
   /* ... all your existing variables ... */
@@ -195,10 +209,7 @@
   --dark-nav-menu-shadow:   0 16px 48px rgba(0, 0, 0, 0.45);
 
   /* Default to light mode */
-  --nav-menu-bg:      var(--light-nav-menu-bg);
-  --nav-menu-backdrop: var(--light-nav-menu-backdrop);
-  --nav-menu-border:  var(--light-nav-menu-border);
-  --nav-menu-shadow:  var(--light-nav-menu-shadow);
+  
    }
 
 
