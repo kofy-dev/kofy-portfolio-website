@@ -154,8 +154,8 @@
 
   /* Navbar glass */
   --navbar-bg:      var(--light-navbar-bg);
-  --navbar-backdrop: var(--light-navbar-backdrop;
-  --navbar-border:  var(--light-navbar-border;
+  --navbar-backdrop: var(--light-navbar-backdrop);
+  --navbar-border:  var(--light-navbar-border);
   --navbar-text:    var(--text-body);
 
   /* Form inputs */
