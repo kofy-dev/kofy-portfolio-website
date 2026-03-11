@@ -117,6 +117,16 @@
   --dark-nav-menu-border:   1px solid rgba(255, 255, 255, 0.10);
   --dark-nav-menu-shadow:   0 16px 48px rgba(0, 0, 0, 0.45);
 
+   --light-navbar-bg:rgba(255, 255, 255, 0.25);
+   --light-navbar-backdrop:blur(12px);
+   --light-navbar-border:1px solid rgba(255, 255, 255, 0.18);
+   --light-navbar-text:var(--text-body);
+   
+   --dark-navbar-bg:rgba(255, 255, 255, 0.25);
+   --dark-navbar-backdrop:blur(12px);
+   --dark-navbar-border:1px solid rgba(255, 255, 255, 0.18);
+   --dark-navbar-text:var(--text-body);
+   
    /*DEFAULT LIGHT-STYLES*/
 
   /* Semantic colors */
