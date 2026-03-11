@@ -139,9 +139,9 @@
    /*DEFAULT LIGHT-STYLES*/
 
   /* Semantic colors */
-  --text-heading:     var(--neutral-200);
-  --text-body:        var(--neutral-400);
-  --text-placeholder: var(--neutral-400);
+  --text-heading:     var(--neutral-800);
+  --text-body:        var(--neutral-700);
+  --text-placeholder: var(--neutral-00);
 
   --bg-page:       var(--neutral-50);
   --surface-color: var(--neutral-50);
