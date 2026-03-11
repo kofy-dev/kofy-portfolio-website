@@ -321,6 +321,7 @@ a {
 .text-input,
 .form-input{
    background-color:var(--input-bg);
+   border: 1px solid var(--border-color);
 }
 .text-input:focus,
 .form-input:focus {
