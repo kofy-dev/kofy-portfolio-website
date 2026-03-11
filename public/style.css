@@ -104,15 +104,20 @@
   --dark-shadow-lg: 0 10px 25px rgba(0,0,0,0.45);
   --dark-shadow-xl: 0 16px 40px rgba(0,0,0,0.55);
 
+
+   /*NAV-MENU-LIGHT-MODE*/
    --light-nav-menu-bg:      rgba(255, 255, 255, 0.45);
   --light-nav-menu-backdrop: blur(20px);
   --light-nav-menu-border:  1px solid rgba(0, 0, 0, 0.08);
   --light-nav-menu-shadow:  0 16px 48px rgba(0, 0, 0, 0.25);
 
+   /*NAV-MENU-DARK-MODE*/
    --dark-nav-menu-bg:       rgba(30, 30, 30, 0.65);
   --dark-nav-menu-backdrop: blur(20px);
   --dark-nav-menu-border:   1px solid rgba(255, 255, 255, 0.10);
   --dark-nav-menu-shadow:   0 16px 48px rgba(0, 0, 0, 0.45);
+
+   /*DEFAULT LIGHT-STYLES*/
 
   /* Semantic colors */
   --text-heading:     var(--neutral-900);
@@ -161,7 +166,7 @@
   --nav-menu-shadow:  var(--light-nav-menu-shadow);
 }
 
-/* Dark mode */
+/* DARK-MODE-STYLES */
 [data-theme="dark"] {
   --bg-page:       var(--neutral-950);
   --text-heading:  var(--neutral-100);
