@@ -139,8 +139,8 @@
    /*DEFAULT LIGHT-STYLES*/
 
   /* Semantic colors */
-  --text-heading:     var(--neutral-900);
-  --text-body:        var(--neutral-700);
+  --text-heading:     var(--neutral-200);
+  --text-body:        var(--neutral-400);
   --text-placeholder: var(--neutral-400);
 
   --bg-page:       var(--neutral-50);
@@ -169,7 +169,7 @@
 
   /* Form inputs */
   --input-bg: var(--neutral-50);
-  --input-color:var(--neutral-300);
+  --input-text:var(--neutral-300);
 
   
   /* Semantic shadows */
