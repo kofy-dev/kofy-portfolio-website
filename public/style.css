@@ -124,7 +124,7 @@
    
    --dark-navbar-bg: rgba(30, 30, 30, 0.35);
    --dark-navbar-backdrop:blur(16px);
-   --dark-navbar-border:;
+   --dark-navbar-border:1px solid rgba(255, 255, 255, 0.08);
    --dark-navbar-text:var(--neutral-100);
    
    /*DEFAULT LIGHT-STYLES*/
@@ -153,9 +153,9 @@
   --btn-primary-outline-hover-text:   var(--white);
 
   /* Navbar glass */
-  --navbar-bg:      rgba(255, 255, 255, 0.25);
-  --navbar-backdrop: blur(12px);
-  --navbar-border:  1px solid rgba(255, 255, 255, 0.18);
+  --navbar-bg:      var(--light-navbar-bg);
+  --navbar-backdrop: var(--light-navbar-backdrop;
+  --navbar-border:  var(--light-navbar-border;
   --navbar-text:    var(--text-body);
 
   /* Form inputs */
@@ -189,9 +189,9 @@
   --input-bg:   var(--neutral-800);
   --input-text: var(--neutral-100);
 
-  --navbar-bg:      rgba(30, 30, 30, 0.35);
-  --navbar-backdrop: blur(16px);
-  --navbar-border:  1px solid rgba(255, 255, 255, 0.08);
+  --navbar-bg:   var(--dark-navbar-bg);
+  --navbar-backdrop: var(--dark-navbar-backdrop);
+  --navbar-border:  var(--dark-navbar-border);
   --navbar-text:    var(--neutral-100);
 
 
