@@ -124,7 +124,7 @@
    
    --dark-navbar-bg: rgba(30, 30, 30, 0.35);
    --dark-navbar-backdrop:blur(16px);
-   --dark-navbar-border:1px solid rgba(255, 255, 255;
+   --dark-navbar-border:;
    --dark-navbar-text:var(--neutral-100);
    
    /*DEFAULT LIGHT-STYLES*/
