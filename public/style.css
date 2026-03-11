@@ -89,7 +89,8 @@
   --white: #ffffff;
   --black: #000000;
 
-   /* ── SHADOW TOKENS ── */
+   /* LIGHT-MODE-SHADOWS */
+   
   --light-shadow-xs: 0 1px 2px rgba(0,0,0,0.06);
   --light-shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
   --light-shadow-md: 0 4px 12px rgba(0,0,0,0.08);
@@ -97,7 +98,8 @@
   --light-shadow-xl: 0 16px 40px rgba(0,0,0,0.14);
    
 
-     /* Dark mode shadows – stronger for visibility */
+     /* DARK-MODE-SHADOWS */
+   
   --dark-shadow-xs: 0 1px 3px rgba(0,0,0,0.30);
   --dark-shadow-sm: 0 2px 6px rgba(0,0,0,0.35);
   --dark-shadow-md: 0 4px 12px rgba(0,0,0,0.40);
@@ -106,21 +108,28 @@
 
 
    /*NAV-MENU-LIGHT-MODE*/
+   
    --light-nav-menu-bg:      rgba(255, 255, 255, 0.45);
   --light-nav-menu-backdrop: blur(20px);
   --light-nav-menu-border:  1px solid rgba(0, 0, 0, 0.08);
   --light-nav-menu-shadow:  0 16px 48px rgba(0, 0, 0, 0.25);
 
    /*NAV-MENU-DARK-MODE*/
+   
    --dark-nav-menu-bg:       rgba(30, 30, 30, 0.65);
   --dark-nav-menu-backdrop: blur(20px);
   --dark-nav-menu-border:   1px solid rgba(255, 255, 255, 0.10);
   --dark-nav-menu-shadow:   0 16px 48px rgba(0, 0, 0, 0.45);
 
+
+   /*LIGHT-MODE-NAVBAR*/
+   
    --light-navbar-bg:rgba(255, 255, 255, 0.25);
    --light-navbar-backdrop:blur(12px);
    --light-navbar-border:1px solid rgba(255, 255, 255, 0.18);
    --light-navbar-text:var(--text-body);
+
+   /* DARK-MODE-NAVBAR*/
    
    --dark-navbar-bg: rgba(30, 30, 30, 0.35);
    --dark-navbar-backdrop:blur(16px);
@@ -160,6 +169,7 @@
 
   /* Form inputs */
   --input-bg: var(--neutral-50);
+  --input-color:var(--neutral-300);
 
   
   /* Semantic shadows */
