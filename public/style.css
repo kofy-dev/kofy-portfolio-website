@@ -163,8 +163,8 @@
 
   
   /* Semantic shadows */
-  --card-shadow:          var(--light-shadow-md);
-  --card-shadow-hover:    var(--light-shadow-xl);
+   --surface-shadow: var(--light-shadow-md);
+   --surface-shadow-hover: var(--light-shadow-xl);
   --navbar-shadow:        var(--light-shadow-lg);
   --button-shadow:        0 4px 14px rgba(121, 80, 242, 0.25);
   --button-shadow-hover:  0 8px 24px rgba(121, 80, 242, 0.35);
@@ -196,8 +196,8 @@
 
 
 
-  --card-shadow:          var(--dark-shadow-md);
-  --card-shadow-hover:    var(--dark-shadow-xl);
+  --surface-shadow:          var(--dark-shadow-md);
+  --surface-shadow-hover:    var(--dark-shadow-xl);
   --navbar-shadow:        var(--dark-shadow-lg);
   --floating-action-shadow: var(--dark-shadow-xl);
 
@@ -378,7 +378,7 @@ a {
   border: 1px solid var(--border-color);
   border-radius: 16px;
   padding: 1.5rem 1.25rem;
-  box-shadow: var(--card-shadow);
+  box-shadow: var(--surface-shadow);
   transition:
     transform 0.25s ease,
     box-shadow 0.3s ease,
@@ -390,7 +390,7 @@ a {
 .card:focus-within,
 .form-container:hover {
   transform: translateY(-6px);
-  box-shadow: var(--card-shadow-hover);
+  box-shadow: var(--surface-shadow-hover);
   border-color: var(--primary-400);
 }
 
