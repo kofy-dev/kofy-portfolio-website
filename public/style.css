@@ -90,19 +90,19 @@
   --black: #000000;
 
    /* ── SHADOW TOKENS ── */
-  --shadow-xs: 0 1px 2px rgba(0,0,0,0.06);
-  --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
-  --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
-  --shadow-lg: 0 10px 25px rgba(0,0,0,0.10);
-  --shadow-xl: 0 16px 40px rgba(0,0,0,0.14);
+  --light-shadow-xs: 0 1px 2px rgba(0,0,0,0.06);
+  --light-shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+  --light-shadow-md: 0 4px 12px rgba(0,0,0,0.08);
+  --light-shadow-lg: 0 10px 25px rgba(0,0,0,0.10);
+  --light-shadow-xl: 0 16px 40px rgba(0,0,0,0.14);
    
 
      /* Dark mode shadows – stronger for visibility */
-  --shadow-xs: 0 1px 3px rgba(0,0,0,0.30);
-  --shadow-sm: 0 2px 6px rgba(0,0,0,0.35);
-  --shadow-md: 0 4px 12px rgba(0,0,0,0.40);
-  --shadow-lg: 0 10px 25px rgba(0,0,0,0.45);
-  --shadow-xl: 0 16px 40px rgba(0,0,0,0.55);
+  --dark-shadow-xs: 0 1px 3px rgba(0,0,0,0.30);
+  --dark-shadow-sm: 0 2px 6px rgba(0,0,0,0.35);
+  --dark-shadow-md: 0 4px 12px rgba(0,0,0,0.40);
+  --dark-shadow-lg: 0 10px 25px rgba(0,0,0,0.45);
+  --dark-shadow-xl: 0 16px 40px rgba(0,0,0,0.55);
 
    --light-nav-menu-bg:      rgba(255, 255, 255, 0.45);
   --light-nav-menu-backdrop: blur(20px);
@@ -148,12 +148,12 @@
 
   
   /* Semantic shadows */
-  --card-shadow:          var(--shadow-md);
-  --card-shadow-hover:    var(--shadow-xl);
-  --navbar-shadow:        var(--shadow-lg);
+  --card-shadow:          var(--light-shadow-md);
+  --card-shadow-hover:    var(--light-shadow-xl);
+  --navbar-shadow:        var(--light-shadow-lg);
   --button-shadow:        0 4px 14px rgba(121, 80, 242, 0.25);
   --button-shadow-hover:  0 8px 24px rgba(121, 80, 242, 0.35);
-  --floating-action-shadow: var(--shadow-xl);
+  --floating-action-shadow: var(--light-shadow-xl);
 
    --nav-menu-bg:      var(--light-nav-menu-bg);
   --nav-menu-backdrop: var(--light-nav-menu-backdrop);
@@ -181,10 +181,10 @@
 
 
 
-  --card-shadow:          var(--shadow-md);
-  --card-shadow-hover:    var(--shadow-xl);
-  --navbar-shadow:        var(--shadow-lg);
-  --floating-action-shadow: var(--shadow-xl);
+  --card-shadow:          var(--dark-shadow-md);
+  --card-shadow-hover:    var(--dark-shadow-xl);
+  --navbar-shadow:        var(--dark-shadow-lg);
+  --floating-action-shadow: var(--dark-shadow-xl);
 
   --button-shadow:        0 4px 14px rgba(121, 80, 242, 0.20);
   --button-shadow-hover:  0 8px 24px rgba(121, 80, 242, 0.30);
