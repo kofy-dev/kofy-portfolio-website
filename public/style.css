@@ -308,6 +308,10 @@ a {
 }
 
 /* Input states */
+.text-input,
+.form-input{
+   background-color:var(--input-bg);
+}
 .text-input:focus,
 .form-input:focus {
   border-color: var(--primary-500);
