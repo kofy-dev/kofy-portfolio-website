@@ -61,75 +61,65 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
                           
-const track = document.querySelector('.carousel-track');
-const cards = Array.from(track.children);
-const indicatorsContainer = document.querySelector('.carousel-indicators');
-let currentIndex = 0;
-let autoSlideInterval;
 
-// 1️⃣ Create indicators dynamically
-cards.forEach((_, index) => {
-  const dot = document.createElement('div');
-  dot.classList.add('carousel-indicator');
-  if (index === 0) dot.classList.add('active');
-  dot.addEventListener('click', () => {
-    currentIndex = index;
-    scrollToCard(currentIndex);
-    resetAutoSlide();
+
+// Select all carousels on the page
+const carousels = document.querySelectorAll('.carousel');
+
+carousels.forEach(carousel => {
+  const track = carousel.querySelector('.carousel-track');
+  const cards = Array.from(track.children);
+  const indicatorsContainer = carousel.querySelector('.carousel-indicators');
+  let currentIndex = 0;
+  let autoSlideInterval;
+
+  // 1️⃣ Create indicators dynamically
+  cards.forEach((_, index) => {
+    const dot = document.createElement('div');
+    dot.classList.add('carousel-indicator');
+    if(index === 0) dot.classList.add('active');
+    dot.addEventListener('click', () => {
+      currentIndex = index;
+      scrollToCard();
+      resetAutoSlide();
+    });
+    indicatorsContainer.appendChild(dot);
   });
-  indicatorsContainer.appendChild(dot);
+
+  // 2️⃣ Scroll to specific card
+  function scrollToCard() {
+    const card = cards[currentIndex];
+    track.scrollTo({
+      left: card.offsetLeft,
+      behavior: 'smooth'
+    });
+    updateIndicators();
+  }
+
+  // 3️⃣ Update active indicator
+  function updateIndicators() {
+    const dots = indicatorsContainer.querySelectorAll('.carousel-indicator');
+    dots.forEach(dot => dot.classList.remove('active'));
+    dots[currentIndex].classList.add('active');
+  }
+
+  // 4️⃣ Auto-slide
+  function autoSlide() {
+    currentIndex = (currentIndex + 1) % cards.length;
+    scrollToCard();
+  }
+
+  function resetAutoSlide() {
+    clearInterval(autoSlideInterval);
+    autoSlideInterval = setInterval(autoSlide, 3000);
+  }
+
+  // 5️⃣ Pause on hover/touch
+  track.addEventListener('mouseenter', () => clearInterval(autoSlideInterval));
+  track.addEventListener('mouseleave', resetAutoSlide);
+  track.addEventListener('touchstart', () => clearInterval(autoSlideInterval));
+  track.addEventListener('touchend', resetAutoSlide);
+
+  // Start auto-slide
+  resetAutoSlide();
 });
-
-// 2️⃣ Scroll to specific card & highlight active card
-function scrollToCard(index) {
-  const card = cards[index];
-  const peekOffset = track.clientWidth * 0.05; // optional peek
-  track.scrollTo({
-    left: card.offsetLeft - peekOffset,
-    behavior: 'smooth'
-  });
-  updateIndicators();
-  highlightActiveCard();
-}
-
-// 3️⃣ Update active indicator
-function updateIndicators() {
-  const dots = indicatorsContainer.querySelectorAll('.carousel-indicator');
-  dots.forEach(dot => dot.classList.remove('active'));
-  dots[currentIndex].classList.add('active');
-}
-
-// 4️⃣ Highlight active card (scale + shadow)
-function highlightActiveCard() {
-  cards.forEach((card, i) => {
-    if (i === currentIndex) {
-      card.style.transform = "scale(1.05)";
-      card.style.boxShadow = "var(--surface-shadow-hover)";
-    } else {
-      card.style.transform = "scale(1)";
-      card.style.boxShadow = "var(--surface-shadow)";
-    }
-  });
-}
-
-// 5️⃣ Auto-slide
-function autoSlide() {
-  currentIndex = (currentIndex + 1) % cards.length;
-  scrollToCard(currentIndex);
-}
-
-// 6️⃣ Reset & start auto-slide
-function resetAutoSlide() {
-  clearInterval(autoSlideInterval);
-  autoSlideInterval = setInterval(autoSlide, 3000); // 3s per slide
-}
-
-// 7️⃣ Pause on hover/touch
-track.addEventListener('mouseenter', () => clearInterval(autoSlideInterval));
-track.addEventListener('mouseleave', resetAutoSlide);
-track.addEventListener('touchstart', () => clearInterval(autoSlideInterval));
-track.addEventListener('touchend', resetAutoSlide);
-
-// 8️⃣ Initialize
-scrollToCard(currentIndex); // scroll to first card + highlight
-resetAutoSlide();
