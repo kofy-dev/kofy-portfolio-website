@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
                           
 
 
-
+ 
   
   // Select all carousel components
 const carousels = document.querySelectorAll('.carousel');
