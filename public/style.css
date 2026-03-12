@@ -856,6 +856,20 @@ font-size: var(--text-2xl);
 font-size: var(--text-xl);
 }
 
+
+/*TECH-SECTION*/
+
+.tech-stack-icon{
+   font-weight:var(--font-weight-medium);
+   font-size:var(--2xl);
+}
+
+.tech-container .card{
+   display:flex;
+   flex-direction:column;
+   gap:var(--space-16);
+}
+
 /*RESUME__SECTION*/
 
 /*RESUME-MAIN-SECTION*/
