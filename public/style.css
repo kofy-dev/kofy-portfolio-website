@@ -865,9 +865,14 @@ font-size: var(--text-xl);
     max-width:var(--container-width-xl);
 }
 
-.tech-stack-description,.tech-stack-heading{
+.tech-stack-description,.tech-stack-title{
     margin-bottom:0;
     text-align:center;
+}
+
+.tech-stack-description,
+tech-stack-title{
+   margin-bottom:var(--space-16);
 }
 
 .tech-icon{
