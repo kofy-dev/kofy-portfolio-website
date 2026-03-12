@@ -112,10 +112,10 @@
   /* Semantic colors */
   --text-secondary:var(--neutral-800);
   --text-primary: var(--neutral-700);
-  --text-placeholder: var(--neutral-100)!;
+  --text-placeholder: var(--neutral-100);
 
-  --bg-page: var(--neutral-50);;
-  --surface-color:var(--neutral-50);;
+  --bg-page: var(--neutral-50);
+  --surface-color:var(--neutral-50);
   --border-color:var(--neutral-200);
 
   /* Buttons */
