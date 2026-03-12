@@ -860,7 +860,7 @@ font-size: var(--text-xl);
 /*TECH-SECTION*/
 
 .tech-stack-icon{
-   font-weight:var(--font-weight-medium);
+  /* font-weight:var(--font-weight-medium);*/
    font-size:5rem;
 }
 
