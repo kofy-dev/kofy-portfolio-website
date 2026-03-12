@@ -861,7 +861,7 @@ font-size: var(--text-xl);
 
 .tech-stack-icon{
    font-weight:var(--font-weight-medium);
-   font-size:var(--text-2xl);
+   font-size:5rem;
 }
 
 .tech-container .card{
