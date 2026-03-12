@@ -867,6 +867,7 @@ font-size: var(--text-xl);
 
 .tech-stack-description,.tech-stack-heading{
     margin-bottom:0;
+    text-align:center;
 }
 
 .tech-icon{
