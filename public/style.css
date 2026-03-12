@@ -20,6 +20,8 @@
   --font-poppins:      'Poppins', sans-serif;
   --font-merriweather: 'Merriweather', serif;
 
+   
+
   --space-4:  clamp(0.3rem, 1vw,   0.5rem);
   --space-8:  clamp(0.6rem, 1.5vw, 1rem);
   --space-12: clamp(0.9rem, 2vw,   1.4rem);
@@ -32,11 +34,25 @@
   --container-width-lg:  80rem;
   --container-width-xl:  120rem;
 
-  --border-sm:   1px;
-  --border-base: 2px;
   
-  --radius-md: clamp(0.4rem, 1vw,   0.8rem);
-  --radius-lg: clamp(0.6rem, 1.5vw, 1rem);
+
+   /* BORDERS & RADIUS */
+
+      --border-sm: 1px;
+
+      --border-base: 2px;
+
+      --border-lg: 3px;
+
+      --border-xl: 4px;
+
+     --radius-sm: clamp(0.2rem, 0.5vw, 0.4rem);
+
+     --radius-md: clamp(0.4rem, 1vw, 0.8rem);
+
+     --radius-lg: clamp(0.6rem, 1.5vw, 1rem);
+
+      --radius-xl: clamp(0.8rem, 2vw, 1.2rem);
 
   /* ==========================================
      2. COLOR PALETTE (Primitives)
