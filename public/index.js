@@ -65,13 +65,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
  
   
-  // Select all carousel components
-const carousels = document.querySelectorAll('.carousel');
+  // Select all carousel tracks
+const tracks = document.querySelectorAll('.carousel-track');
 
-carousels.forEach(carousel => {
-  const track = carousel.querySelector('.carousel-track');
+tracks.forEach(track => {
   const cards = Array.from(track.children);
-  const indicatorsContainer = carousel.querySelector('.carousel-indicators');
+  const indicatorsContainer = track.nextElementSibling; // assumes indicators div is right after the track
   let currentIndex = 0;
   let autoSlideInterval;
 
@@ -115,7 +114,7 @@ carousels.forEach(carousel => {
 
   function resetAutoSlide() {
     clearInterval(autoSlideInterval);
-    autoSlideInterval = setInterval(autoSlide, 3000); // 3s per slide
+    autoSlideInterval = setInterval(autoSlide, 3000);
   }
 
   // 5️⃣ Pause on hover/touch
