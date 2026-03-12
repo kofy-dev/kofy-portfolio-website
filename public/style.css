@@ -113,13 +113,13 @@
    /*DEFAULT LIGHT-STYLES*/
 
   /* Semantic colors */
-  --text-secondary:     var(--neutral-800);
-  --text-primary:        var(--neutral-700);
-  --text-placeholder: var(--neutral-100);
+  --text-secondary:#262626;
+  --text-primary: #404040;
+  --text-placeholder: #171717;
 
-  --bg-page:       var(--neutral-50);
-  --surface-color: var(--neutral-50);
-  --border-color:  var(--neutral-200);
+  --bg-page:#0f0f0f;
+  --surface-color:#525252;
+  --border-color:#e5e5e5;
 
   /* Buttons */
   --btn-primary-bg:           var(--primary-600);
