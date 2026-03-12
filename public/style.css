@@ -1,8 +1,8 @@
    
-
-
 :root {
-  /* TYPOGRAPHY */
+  /* ==========================================
+     1. TYPOGRAPHY & SPACING (Primitives)
+     ========================================== */
   --text-sm:   clamp(0.8rem,  1vw, 0.9rem);
   --text-base: clamp(0.95rem, 1.5vw, 1.1rem);
   --text-lg:   clamp(1.1rem,  2vw, 1.3rem);
@@ -20,14 +20,6 @@
   --font-poppins:      'Poppins', sans-serif;
   --font-merriweather: 'Merriweather', serif;
 
-  --line-height-normal: 1.5;
-  --line-height-medium: 1.6;
-  --line-height-tight:  1.2;
-
-  --letter-spacing-normal: 0;
-  --letter-spacing-tight:  -0.01em;
-
-  /* SPACING */
   --space-4:  clamp(0.3rem, 1vw,   0.5rem);
   --space-8:  clamp(0.6rem, 1.5vw, 1rem);
   --space-12: clamp(0.9rem, 2vw,   1.4rem);
@@ -37,28 +29,19 @@
   --space-48: clamp(3.6rem, 5vw,   6rem);
   --space-64: clamp(4.8rem, 6vw,   8rem);
 
-  /* CONTAINER WIDTHS */
-  --container-width-sm:  50rem;
-  --container-width-md:  60rem;
   --container-width-lg:  80rem;
   --container-width-xl:  120rem;
-  --container-width-2xl: 128rem;
-  --container-width-3xl: 138rem;
 
-  /* BORDERS & RADIUS */
   --border-sm:   1px;
   --border-base: 2px;
-  --border-lg:   3px;
-  --border-xl:   4px;
-
-  --radius-sm: clamp(0.2rem, 0.5vw, 0.4rem);
+  
   --radius-md: clamp(0.4rem, 1vw,   0.8rem);
   --radius-lg: clamp(0.6rem, 1.5vw, 1rem);
-  --radius-xl: clamp(0.8rem, 2vw,   1.2rem);
 
-  /* COLORS */
-   
-  /* Primary */
+  /* ==========================================
+     2. COLOR PALETTE (Primitives)
+     ========================================== */
+  /* Primary Purple */
   --primary-50:  #f3f0ff;
   --primary-100: #e5dbff;
   --primary-200: #d0bfff;
@@ -70,7 +53,7 @@
   --primary-800: #6741d9;
   --primary-900: #5f3dc4;
 
-  /* Neutral */
+  /* Neutrals */
   --neutral-50:  #fafafa;
   --neutral-100: #f5f5f5;
   --neutral-200: #e5e5e5;
@@ -82,44 +65,28 @@
   --neutral-800: #262626;
   --neutral-900: #171717;
   --neutral-950: #0f0f0f;
-
   --white: #ffffff;
   --black: #000000;
 
-   /* LIGHT-MODE-SHADOWS */
-   
-  --light-shadow-xs: 0 1px 2px rgba(0,0,0,0.06);
-  --light-shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
-  --light-shadow-md: 0 4px 12px rgba(0,0,0,0.08);
-  --light-shadow-lg: 0 10px 25px rgba(0,0,0,0.10);
-  --light-shadow-xl: 0 16px 40px rgba(0,0,0,0.14);
-   
+  /* ==========================================
+     3. LIGHT MODE (Semantics)
+     ========================================== */
+  /* Colors */
+  --bg-page:          var(--neutral-50);
+  --surface-color:    var(--white); /* White pops better in light mode */
+  --border-color:     var(--neutral-200);
 
-     /* DARK-MODE-SHADOWS */
-   
-  --dark-shadow-xs: 0 1px 3px rgba(0,0,0,0.30);
-  --dark-shadow-sm: 0 2px 6px rgba(0,0,0,0.35);
-  --dark-shadow-md: 0 4px 12px rgba(0,0,0,0.40);
-  --dark-shadow-lg: 0 10px 25px rgba(0,0,0,0.45);
-  --dark-shadow-xl: 0 16px 40px rgba(0,0,0,0.55);
+  /* Typography */
+  --text-secondary:   var(--neutral-800);
+  --text-primary:     var(--neutral-700);
+  --text-placeholder: var(--neutral-400); /* Fixed: Was too light before */
 
-
-   
-   
-   
-   /*DEFAULT LIGHT-STYLES*/
-
-  /* Semantic colors */
-  --text-secondary:var(--neutral-800);
-  --text-primary: var(--neutral-700);
-  --text-placeholder: var(--neutral-100);
-
-  --bg-page: var(--neutral-50);
-  --surface-color:var(--neutral-50);
-  --border-color:var(--neutral-200);
+  /* Forms & Inputs */
+  --input-bg:         var(--white);
+  --input-text:       var(--neutral-900); /* Fixed: Was too light before */
 
   /* Buttons */
-  --btn-primary-bg:      var(--primary-600)  ;
+  --btn-primary-bg:           var(--primary-600);
   --btn-primary-text:         var(--white);
   --btn-primary-border:       var(--primary-600);
   --btn-primary-hover-bg:     var(--primary-700);
@@ -132,70 +99,66 @@
   --btn-primary-outline-hover-border: var(--primary-700);
   --btn-primary-outline-hover-text:   var(--white);
 
-  /* Navbar glass */
-  --navbar-bg: rgba(255, 255, 255, 0.25);  
-  --navbar-backdrop:blur(12px);
-  --navbar-border:1px solid rgba(255, 255, 255, 0.18);
-  --navbar-text:    var(--text-body);
+  /* Glassmorphism & Menus */
+  --navbar-bg:         rgba(255, 255, 255, 0.25);  
+  --navbar-backdrop:   blur(12px);
+  --navbar-border:     1px solid rgba(255, 255, 255, 0.18);
+  --navbar-text:       var(--text-secondary); /* Fixed reference */
 
-  /* Form inputs */
-  --input-bg: var(--neutral-50);
-  --input-text:var(--neutral-300);
-
-  
-  /* Semantic shadows */
-   --surface-shadow: var(--light-shadow-md);
-   --surface-shadow-hover: var(--light-shadow-xl);
-  --navbar-shadow:        var(--light-shadow-lg);
-  --button-shadow:        0 4px 14px rgba(121, 80, 242, 0.25);
-  --button-shadow-hover:  0 8px 24px rgba(121, 80, 242, 0.35);
-  --floating-action-shadow: var(--light-shadow-xl);
-
-   
-   --nav-menu-bg:      rgba(255, 255, 255, 0.45);
+  --nav-menu-bg:       rgba(255, 255, 255, 0.45);
   --nav-menu-backdrop: blur(20px);
-  --nav-menu-border:  1px solid rgba(0, 0, 0, 0.08);
-  --nav-menu-shadow:  0 16px 48px rgba(0, 0, 0, 0.25);
+  --nav-menu-border:   1px solid rgba(0, 0, 0, 0.08);
+  --nav-menu-shadow:   0 16px 48px rgba(0, 0, 0, 0.25);
+
+  /* Shadows (Direct Values) */
+  --surface-shadow:         0 4px 12px rgba(0,0,0,0.08);
+  --surface-shadow-hover:   0 16px 40px rgba(0,0,0,0.14);
+  --navbar-shadow:          0 10px 25px rgba(0,0,0,0.10);
+  --floating-action-shadow: 0 16px 40px rgba(0,0,0,0.14);
+  --button-shadow:          0 4px 14px rgba(121, 80, 242, 0.25);
+  --button-shadow-hover:    0 8px 24px rgba(121, 80, 242, 0.35);
 }
 
-/* DARK-MODE-STYLES */
+/* ==========================================
+   4. DARK MODE SWAP
+   ========================================== */
 [data-theme="dark"] {
-  --bg-page:       var(--neutral-950);
-  --text-secondary:  var(--neutral-100);
+  /* Colors */
+  --bg-page:          var(--neutral-950);
+  --surface-color:    var(--neutral-900);
+  --border-color:     var(--neutral-700);
+
+  /* Typography */
+  --text-secondary:   var(--neutral-100);
   --text-primary:     var(--neutral-200);
   --text-placeholder: var(--neutral-500);
-  --surface-color: var(--neutral-900);
-  --border-color:  var(--neutral-700);
 
+  /* Forms & Inputs */
+  --input-bg:         var(--neutral-800);
+  --input-text:       var(--neutral-100);
+
+  /* Buttons */
   --btn-primary-outline-bg: transparent;
-  --input-bg:   var(--neutral-800);
-  --input-text: var(--neutral-100);
 
+  /* Glassmorphism & Menus */
+  --navbar-bg:         rgba(30, 30, 30, 0.35);
+  --navbar-backdrop:   blur(16px);
+  --navbar-border:     1px solid rgba(255, 255, 255, 0.08);
+  --navbar-text:       var(--neutral-100);
 
+  --nav-menu-bg:       rgba(30, 30, 30, 0.65);
+  --nav-menu-backdrop: blur(20px);
+  --nav-menu-border:   1px solid rgba(255, 255, 255, 0.10);
+  --nav-menu-shadow:   0 16px 48px rgba(0, 0, 0, 0.45);
 
-   --navbar-bg: rgba(30, 30, 30, 0.35);
-   --navbar-backdrop:blur(16px);
-   --navbar-border:1px solid rgba(255, 255, 255, 0.08);
-   --navbar-text:var(--neutral-100);
-   
-
-  --surface-shadow:          var(--dark-shadow-md);
-  --surface-shadow-hover:    var(--dark-shadow-xl);
-  --navbar-shadow:        var(--dark-shadow-lg);
-  --floating-action-shadow: var(--dark-shadow-xl);
-
-  --button-shadow:        0 4px 14px rgba(121, 80, 242, 0.20);
-  --button-shadow-hover:  0 8px 24px rgba(121, 80, 242, 0.30);
-
-   
-
-   --nav-menu-bg:       rgba(30, 30, 30, 0.65);
-   --nav-menu-backdrop: blur(20px);
-   --nav-menu-border:   1px solid rgba(255, 255, 255, 0.10);
-   --nav-menu-shadow:   0 16px 48px rgba(0, 0, 0, 0.45);
-   
+  /* Shadows (Direct Values) */
+  --surface-shadow:         0 4px 12px rgba(0,0,0,0.40);
+  --surface-shadow-hover:   0 16px 40px rgba(0,0,0,0.55);
+  --navbar-shadow:          0 10px 25px rgba(0,0,0,0.45);
+  --floating-action-shadow: 0 16px 40px rgba(0,0,0,0.55);
+  --button-shadow:          0 4px 14px rgba(121, 80, 242, 0.20);
+  --button-shadow-hover:    0 8px 24px rgba(121, 80, 242, 0.30);
 }
-
 
 /* ==========================================================================
    BASE STYLES
