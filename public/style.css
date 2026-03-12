@@ -858,16 +858,15 @@ font-size: var(--text-xl);
 
 
 /*TECH-SECTION*/
-.tech-stack-heading,.tech-stack-description{
-    text-align:center;
+
+.tech-container{
+    margin: 0 auto;
+    width:90%;
+    max-width:var(--container-width-xl);
 }
 
-.tech-stack-heading{
-    margin-bottom:var(--space-16);
-}
-
-.tech-stack-description{
-    margin-bottom:var(--space-12);
+.tech-stack-description,.tech-stack-heading{
+    margin-bottom:0;
 }
 
 .tech-icon{
@@ -881,12 +880,10 @@ font-size: var(--text-xl);
    align-items:center;
    flex-direction:column;
    gap:var(--space-16);
+   text-align:center;
 }
 
-tech-container .card-paragraph{
-     text-align:center;
-      word-wrap: wrap;
-}
+
 
 /*RESUME__SECTION*/
 
