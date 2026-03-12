@@ -107,40 +107,14 @@
   --dark-shadow-xl: 0 16px 40px rgba(0,0,0,0.55);
 
 
-   /*NAV-MENU-LIGHT-MODE*/
    
-   --light-nav-menu-bg:      rgba(255, 255, 255, 0.45);
-  --light-nav-menu-backdrop: blur(20px);
-  --light-nav-menu-border:  1px solid rgba(0, 0, 0, 0.08);
-  --light-nav-menu-shadow:  0 16px 48px rgba(0, 0, 0, 0.25);
-
-   /*NAV-MENU-DARK-MODE*/
    
-   --dark-nav-menu-bg:       rgba(30, 30, 30, 0.65);
-  --dark-nav-menu-backdrop: blur(20px);
-  --dark-nav-menu-border:   1px solid rgba(255, 255, 255, 0.10);
-  --dark-nav-menu-shadow:   0 16px 48px rgba(0, 0, 0, 0.45);
-
-
-   /*LIGHT-MODE-NAVBAR*/
-   
-   --light-navbar-bg:rgba(255, 255, 255, 0.25);
-   --light-navbar-backdrop:blur(12px);
-   --light-navbar-border:1px solid rgba(255, 255, 255, 0.18);
-   --light-navbar-text:var(--text-body);
-
-   /* DARK-MODE-NAVBAR*/
-   
-   --dark-navbar-bg: rgba(30, 30, 30, 0.35);
-   --dark-navbar-backdrop:blur(16px);
-   --dark-navbar-border:1px solid rgba(255, 255, 255, 0.08);
-   --dark-navbar-text:var(--neutral-100);
    
    /*DEFAULT LIGHT-STYLES*/
 
   /* Semantic colors */
-  --text-heading:     var(--neutral-800);
-  --text-body:        var(--neutral-700);
+  --text-secondary:     var(--neutral-800);
+  --text-primary:        var(--neutral-700);
   --text-placeholder: var(--neutral-100);
 
   --bg-page:       var(--neutral-50);
@@ -162,9 +136,9 @@
   --btn-primary-outline-hover-text:   var(--white);
 
   /* Navbar glass */
-  --navbar-bg:      var(--light-navbar-bg);
-  --navbar-backdrop: var(--light-navbar-backdrop);
-  --navbar-border:  var(--light-navbar-border);
+  --navbar-bg: rgba(255, 255, 255, 0.25);  
+  --navbar-backdrop:blur(12px);
+  --navbar-border:1px solid rgba(255, 255, 255, 0.18);
   --navbar-text:    var(--text-body);
 
   /* Form inputs */
@@ -180,17 +154,18 @@
   --button-shadow-hover:  0 8px 24px rgba(121, 80, 242, 0.35);
   --floating-action-shadow: var(--light-shadow-xl);
 
-   --nav-menu-bg:      var(--light-nav-menu-bg);
-  --nav-menu-backdrop: var(--light-nav-menu-backdrop);
-  --nav-menu-border:  var(--light-nav-menu-border);
-  --nav-menu-shadow:  var(--light-nav-menu-shadow);
+   
+   --nav-menu-bg:      rgba(255, 255, 255, 0.45);
+  --nav-menu-backdrop: blur(20px);
+  --nav-menu-border:  1px solid rgba(0, 0, 0, 0.08);
+  --nav-menu-shadow:  0 16px 48px rgba(0, 0, 0, 0.25);
 }
 
 /* DARK-MODE-STYLES */
 [data-theme="dark"] {
   --bg-page:       var(--neutral-950);
-  --text-heading:  var(--neutral-100);
-  --text-body:     var(--neutral-200);
+  --text-secondary:  var(--neutral-100);
+  --text-primary:     var(--neutral-200);
   --text-placeholder: var(--neutral-500);
   --surface-color: var(--neutral-900);
   --border-color:  var(--neutral-700);
@@ -199,12 +174,13 @@
   --input-bg:   var(--neutral-800);
   --input-text: var(--neutral-100);
 
-  --navbar-bg:   var(--dark-navbar-bg);
-  --navbar-backdrop: var(--dark-navbar-backdrop);
-  --navbar-border:  var(--dark-navbar-border);
-  --navbar-text:    var(--neutral-100);
 
 
+   --navbar-bg: rgba(30, 30, 30, 0.35);
+   --navbar-backdrop:blur(16px);
+   --navbar-border:1px solid rgba(255, 255, 255, 0.08);
+   --navbar-text:var(--neutral-100);
+   
 
   --surface-shadow:          var(--dark-shadow-md);
   --surface-shadow-hover:    var(--dark-shadow-xl);
@@ -214,10 +190,13 @@
   --button-shadow:        0 4px 14px rgba(121, 80, 242, 0.20);
   --button-shadow-hover:  0 8px 24px rgba(121, 80, 242, 0.30);
 
-   --nav-menu-bg:      var(--dark-nav-menu-bg);
-  --nav-menu-backdrop: var(--dark-nav-menu-backdrop);
-  --nav-menu-border:  var(--dark-nav-menu-border);
-  --nav-menu-shadow:  var(--dark-nav-menu-shadow);
+   
+
+   --nav-menu-bg:       rgba(30, 30, 30, 0.65);
+   --nav-menu-backdrop: blur(20px);
+   --nav-menu-border:   1px solid rgba(255, 255, 255, 0.10);
+   --nav-menu-shadow:   0 16px 48px rgba(0, 0, 0, 0.45);
+   
 
 
 }
@@ -242,7 +221,7 @@ body {
   font-family: var(--font-poppins);
   font-weight: var(--font-weight-normal);
   line-height: var(--line-height-normal);
-  color: var(--text-body);
+  color: var(--text-primary);
   font-size: var(--text-lg);
   padding-top: var(--space-48);
   background-color: var(--bg-page);
@@ -253,7 +232,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: var(--font-weight-medium);
   line-height: var(--line-height-tight);
   letter-spacing: var(--letter-spacing-tight);
-  color: var(--text-heading);
+  color: var(--text-secondary);
 }
 
 h1 { font-size: var(--text-5xl); }
