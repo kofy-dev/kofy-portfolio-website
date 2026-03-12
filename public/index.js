@@ -64,9 +64,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 // Select all carousels on the page
-const carousels = document.querySelectorAll('.carousel');
+const carousel = document.querySelectorAll('.carousel');
 
-carousels.forEach(carousel => {
+carousel.forEach(carousel => {
   const track = carousel.querySelector('.carousel-track');
   const cards = Array.from(track.children);
   const indicatorsContainer = carousel.querySelector('.carousel-indicators');
