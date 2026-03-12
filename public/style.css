@@ -858,6 +858,17 @@ font-size: var(--text-xl);
 
 
 /*TECH-SECTION*/
+.tech-stack-heading,.tech-stack-description{
+    text-align:center;
+}
+
+.tech-stack-heading{
+    margin-bottom:var(--space-16);
+}
+
+.tech-stack-description{
+    margin-bottom:var(--space-12);
+}
 
 .tech-icon{
    font-weight:var(--font-weight-medium);
