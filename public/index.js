@@ -63,10 +63,12 @@ document.addEventListener('DOMContentLoaded', () => {
                           
 
 
-// Select all carousels on the page
-const carousel = document.querySelectorAll('.carousel');
 
-carousel.forEach(carousel => {
+  
+  // Select all carousel components
+const carousels = document.querySelectorAll('.carousel');
+
+carousels.forEach(carousel => {
   const track = carousel.querySelector('.carousel-track');
   const cards = Array.from(track.children);
   const indicatorsContainer = carousel.querySelector('.carousel-indicators');
@@ -78,17 +80,19 @@ carousel.forEach(carousel => {
     const dot = document.createElement('div');
     dot.classList.add('carousel-indicator');
     if(index === 0) dot.classList.add('active');
+
     dot.addEventListener('click', () => {
       currentIndex = index;
-      scrollToCard();
+      scrollToCard(currentIndex);
       resetAutoSlide();
     });
+
     indicatorsContainer.appendChild(dot);
   });
 
   // 2️⃣ Scroll to specific card
-  function scrollToCard() {
-    const card = cards[currentIndex];
+  function scrollToCard(index) {
+    const card = cards[index];
     track.scrollTo({
       left: card.offsetLeft,
       behavior: 'smooth'
@@ -106,12 +110,12 @@ carousel.forEach(carousel => {
   // 4️⃣ Auto-slide
   function autoSlide() {
     currentIndex = (currentIndex + 1) % cards.length;
-    scrollToCard();
+    scrollToCard(currentIndex);
   }
 
   function resetAutoSlide() {
     clearInterval(autoSlideInterval);
-    autoSlideInterval = setInterval(autoSlide, 3000);
+    autoSlideInterval = setInterval(autoSlide, 3000); // 3s per slide
   }
 
   // 5️⃣ Pause on hover/touch
