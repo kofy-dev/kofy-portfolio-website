@@ -1,8 +1,5 @@
    
 
-/* ==========================================================================
-   ROOT VARIABLES
-   ========================================================================== */
 
 :root {
   /* TYPOGRAPHY */
@@ -113,16 +110,16 @@
    /*DEFAULT LIGHT-STYLES*/
 
   /* Semantic colors */
-  --text-secondary:#262626;
-  --text-primary: #404040;
-  --text-placeholder: #171717;
+  --text-secondary:var(--neutral-800);
+  --text-primary: var(--neutral-700);
+  --text-placeholder: var(--neutral-100)!;
 
-  --bg-page: #0f0f0f;
-  --surface-color:#fafafa;
-  --border-color:#e5e5e5;
+  --bg-page: var(--neutral-50);;
+  --surface-color:var(--neutral-50);;
+  --border-color:var(--neutral-200);
 
   /* Buttons */
-  --btn-primary-bg:           var(--primary-600);
+  --btn-primary-bg:      var(--primary-600)  ;
   --btn-primary-text:         var(--white);
   --btn-primary-border:       var(--primary-600);
   --btn-primary-hover-bg:     var(--primary-700);
@@ -197,8 +194,6 @@
    --nav-menu-border:   1px solid rgba(255, 255, 255, 0.10);
    --nav-menu-shadow:   0 16px 48px rgba(0, 0, 0, 0.45);
    
-
-
 }
 
 
