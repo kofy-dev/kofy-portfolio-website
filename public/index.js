@@ -65,64 +65,106 @@ document.addEventListener('DOMContentLoaded', () => {
 
  
   
-  // Select all carousel tracks
-const tracks = document.querySelectorAll('.carousel-track');
+  const track = document.querySelector('.carousel-track');
+const container = document.querySelector('.carousel-container');
+const indicatorContainer = document.querySelector('.carousel-indicators');
+const slides = Array.from(track.children);
 
-tracks.forEach(track => {
-  const cards = Array.from(track.children);
-  const indicatorsContainer = track.nextElementSibling; // assumes indicators div is right after the track
-  let currentIndex = 0;
-  let autoSlideInterval;
+let currentIndex = 0;
+let autoPlayTimer;
+let startX = 0;
+let isDragging = false;
+let currentTranslate = 0;
+let prevTranslate = 0;
 
-  // 1️⃣ Create indicators dynamically
-  cards.forEach((_, index) => {
+// 1. AUTO-GENERATE INDICATORS
+slides.forEach((_, i) => {
     const dot = document.createElement('div');
-    dot.classList.add('carousel-indicator');
-    if(index === 0) dot.classList.add('active');
-
-    dot.addEventListener('click', () => {
-      currentIndex = index;
-      scrollToCard(currentIndex);
-      resetAutoSlide();
-    });
-
-    indicatorsContainer.appendChild(dot);
-  });
-
-  // 2️⃣ Scroll to specific card
-  function scrollToCard(index) {
-    const card = cards[index];
-    track.scrollTo({
-      left: card.offsetLeft,
-      behavior: 'smooth'
-    });
-    updateIndicators();
-  }
-
-  // 3️⃣ Update active indicator
-  function updateIndicators() {
-    const dots = indicatorsContainer.querySelectorAll('.carousel-indicator');
-    dots.forEach(dot => dot.classList.remove('active'));
-    dots[currentIndex].classList.add('active');
-  }
-
-  // 4️⃣ Auto-slide
-  function autoSlide() {
-    currentIndex = (currentIndex + 1) % cards.length;
-    scrollToCard(currentIndex);
-  }
-
-  function resetAutoSlide() {
-    clearInterval(autoSlideInterval);
-    autoSlideInterval = setInterval(autoSlide, 3000);
-  }
-
-  // 5️⃣ Pause on hover/touch
-  track.addEventListener('mouseenter', () => clearInterval(autoSlideInterval));
-  track.addEventListener('mouseleave', resetAutoSlide);
-  track.addEventListener('touchstart', () => clearInterval(autoSlideInterval));
-  track.addEventListener('touchend', resetAutoSlide);
-
-  // Start auto-slide
-  resetAutoSlide();
+    dot.classList.add('indicator');
+    if (i === 0) dot.classList.add('active');
+    dot.dataset.index = i;
+    indicatorContainer.appendChild(dot);
 });
+
+const indicators = document.querySelectorAll('.indicator');
+
+// 2. MOVE TO SLIDE FUNCTION
+const moveToSlide = (index) => {
+    const slideWidth = slides[0].offsetWidth;
+    track.style.transition = "transform 0.5s ease-out"; // Smooth slide
+    track.style.transform = `translateX(-${index * slideWidth}px)`;
+    
+    // Update active dot
+    indicators.forEach(dot => dot.classList.remove('active'));
+    indicators[index].classList.add('active');
+    
+    currentIndex = index;
+    prevTranslate = -index * slideWidth;
+};
+
+// 3. AUTO-PLAY CONTROL
+const startAutoPlay = () => {
+    autoPlayTimer = setInterval(() => {
+        let nextIndex = (currentIndex + 1) % slides.length;
+        moveToSlide(nextIndex);
+    }, 5000);
+};
+
+const resetTimer = () => {
+    clearInterval(autoPlayTimer);
+    startAutoPlay();
+};
+
+// 4. CLICK INDICATORS (Manual Control)
+indicatorContainer.addEventListener('click', (e) => {
+    if (e.target.classList.contains('indicator')) {
+        const targetIndex = parseInt(e.target.dataset.index);
+        moveToSlide(targetIndex);
+        resetTimer();
+    }
+});
+
+// 5. MANUAL TOUCH/MOUSE SWIPE LOGIC
+const handleDragStart = (e) => {
+    startX = e.type.includes('touch') ? e.touches[0].clientX : e.clientX;
+    isDragging = true;
+    clearInterval(autoPlayTimer); // Pause while user drags
+    track.style.transition = "none"; // Fast response while dragging
+};
+
+const handleDragMove = (e) => {
+    if (!isDragging) return;
+    const currentX = e.type.includes('touch') ? e.touches[0].clientX : e.clientX;
+    const diff = currentX - startX;
+    track.style.transform = `translateX(${prevTranslate + diff}px)`;
+};
+
+const handleDragEnd = (e) => {
+    if (!isDragging) return;
+    isDragging = false;
+    const endX = e.type.includes('touch') ? e.changedTouches[0].clientX : e.clientX;
+    const movedBy = endX - startX;
+
+    // If swiped more than 100px, change slide
+    if (movedBy < -100 && currentIndex < slides.length - 1) currentIndex++;
+    else if (movedBy > 100 && currentIndex > 0) currentIndex--;
+
+    moveToSlide(currentIndex);
+    startAutoPlay(); // Restart the clock
+};
+
+// EVENT LISTENERS
+container.addEventListener('touchstart', handleDragStart);
+container.addEventListener('touchmove', handleDragMove);
+container.addEventListener('touchend', handleDragEnd);
+
+container.addEventListener('mousedown', handleDragStart);
+container.addEventListener('mousemove', handleDragMove);
+container.addEventListener('mouseup', handleDragEnd);
+container.addEventListener('mouseleave', handleDragEnd);
+
+// RESIZE FIX
+window.addEventListener('resize', () => moveToSlide(currentIndex));
+
+// INITIALIZE
+startAutoPlay();
