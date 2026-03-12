@@ -65,66 +65,82 @@ document.addEventListener('DOMContentLoaded', () => {
 
  
   
-  const track = document.querySelector('.carousel-track');
-const indicatorContainer = document.querySelector('.carousel-indicators');
-const slides = Array.from(track.children);
+  const allCarousels = document.querySelectorAll('.carousel-container');
 
-let currentIndex = 0;
-let autoPlayTimer;
+allCarousels.forEach((container) => {
+    const track = container.querySelector('.carousel-track');
+    const indicatorContainer = container.querySelector('.carousel-indicators');
+    const slides = Array.from(track.children);
+    
+    let currentIndex = 0;
+    let autoPlayTimer;
 
-// 1. GENERATE DOTS (Keep this, it's clean)
-slides.forEach((_, i) => {
-    const dot = document.createElement('div');
-    dot.classList.add('indicator');
-    if (i === 0) dot.classList.add('active');
-    dot.dataset.index = i;
-    indicatorContainer.appendChild(dot);
-});
-const indicators = document.querySelectorAll('.indicator');
-
-// 2. MOVE FUNCTION (Using ScrollTo instead of Transform)
-const moveToSlide = (index) => {
-    const slideWidth = track.offsetWidth; // Width of the container
-    track.scrollTo({
-        left: index * slideWidth,
-        behavior: 'smooth' // This makes the auto-swipe look nice
+    // 1. CLEAR & GENERATE DOTS
+    indicatorContainer.innerHTML = ''; 
+    slides.forEach((_, i) => {
+        const dot = document.createElement('div');
+        dot.classList.add('carousel-indicator'); // Matches your CSS
+        if (i === 0) dot.classList.add('active');
+        dot.dataset.index = i;
+        indicatorContainer.appendChild(dot);
     });
+
+    const indicators = indicatorContainer.querySelectorAll('.carousel-indicator');
+
+    // 2. MOVE FUNCTION
+    const moveToSlide = (index) => {
+        // We calculate the gap + the card width (280px + 16px gap)
+        const style = window.getComputedStyle(track);
+        const gap = parseInt(style.columnGap) || 16;
+        const slideWidth = slides[0].offsetWidth + gap;
+
+        track.scrollTo({
+            left: index * slideWidth,
+            behavior: 'smooth'
+        });
+        
+        currentIndex = index;
+    };
+
+    // 3. INDICATOR CLICK
+    indicatorContainer.addEventListener('click', (e) => {
+        if (e.target.classList.contains('carousel-indicator')) {
+            clearInterval(autoPlayTimer);
+            const targetIndex = parseInt(e.target.dataset.index);
+            moveToSlide(targetIndex);
+            startAutoPlay();
+        }
+    });
+
+    // 4. SYNC DOTS ON MANUAL SCROLL
+    track.addEventListener('scroll', () => {
+        const style = window.getComputedStyle(track);
+        const gap = parseInt(style.columnGap) || 16;
+        const slideWidth = slides[0].offsetWidth + gap;
+        
+        // Use Math.round to find which card is most visible
+        const newIndex = Math.round(track.scrollLeft / slideWidth);
+        
+        if (newIndex !== currentIndex && indicators[newIndex]) {
+            indicators.forEach(dot => dot.classList.remove('active'));
+            indicators[newIndex].classList.add('active');
+            currentIndex = newIndex;
+        }
+    }, { passive: true });
+
+    // 5. AUTO-PLAY
+    const startAutoPlay = () => {
+        autoPlayTimer = setInterval(() => {
+            // Only auto-swipe if the user isn't hovering
+            let nextIndex = (currentIndex + 1) % slides.length;
+            moveToSlide(nextIndex);
+        }, 4000);
+    };
+
+    // 6. INITIALIZE
+    startAutoPlay();
     
-    // Update Indicators
-    indicators.forEach(dot => dot.classList.remove('active'));
-    indicators[index].classList.add('active');
-    currentIndex = index;
-};
-
-// 3. INDICATOR CLICK
-indicatorContainer.addEventListener('click', (e) => {
-    if (e.target.classList.contains('indicator')) {
-        clearInterval(autoPlayTimer);
-        const targetIndex = parseInt(e.target.dataset.index);
-        moveToSlide(targetIndex);
-        startAutoPlay();
-    }
+    // Optional: Pause on hover
+    container.addEventListener('mouseenter', () => clearInterval(autoPlayTimer));
+    container.addEventListener('mouseleave', startAutoPlay);
 });
-
-// 4. SYNC DOTS WHEN USER SWIPES MANUALLY
-// This detects when a user swipes with their finger and updates the dots
-track.addEventListener('scroll', () => {
-    const slideWidth = track.offsetWidth;
-    const newIndex = Math.round(track.scrollLeft / slideWidth);
-    
-    if (newIndex !== currentIndex) {
-        indicators.forEach(dot => dot.classList.remove('active'));
-        indicators[newIndex].classList.add('active');
-        currentIndex = newIndex;
-    }
-});
-
-// 5. AUTO-SWIPE
-const startAutoPlay = () => {
-    autoPlayTimer = setInterval(() => {
-        let nextIndex = (currentIndex + 1) % slides.length;
-        moveToSlide(nextIndex);
-    }, 5000);
-};
-
-startAutoPlay();
