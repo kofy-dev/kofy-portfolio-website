@@ -866,7 +866,7 @@ font-size: var(--text-xl);
 
 .tech-container .card{
    display:flex;
-   justfify:center;
+   justfify-content:center;
    align-items:center;
    flex-direction:column;
    gap:var(--space-16);
