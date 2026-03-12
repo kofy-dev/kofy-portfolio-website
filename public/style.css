@@ -860,7 +860,7 @@ font-size: var(--text-xl);
 /*TECH-SECTION*/
 
 .tech-icon{
-  /* font-weight:var(--font-weight-medium);*/
+   font-weight:var(--font-weight-medium);
    font-size:5rem;
 }
 
@@ -870,6 +870,11 @@ font-size: var(--text-xl);
    align-items:center;
    flex-direction:column;
    gap:var(--space-16);
+}
+
+tech-container .card-paragraph{
+     text-align:center;
+      word-wrap: wrap;
 }
 
 /*RESUME__SECTION*/
