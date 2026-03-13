@@ -61,7 +61,7 @@
 
      --radius-lg: clamp(0.6rem, 1.5vw, 1rem);
 
-      --radius-xl: clamp(0.8rem, 2vw, 1.2rem);
+     --radius-xl: clamp(0.8rem, 2vw, 1.2rem);
 
        /* ==========================================
      2. COLOR PALETTE (Primitives)
