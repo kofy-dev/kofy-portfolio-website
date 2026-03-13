@@ -841,7 +841,7 @@ font-size: var(--text-xl);
 }
 
 .tech-stack-description,
-tech-stack-title{
+.tech-stack-title{
    margin-bottom:var(--space-16);
 }
 
