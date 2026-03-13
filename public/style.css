@@ -241,19 +241,9 @@ a {
   
 
 
-  
-  
-
-
-  
-
-
-
-
-
-
-
-/* ==========================================================================
+  @layer components{
+      
+        /* ==========================================================================
    BUTTONS
    ========================================================================== */
 
@@ -298,10 +288,9 @@ a {
   border-color: var(--btn-primary-outline-hover-border);
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(121, 80, 242, 0.2);
-}
+ }
 
-/* Input states */
-.text-input,
+ .text-input,
 .form-input{
    background-color:var(--input-bg);
    border: 1px solid var(--border-color);
@@ -322,10 +311,9 @@ a {
 .form-input::placeholder {
   color: var(--text-placeholder);
   opacity: 0.7;
-}
-
-/*FORMS-LABEL*/
-.form-label{
+ }
+   
+   .form-label{
    display:block;
    font-weight:var(--font-weight-medium);
    font-size:var(--text-3xl);
@@ -361,8 +349,7 @@ a {
    margin-bottom:var(--space-24);
  }
 
-
-/* ==========================================================================
+   /* ==========================================================================
    CARDS & FORMS
    ========================================================================== */
 
@@ -386,11 +373,9 @@ a {
   transform: translateY(-6px);
   box-shadow: var(--surface-shadow-hover);
   border-color: var(--primary-400);
-}
+ }
 
-/* ... rest of your file (navbar, hero, about, footer, carousel, etc.) remains the same ... */
-
-/* Only update the floating button to use the new shadow var */
+   /* Only update the floating button to use the new shadow var */
 .whatsapp-float {
   position: fixed;
   bottom: 20px;
@@ -411,13 +396,10 @@ a {
 .whatsapp-float:hover {
   transform: scale(1.1);
   background-color: #128C7E;
-   }
+  }
 
-
-/*CARD-COMPONENTS*/
-
-.card,.form-container{
-background-color: var(--surface-color);          /* neutral light/dark flip */
+  .card,.form-container{
+   background-color: var(--surface-color);     /* neutral light/dark flip */
   border: 1px solid var(--border-color);
   border-radius: 16px;                             /* generous modern rounding */
   padding: 1.5rem 1.25rem;
@@ -458,17 +440,9 @@ color:var(--primary-500);
 
 .card-link{
 text-decoration: underline solid var(--primary-600) 2px;
-}
+                               }
 
-
-
-
-
-/* NAVBAR-COMPONENTS */
-
-/*NAVBAR*/
-
-.navbar-container{
+   .navbar-container{
   position: fixed;
   top: 0;
   width: 100%;
@@ -501,11 +475,10 @@ color: var(--primary-600);
 display: flex;
 align-items: center;
 gap: var(--space-4);
-}
+ }
 
 
-
-.navbar-right{
+   .navbar-right{
     display:flex;
     align-items:center;
     gap:var(--space-16);
@@ -570,10 +543,9 @@ font-weight: 500;
 font-size: var(--text-xl);
 text-align: center;
 
-}
+ }
 
-/* NAVBAR-BTNS-CONTAINER*/
-.nav-btn-container {
+   .nav-btn-container {
 display: flex;
 flex-direction: column;
 gap: 0.75rem;
@@ -610,24 +582,7 @@ border-top: 1px solid var(--border-color);
   color: var(--primary-400);
 }
 
-
-  /*FORMS-COMPONENTS*/
-
-/*FORMS-TITLE*/
-
-
-
-
-
-   
-
-
-
-
-    
-
-
-/*CAROUSEL-COMPONENTS*/
+   /*CAROUSEL-COMPONENTS*/
 .carousel-track{
   display: flex;
   overflow-x: auto;
@@ -670,6 +625,16 @@ border-top: 1px solid var(--border-color);
   width: 24px;
   border-radius: 4px;
 }
+ 
+    
+  }
+  
+
+
+
+
+
+
 
 
 
