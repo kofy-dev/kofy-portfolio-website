@@ -2,8 +2,6 @@
 /* ==========================================================================
    BASE LAYER (global defaults & variables)
    ========================================================================== */
-
-@layer base {
   :root {
     /* TYPOGRAPHY */
     --text-sm:   clamp(0.8rem,  1vw, 0.9rem);
@@ -131,7 +129,7 @@
     --button-shadow:          0 4px 14px rgba(121, 80, 242, 0.25);
     --button-shadow-hover:    0 8px 24px rgba(121, 80, 242, 0.35);
   }
-}
+
 
 /* ==========================================================================
    DARK MODE – ONLY OVERRIDE WHAT CHANGES
