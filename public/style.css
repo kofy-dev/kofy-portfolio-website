@@ -885,6 +885,7 @@ flex-direction: column;
 margin-top:var(--space-12);
 margin-bottom: var(--space-12);
 font-size:var(--text-3xl);
+   text-align:center;
 }
 
 /*RESUME-PARAGRAPH*/
