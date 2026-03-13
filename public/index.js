@@ -65,44 +65,49 @@ document.addEventListener('DOMContentLoaded', () => {
 
  
   
-  // 1. Find all tracks on the page
+// Find all carousel tracks
 const allTracks = document.querySelectorAll('.carousel-track');
 
 allTracks.forEach((track) => {
-  // 2. Find the indicators div that is placed right after the track in your HTML
-  const indicatorContainer = track.nextElementSibling;
-  
-  // Safety check: make sure the next element is actually the indicators div
+  // Walk forward from the track to find the nearest .carousel-indicators
+  let indicatorContainer = track.nextElementSibling;
+  while (indicatorContainer && !indicatorContainer.classList.contains('carousel-indicators')) {
+    indicatorContainer = indicatorContainer.nextElementSibling;
+  }
+
+  // Safety: if we didn't find it, skip this carousel (and log for debug)
   if (!indicatorContainer || !indicatorContainer.classList.contains('carousel-indicators')) {
-    return; 
+    console.warn('No carousel-indicators found after this track:', track);
+    return;
   }
 
   const slides = Array.from(track.children);
   let autoPlayTimer;
 
-  // 3. Create the dots
-  indicatorContainer.innerHTML = ''; // Clear it first
-  slides.forEach((_, i) => {
-    const dot = document.createElement('div');
-    dot.classList.add('carousel-indicator'); // Matches your CSS
-    if (i === 0) dot.classList.add('active');
-    indicatorContainer.appendChild(dot);
+  // Create dots only if container is empty
+  if (indicatorContainer.children.length === 0) {
+    slides.forEach((_, i) => {
+      const dot = document.createElement('div');
+      dot.classList.add('carousel-indicator');
+      if (i === 0) dot.classList.add('active');
+      indicatorContainer.appendChild(dot);
 
-    // Manual Click
-    dot.addEventListener('click', () => {
-      stopAutoPlay();
-      const slideWidth = slides[0].offsetWidth + 16; // 16 is your --space-16 gap
-      track.scrollTo({
-        left: i * slideWidth,
-        behavior: 'smooth'
+      // Click to jump to slide
+      dot.addEventListener('click', () => {
+        stopAutoPlay();
+        const slideWidth = slides[0].offsetWidth + 16; // card + gap
+        track.scrollTo({
+          left: i * slideWidth,
+          behavior: 'smooth'
+        });
+        startAutoPlay();
       });
-      startAutoPlay();
     });
-  });
+  }
 
   const indicators = indicatorContainer.querySelectorAll('.carousel-indicator');
 
-  // 4. Update dots when user swipes manually (Intersection Observer)
+  // Update active dot on scroll
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
@@ -115,13 +120,13 @@ allTracks.forEach((track) => {
 
   slides.forEach(slide => observer.observe(slide));
 
-  // 5. Auto-Swipe Logic
+  // Auto-swipe
   function startAutoPlay() {
     autoPlayTimer = setInterval(() => {
       const activeDot = indicatorContainer.querySelector('.active');
       const currentIndex = Array.from(indicators).indexOf(activeDot);
       const nextIndex = (currentIndex + 1) % slides.length;
-      
+
       const slideWidth = slides[0].offsetWidth + 16;
       track.scrollTo({
         left: nextIndex * slideWidth,
@@ -134,10 +139,11 @@ allTracks.forEach((track) => {
     clearInterval(autoPlayTimer);
   }
 
-  // 6. Initialize
   startAutoPlay();
-  
-  // Pause when mouse is over the track
+
+  // Pause on hover/touch
   track.addEventListener('mouseenter', stopAutoPlay);
   track.addEventListener('mouseleave', startAutoPlay);
+  track.addEventListener('touchstart', stopAutoPlay);
+  track.addEventListener('touchend', startAutoPlay);
 });
