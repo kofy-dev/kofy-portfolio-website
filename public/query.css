@@ -1,55 +1,5 @@
 @media(min-width:48rem) {
 
-	.carousel-track {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-		justify-items: center;
-		align-items:stretch;
-		gap: var(--space-24);
-		overflow: visible;
-		scroll-snap-type: none;
-		padding: 0;
-	}
-
-	.carousel-track.card {
-		flex: unset;
-		width: 100%;
-		scroll-snap-align: none;
-	}
-
-	.carousel-indicators {
-		display: none;
-	}
-
-	.hero-container{
-		 text-align:left;
-		 align-items:flex-start 
-		;
-	}
-
-	.hero-btn-container{
-		flex-direction:row;
-		 justify-content:flex-start;
-	}
-
-	.about-container{
-		 align-items:flex-start;
-	}
-
-	.resume-btn-container{
-		 width:fit-content;
-	}
-
-	.cta-btn-container{
-		 flex-direction:row;
-		
-		justify-content: center;
-	}
-
-}
-
-
-@media(min-width:62rem) {
 	.hamburger-btn {
 		display: none;
 	}
@@ -89,30 +39,62 @@
 		flex-shrink: 0;
 	}
 
-	/*.hero-section {
-		min-height: 100vh;
-	}*/ 
+	.carousel-track {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		justify-items: center;
+		align-items:stretch;
+		gap: var(--space-24);
+		overflow: visible;
+		scroll-snap-type: none;
+		padding: 0;
+	}
 
-	.hero-heading,.hero-paragraph{
-		 text-align:left;
+	.carousel-track.card {
+		flex: unset;
+		width: 100%;
+		scroll-snap-align: none;
+	}
+
+	.carousel-indicators {
+		display: none;
 	}
 
 	.hero-container,
 	.about-container {
 		flex-direction: row;
+		gap: clamp(3rem, 9vw, 7rem);           /* 48–112 px gap – this is what removes the cramped feel */
+         padding: clamp(3rem, 10vw, 7rem) clamp(2.5rem, 8vw, 6rem); 
+		 text-align:left;
+		 align-items:center;
 	}
 
-	.hero-container{
-  padding-bottom: clamp(4rem, 8vw, 8rem) 0;
+
+
+	.hero-btn-container{
+		 justify-content:flex-start;
 	}
 
-	
+	.about-container{
+		 align-items:flex-start;
+	}
+
+	.resume-btn-container{
+		 width:fit-content;
+	}
+
+	.cta-btn-container{
+		 flex-direction:row;
+		
+		justify-content: center;
+	}
 
 
 	.footer-container {
 		flex-direction: row;
 		justify-content: space-between;
-	}
-
+		}
 
 }
+
+
