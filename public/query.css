@@ -66,6 +66,14 @@
 		flex-shrink: 0;
 		}
 
+		.nav-links-container{
+			background: none;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;  /* Safari support */
+  border-bottom: none;
+  box-shadow: none;
+		}
+		
 	.hero-container,
 	.about-container {
 		flex-direction: row;
