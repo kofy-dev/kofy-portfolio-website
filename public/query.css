@@ -69,11 +69,13 @@
 	.hero-container,
 	.about-container {
 		flex-direction: row;
-		gap: clamp(3rem, 9vw, 7rem);           /* 48–112 px gap – this is what removes the cramped feel */
-         padding: clamp(3rem, 10vw, 7rem) clamp(2.5rem, 8vw, 6rem); 
 		 text-align:left;
 		 align-items:center;
 	}
+
+		.about-img-container{
+			flex-shrink:0;
+		}
 
 		.hero-btn-container,.cta-btn-container{
 			 flex-direction:row;
