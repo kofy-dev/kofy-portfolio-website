@@ -77,6 +77,10 @@
 			flex-shrink:0;
 		}
 
+		.about-paragraph{
+			 max-width:55ch;
+		}
+
 		.hero-btn-container,.cta-btn-container{
 			 flex-direction:row;
 		}
