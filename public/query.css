@@ -75,9 +75,13 @@
 		 align-items:center;
 	}
 
-		.hero-btn-container, .cta-btn-container{
+		.hero-btn-container{
 			 flex-direction:row;
 			justify-content:flex-start;
+		}
+
+		.cta-btn-container{
+			justify-content:center;
 		}
 
 		.resume-btn-container .btn-primary{
