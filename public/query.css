@@ -86,7 +86,7 @@
 		}
 
 		.about-paragraph{
-			 max-width:55ch;
+			 max-width: clamp(50ch, 45vw, 70ch);
 		}
 
 		.hero-btn-container,.cta-btn-container{
