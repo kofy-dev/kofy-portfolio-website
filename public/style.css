@@ -1008,7 +1008,7 @@ font-size:var(--text-5xl);
 /*CTA-MAIN-SECTION*/
 .contact-section{
    padding-top:var(--space-64);
-   min-height:70vh;
+   min-height:80vh;
 }
 
 /*CTA-CONTAINER*/
