@@ -77,7 +77,7 @@
 
 		.hero-btn-container, .cta-btn-container{
 			 flex-direction:row;
-			justify-content:center;
+			justify-content:flex-start;
 		}
 
 		.resume-btn-container .btn-primary{
