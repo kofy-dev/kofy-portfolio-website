@@ -39,8 +39,9 @@
     --space-64: clamp(4.8rem, 6vw,   8rem);
 
     /* CONTAINER WIDTHS */
+    --container-width-md:70rem;
     --container-width-lg:  80rem;
-    --container-width-xl:  120rem;
+    --container-width-xl:  85rem;
 
     /* BORDERS & RADIUS */
     --border-sm:   1px;
@@ -652,7 +653,7 @@ justify-content: center;
   text-align:center;
 gap:var(--space-24);
    width: clamp(90%, 80vw, var(--container-width-xl));
-  max-width: var(--container-width-xl);
+  max-width: var(--container-width-lg);
 margin:0 auto;
 width:90%;
 overflow: visible;
