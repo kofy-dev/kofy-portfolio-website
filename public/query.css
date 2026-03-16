@@ -69,7 +69,7 @@
     gap: clamp(3rem, 8vw, 6rem);
     padding: 0;  /* NO inner padding – outer handles space */
     text-align: left;
-	  max-width:var(--container-width-lg);
+	  max-width:var(--container-width-xl);
   }
 
   .hero-heading,
