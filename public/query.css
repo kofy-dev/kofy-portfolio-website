@@ -22,6 +22,16 @@
 		display: none;
 	}
 
+	.hero-btn-container{
+			 justify-content:flex-start;
+		      flex-direction:row;
+	}
+
+	.cta-btn-container{
+		justify-content:center;
+		flex-direction:row;
+	}
+
 }
 
 	@media (min-width:52.5rem){
@@ -90,15 +100,7 @@
 		max-width:var(--container-width-xl);
 	}
 
-	.hero-btn-container{
-			 justify-content:flex-start;
-		      flex-direction:row;
-	}
-
-	.cta-btn-container{
-		justify-content:center;
-		flex-direction:row;
-	}
+	
 		
 .resume-btn-container .btn-primary{
 			 width:fit-content;
