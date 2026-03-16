@@ -885,6 +885,14 @@ flex-direction: column;
 }
 
 /*RESUME-HEADING*/
+
+.resume-container{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+     align-items:center;
+}
+
 .resume-heading {
 margin-top:var(--space-12);
 margin-bottom: var(--space-12);
