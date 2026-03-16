@@ -1,112 +1,137 @@
-@media(min-width:48rem) {
+/* ==========================================================================
+   768 px (48rem) – Tablet & small laptop
+   – Keep column, but make it spacious & ready for row
+   ========================================================================== */
 
+@media (min-width: 48rem) {
+  .carousel-track {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    justify-items: center;
+    align-items: stretch;
+    gap: var(--space-32);
+    overflow: visible;
+    scroll-snap-type: none;
+    padding: 0;
+  }
 
-	.carousel-track {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-		justify-items: center;
-		align-items:stretch;
-		gap: var(--space-24);
-		overflow: visible;
-		scroll-snap-type: none;
-		padding: 0;
-	}
+  .carousel-track .card {
+    flex: unset;
+    width: 100%;
+    scroll-snap-align: none;
+  }
 
-	.carousel-track.card {
-		flex: unset;
-		width: 100%;
-		scroll-snap-align: none;
-	}
+  .carousel-indicators {
+    display: none;
+  }
 
-	.carousel-indicators {
-		display: none;
-	}
-
-	.hero-btn-container{
-			 justify-content:center;
-		      flex-direction:row;
-	}
-
-	.cta-btn-container{
-		justify-content:center;
-		flex-direction:row;
-	}
-
-}
-
-	@media (min-width:52.5rem){
-		
-        .hamburger-btn{
-			
-			display: none;
-	   }
-
-	.brand-logo {
-		white-space: nowrap;
-	}
-
-	.nav-links-container {
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		box-shadow: none;
-		height: auto;
-		position: static;
-		padding: 0;
-		background-color: transparent;
-	}
-
-	.nav-link-groups {
-		display: flex;
-		flex-direction: row;
-		gap: var(--space-12);
-		margin: 0 auto;
-	}
-
-	.nav-btn-container {
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		align-items: center;
-		border-top: 0;
-		margin: 0;
-		padding: 0;
-		width: fit-content;
-		gap: var(--space-12);
-		flex-shrink: 0;
-		}
-
-		.nav-links-container{
-			background: none;
-  backdrop-filter: none;
-  -webkit-backdrop-filter: none;  /* Safari support */
-  border-bottom: none;
-  box-shadow: none;
-		}
-		
-		.footer-container {
-		flex-direction: row;
-		justify-content: space-between;
-		}
-}
-
-@media (min-width:62.5rem){
-	
+  /* Hero & About – stay column but feel open */
   .hero-container,
-	.about-container {
-		flex-direction: row;
-		 text-align:left;
-		 align-items:center;
-		max-width:var(--container-width-xl);
-	}
+  .about-container {
+    gap: var(--space-48);
+    padding: var(--space-32) var(--space-24);
+    text-align: left;
+    align-items: flex-start;
+  }
 
-	.hero-btn-container{
-		justify-content:flex-start;
-	}
+  .hero-btn-container {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: var(--space-16);
+  }
 
-	
-		
-.resume-btn-container .btn-primary{
-			 width:fit-content;
+  .resume-btn-container {
+    width: fit-content;
+  }
+
+  .cta-btn-container {
+    flex-direction: row;
+    justify-content: center;
+    gap: var(--space-16);
+  }
+
+  .container {
+    padding-left: var(--space-24);
+    padding-right: var(--space-24);
+  }
 }
+
+/* ==========================================================================
+   880 px (55rem) – Switch to row (comfortable, balanced)
+   ========================================================================== */
+
+@media (min-width: 55rem) {
+  .hero-container,
+  .about-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: clamp(3rem, 8vw, 6rem);
+    padding: 0;  /* NO inner padding – outer handles space */
+    text-align: left;
+  }
+
+  .hero-heading,
+  .hero-paragraph {
+    text-align: left;
+  }
+
+  .hero-container {
+    padding-bottom: clamp(4rem, 8vw, 8rem);
+  }
+
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: var(--space-32);
+  }
 }
+
+/* ==========================================================================
+   992 px (62rem) – Larger desktops – refine spacing & nav
+   ========================================================================== */
+
+@media (min-width: 62rem) {
+  .hamburger-btn {
+    display: none;
+  }
+
+  .brand-logo {
+    white-space: nowrap;
+  }
+
+  .nav-links-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: none;
+    height: auto;
+    position: static;
+    padding: 0;
+    background-color: transparent;
+  }
+
+  .nav-link-groups {
+    display: flex;
+    flex-direction: row;
+    gap: var(--space-16);
+    margin: 0 auto;
+  }
+
+  .nav-btn-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-top: 0;
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+    gap: var(--space-16);
+    flex-shrink: 0;
+  }
+
+  .footer-container {
+    padding: var(--space-48) var(--space-32);
+  }
+	  }
