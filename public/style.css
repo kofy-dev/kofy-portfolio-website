@@ -1040,6 +1040,7 @@ font-size:var(--text-5xl);
 .contact-heading{
    text-align:center;
   font-size:clamp(2.8rem, 5vw, 4.2rem);
+   margin-bottom:var(--space-24);
 }
 
 
