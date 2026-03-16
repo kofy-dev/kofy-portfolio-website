@@ -100,6 +100,10 @@
 		max-width:var(--container-width-xl);
 	}
 
+	.hero-btn-container{
+		justify-content:flex-start;
+	}
+
 	
 		
 .resume-btn-container .btn-primary{
