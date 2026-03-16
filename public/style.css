@@ -797,7 +797,7 @@ width: 90%;
 /*ABOUT-IMG-CONTAINER*/
 .about-img-container {
 display: flex;
-justify-content:center;
+/*justify-content:center;*/
 align-items:center;
 width:100%;
 max-width:350px;
