@@ -930,6 +930,7 @@ margin-bottom: var(--space-64);
 
 /*SERVICE-HEADING*/
 .service-heading {
+   margin-top:var(--space-16);
 margin-bottom: var(--space-24);
   font-size:var(--text-2xl);
 }
