@@ -904,6 +904,7 @@ font-size:var(--text-3xl);
 .resume-paragraph{
 margin-bottom:var(--space-12);
 font-size:var(--text-xl);
+   text-align:center;
 }
 
 .resume-btn-container .btn-primary{
