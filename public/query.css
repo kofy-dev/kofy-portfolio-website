@@ -87,6 +87,10 @@
 			max-width:400px;
 		}
 
+		.about-heading,.about-paragraph{
+			  margin-inline:0;
+		}
+
 		/*.about-paragraph{
 			 max-width: clamp(50ch, 45vw, 70ch);
 		}*/
