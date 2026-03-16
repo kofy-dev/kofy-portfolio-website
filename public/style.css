@@ -801,7 +801,7 @@ display: flex;
 /*justify-content:center;*/
 align-items:center;
 width:100%;
-max-width:350px;
+max-width:500px;
 aspect-ratio: 1;
 overflow: hidden;
 border-radius: var(--radius-xl);
