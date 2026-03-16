@@ -894,14 +894,14 @@ flex-direction: column;
 
 .resume-heading {
 margin-top:var(--space-12);
-margin-bottom: var(--space-12);
+margin-bottom: var(--space-24);
 font-size:var(--text-3xl);
    text-align:center;
 }
 
 /*RESUME-PARAGRAPH*/
 .resume-paragraph{
-margin-bottom:var(--space-12);
+margin-bottom:var(--space-16);
 font-size:var(--text-xl);
    max-width:55ch;
    margin-inline: auto;
