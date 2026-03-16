@@ -84,11 +84,12 @@
 
 		.about-img-container{
 			flex-shrink:0;
+			max-width:400px;
 		}
 
-		.about-paragraph{
+		/*.about-paragraph{
 			 max-width: clamp(50ch, 45vw, 70ch);
-		}
+		}*/
 
 		.hero-btn-container,.cta-btn-container{
 			 flex-direction:row;
