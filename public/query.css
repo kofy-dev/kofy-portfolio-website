@@ -91,9 +91,9 @@
 			  margin-inline:0;
 		}
 
-		/*.about-paragraph{
+		.about-paragraph{
 			 max-width: clamp(50ch, 45vw, 70ch);
-		}*/
+		}
 
 		.hero-btn-container,.cta-btn-container{
 			 flex-direction:row;
