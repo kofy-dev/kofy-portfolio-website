@@ -819,7 +819,7 @@ border-radius: var(--radius-xl);
 .about-heading,
 .about-paragraph {
 margin-bottom: var(--space-16);
-   max-width:55ch;
+   max-width:60ch;
    margin-inline: auto;
 }
 
