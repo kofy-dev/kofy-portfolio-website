@@ -920,7 +920,7 @@ font-size:var(--text-xl);
 }
 
 .resume-btn-container .btn-primary{
-    width:100%;
+    display:block;
 }
 
 /* ===== SERVICE SECTION ===== */
