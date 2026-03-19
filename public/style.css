@@ -682,27 +682,21 @@ word-wrap: break-word;
 overflow-wrap: break-word;
   }
 
-
-
-
-/*HERO__DYNAMIC__TEXT*/
-#dynamic-text {
-display: block;
-margin-top: 0.5rem;
-min-height: 1.2em;
-color: var(--primary-500);
-font-weight: 600;
+.typing-text {
+  color: var(--primary-600);
+  font-weight: var(--font-weight-bold);
+  position: relative;
+  display: inline-block;
 }
 
-#dynamic-text::after {
-content: '|';
-animation: cursorBlink 1s infinite;
-margin-left: 2px;
+.typing-text::after {
+  content: "|";
+  color: var(--primary-600);
+  animation: blink 0.8s step-end infinite;
 }
 
-@keyframes cursorBlink {
-0%, 50% { opacity: 1; }
-51%, 100% { opacity: 0; }
+@keyframes blink {
+  50% { opacity: 0; }
 }
 
 /*HERO__BTN__CONTAINER*/
