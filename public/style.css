@@ -857,7 +857,7 @@ font-size: var(--text-xl);
 }
 
 .tech-stack-description{
-    max-width:55ch;
+    max-width:50ch;
     margin-inline: auto;
 }
 
@@ -890,19 +890,13 @@ width: 90%;
 margin:0 auto;
 display:flex;
 flex-direction: column;
-  /*justify-content:center;
-  align-items:center;*/
-
-}
-
-/*RESUME-HEADING*/
-
-.resume-container{
-    display:flex;
-    flex-direction:column;
     justify-content:center;
      align-items:center;
+  justify-content:center;
+  align-items:center;
+
 }
+
 
 .resume-heading {
 margin-top:var(--space-12);
