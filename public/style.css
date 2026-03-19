@@ -840,13 +840,25 @@ font-size: var(--text-xl);
 }
 
 .tech-stack-description,.tech-stack-title{
-    margin-bottom: 0;
     text-align:center;
 }
 
 .tech-stack-description,
 .tech-stack-title{
    margin-bottom:var(--space-16);
+}
+
+.tech-stack-title{
+    font-size:var(--text-2xl);
+}
+
+.tech-stack-description{
+   font-size:var(--text-xl);
+}
+
+.tech-stack-description{
+    max-width:55ch;
+    margin-inline: auto;
 }
 
 .tech-icon{
@@ -979,6 +991,7 @@ text-align: center;
 /*WORK-HEADING*/
 .portfolio-heading{
     margin-bottom:var(--space-24);
+    font-size:var(--text-2xl);
 }
 
 /*CTA__SECTION*/
