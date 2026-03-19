@@ -684,7 +684,8 @@ overflow-wrap: break-word;
 
 .typing-text {
   color: var(--primary-600);
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-medium);
+font-size:var(--text-2xl);
   position: relative;
   display: block;
 }
