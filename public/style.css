@@ -686,7 +686,7 @@ overflow-wrap: break-word;
   color: var(--primary-600);
   font-weight: var(--font-weight-bold);
   position: relative;
-  display: inline-block;
+  display: block;
 }
 
 .typing-text::after {
