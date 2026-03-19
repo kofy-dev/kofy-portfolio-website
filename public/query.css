@@ -40,9 +40,9 @@
     gap: var(--space-16);
   }
 
-  .resume-btn-container {
+ /* .resume-btn-container {
     width: fit-content;
-  }
+  }*/
 
   .cta-btn-container {
     flex-direction: row;
