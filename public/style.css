@@ -914,8 +914,13 @@ font-size:var(--text-xl);
    text-align:center;
 }
 
-.resume-btn-container .btn{
-  display:block;
+.resume-btn-container{
+  display:flex;
+  flex-direction:column;
+}
+
+.resume-btn-container .btn-primary{
+    width:100%;
 }
 
 /* ===== SERVICE SECTION ===== */
