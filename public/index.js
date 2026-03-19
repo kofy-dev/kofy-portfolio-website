@@ -147,3 +147,47 @@ allTracks.forEach((track) => {
   track.addEventListener('touchstart', stopAutoPlay);
   track.addEventListener('touchend', startAutoPlay);
 });
+
+
+
+      const phrases = [
+  "Frontend Dev",
+  "Tech Consultant",
+  "Web Developer"
+];
+
+const typingElement = document.getElementById("typing-text");
+let phraseIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+
+function type() {
+  const currentPhrase = phrases[phraseIndex];
+  const speed = isDeleting ? 50 : 100; // faster delete, slower type
+
+  if (!isDeleting && charIndex <= currentPhrase.length) {
+    // Typing
+    typingElement.textContent = currentPhrase.substring(0, charIndex);
+    charIndex++;
+    setTimeout(type, speed);
+  } else if (isDeleting && charIndex > 0) {
+    // Deleting
+    typingElement.textContent = currentPhrase.substring(0, charIndex);
+    charIndex--;
+    setTimeout(type, speed);
+  } else {
+    // Finished typing or deleting — switch state
+    isDeleting = !isDeleting;
+
+    if (!isDeleting) {
+      // Move to next phrase
+      phraseIndex = (phraseIndex + 1) % phrases.length;
+    }
+
+    // Small pause before next action
+    setTimeout(type, 1500); // 1.5s pause after typing full phrase
+  }
+}
+
+// Start the animation
+type();
