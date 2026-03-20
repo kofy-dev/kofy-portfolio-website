@@ -412,6 +412,10 @@ a {
   border-color: var(--primary-400);                /* subtle purple hint */
 }
 
+.card-content{
+    padding:var(--space-8);
+}
+
 
 .card-heading{
 margin-bottom:var(--space-12);
