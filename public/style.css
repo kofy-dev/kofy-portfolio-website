@@ -235,6 +235,7 @@ a {
    BUTTONS
    ========================================================================== */
 
+
 .btn,
 .text-input,
 .form-input {
@@ -619,7 +620,10 @@ border-top: 1px solid var(--border-color);
     
   
   
-
+/*HIGHLIGHTS*/
+.highlight-primary{
+    color:var(--primary-600);
+}
 
 
 
