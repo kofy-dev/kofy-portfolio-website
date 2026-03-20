@@ -994,14 +994,13 @@ text-align: center;
    . screenshot-wrapper{
       position: relative;
   width: 100%;
-  aspect-ratio: 16 / 9; /* keeps proportions */
   overflow: hidden;
    }
 
    .project-screenshot{
           width:100%;
            height:100%;
-          object-fit:cover;
+          object-fit: contain;
       display:block;
    }
 
