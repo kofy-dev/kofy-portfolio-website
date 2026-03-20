@@ -973,6 +973,10 @@ margin-bottom: var(--space-64);
    max-width:var(--container-width-xl);
 }
 
+   .portfolio-container .card{
+      padding:0;
+   }
+
 
 .portfolio-heading,
 .portfolio-paragraph,
