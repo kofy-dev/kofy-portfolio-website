@@ -413,9 +413,8 @@ a {
 }
 
 .card-content{
-    padding:var(--space-8);
+   margin-top:var(--space-8);
 }
-
 
 .card-heading{
 margin-bottom:var(--space-12);
@@ -980,6 +979,9 @@ margin-bottom: var(--space-64);
    .portfolio-container .card{
       padding:0;
    }
+
+. portfolio-container .card-content{
+       
 
 
 .portfolio-heading,
