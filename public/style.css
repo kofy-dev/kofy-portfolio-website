@@ -939,8 +939,6 @@ margin-bottom: var(--space-64);
 
 .service-container .card{
       padding:0;
-      max-height:350px;
-      overflow:hidden;
 }
 
 .service-container .card-content{
