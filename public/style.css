@@ -937,6 +937,24 @@ margin-bottom: var(--space-64);
    max-width:var(--container-width-xl);
 }
 
+.service-container .card{
+      padding:0;
+}
+
+.service-container .card-content{
+    padding:var(--space-16);
+}
+.service-img-wrapper{
+     overflow: hidden;
+      width:100%;
+}
+
+.service-img{
+   width:100%;
+   height:100%;
+   object-fit:cover;
+}
+
 
 /*SERVICE-HEADING*/
 .service-heading {
