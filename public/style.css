@@ -860,7 +860,7 @@ font-size: var(--text-xl);
 }
 
 .tech-stack-description{
-    max-width:45ch;
+    max-width:40ch;
     margin-inline: auto;
 }
 
