@@ -942,8 +942,8 @@ margin-bottom: var(--space-64);
 }
 
 .service-container .card-content{
-    padding-left:var(--space-8);
-    padding-right:var(--space-8);
+    padding:var(--space-8);
+   
 }
 .service-img-wrapper{
      overflow: hidden;
@@ -1000,7 +1000,7 @@ margin-bottom: var(--space-64);
    }
 
 .portfolio-container .card-content{
-    padding:var(--space-16);
+    padding:var(--space-8);
 }
 
        
