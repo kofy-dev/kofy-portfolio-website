@@ -117,8 +117,12 @@
 
 	  .resume-btn-container .btn-primary{
 		  width:fit-content;
-		  align-items: center;
+		  align-items:center;
 	  }
+
+	.resume-btn-container .btn-primary{
+		align-items:center;
+	}
 
   .hero-heading,
   .hero-paragraph {
