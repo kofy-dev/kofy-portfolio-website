@@ -111,6 +111,10 @@
 	  max-width:var(--container-width-xl);
   }
 
+	  .resume-btn-container .btn-primary{
+		  width:fit-content;
+	  }
+
   .hero-heading,
   .hero-paragraph {
     text-align: left;
