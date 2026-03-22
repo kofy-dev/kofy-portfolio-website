@@ -117,7 +117,7 @@
 
 	  .resume-btn-container .btn-primary{
 		  width:fit-content;
-		  justify-content: center;
+		  align-items: center;
 	  }
 
   .hero-heading,
