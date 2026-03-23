@@ -95,6 +95,9 @@
     --footer-bg:var(--neutral-50);
 
      --about-bg:var(--primary-50);
+     --service-bg:var(--primary-50);
+     --resume-bg:var(--primary-50);
+     --contact-bg:var(--primary-50);
 
     --input-bg:         var(--white);
     --input-text:       var(--neutral-900);
@@ -656,6 +659,7 @@ border-top: 1px solid var(--border-color);
   margin-bottom: var(--space-48);
   padding-top: clamp(5rem, 12vw, 8rem);
   padding-bottom: clamp(4rem, 10vw, 6rem);
+  background-color:var(--hero-bg);
 }
 
 /* FLOATING BLOBS BACKGROUND */
@@ -907,6 +911,9 @@ font-size: var(--text-xl);
 
 
 /*TECH-SECTION*/
+.tech-section{
+    background-color:var(--tech-bg);
+}
 
 .tech-container{
     margin: 0 auto;
@@ -957,6 +964,7 @@ font-size: var(--text-xl);
 /*RESUME-MAIN-SECTION*/
 .resume-section{
 margin-bottom:var(--space-64);
+   background-color:var(--resume-bg);
 }
 /*RESUME-CONTAINER*/
 .resume-container{
@@ -1000,6 +1008,7 @@ font-size:var(--text-xl);
 /*SERVICE-MAIN-SECTION*/
 .service-section{
 margin-bottom: var(--space-64);
+   background-color:var(--service-bg);
 }
 
 .service-container{
@@ -1110,6 +1119,7 @@ text-align: center;
 /*CTA-MAIN-SECTION*/
 .cta-section{
 margin-bottom: var(--space-32);
+   
 }
 /*CTA-CONTAINER*/
 .cta-container{
@@ -1148,6 +1158,7 @@ font-size:var(--text-5xl);
 .contact-section{
    padding-top:var(--space-64);
    min-height:100vh;
+   background-color:var(--contact-bg);
 }
 
 /*CTA-CONTAINER*/
@@ -1175,6 +1186,7 @@ font-size:var(--text-5xl);
  margin-bottom: var(--space-48);
  border-top:1px solid  var(--border-color);
  padding-top:30px;
+   background-color:var(--footer-bg)
 }
 
 
