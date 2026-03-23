@@ -154,7 +154,20 @@
   --text-secondary:    var(--neutral-100);
   --text-primary:      var(--neutral-200);
   --text-placeholder:  var(--neutral-500);
+  --hero-bg: var(--neutral-950);
+  --tech-bg:var(--neutral-950);
+  --portfolio-bg:var(--neutral-950);
+  --footer-bg:var(--neutral-950);
 
+   --about-bg:rgba(121,80,242,0.05);
+   
+   --resume-bg:rgba(121,80,242,0.05);
+   
+   --service-bg:rgba(121,80,242,0.05);
+   
+     
+   --contact-bg:rgba(121,80,242,0.05);
+   
   /* Forms & Inputs */
   --input-bg:          var(--neutral-800);
   --input-text:        var(--neutral-100);
@@ -1066,6 +1079,7 @@ text-align: center;
 /*WORK-MAIN-SECTION*/
 .work-section{
 margin-bottom: var(--space-64);
+   background-color:var(--portfolio-bg);
 }
 
 
