@@ -89,6 +89,12 @@
     --text-secondary:   var(--neutral-800);
     --text-primary:     var(--neutral-700);
     --text-placeholder: var(--neutral-400);
+    --hero-bg:var(--neutral-50);
+    --portfolio-bg:var(--neutral-50);
+    --tech-bg:var(--neutral-50);
+    --footer-bg:var(--neutral-50);
+
+     --about-bg:var(--primary-50);
 
     --input-bg:         var(--white);
     --input-text:       var(--neutral-900);
@@ -843,6 +849,7 @@ border-top: 1px solid var(--border-color);
 /*ABOUT-MAIN-SECTION*/
 .about-section{
 margin-bottom: var(--space-48);
+   background-color:var(--about-bg);
 }
 
 /*ABOUT__CONTAINER*/
