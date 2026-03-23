@@ -92,6 +92,7 @@
     --hero-bg:var(--neutral-50);
     --portfolio-bg:var(--neutral-50);
     --tech-bg:var(--neutral-50);
+    --cta-bg:var(--neutral-50);
     --footer-bg:var(--neutral-50);
 
      --about-bg:var(--primary-50);
@@ -158,6 +159,7 @@
   --tech-bg:var(--neutral-950);
   --portfolio-bg:var(--neutral-950);
   --footer-bg:var(--neutral-950);
+   --cta-bg:var(--neutral-950);
 
    --about-bg:rgba(121,80,242,0.05);
    
