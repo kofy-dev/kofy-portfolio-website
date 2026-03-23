@@ -642,58 +642,128 @@ border-top: 1px solid var(--border-color);
   
   
 
-/*HERO__STYLES*/
 
-/*HERO-SECTION*/
-.hero-section{
-  margin-bottom:var(--space-48);
+//* HERO SECTION */
+.hero-section {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: var(--space-48);
   padding-top: clamp(5rem, 12vw, 8rem);
   padding-bottom: clamp(4rem, 10vw, 6rem);
 }
 
-/*HERO-CONTAINER*/
-.hero-container{
-display: flex;
-  flex-direction:column;
-align-items:center;
-justify-content: center;
-  text-align:center;
-gap:var(--space-24);
-   width: clamp(90%, 80vw, var(--container-width-xl));
+/* FLOATING BLOBS BACKGROUND */
+.hero-section::before,
+.hero-section::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  z-index: 0;
+  pointer-events: none;
+  animation: blobFloat 8s ease-in-out infinite;
+}
+
+/* Top-left blob */
+.hero-section::before {
+  width: clamp(250px, 40vw, 500px);
+  height: clamp(250px, 40vw, 500px);
+  background: radial-gradient(circle, rgba(121, 80, 242, 0.15), transparent 70%);
+  top: -100px;
+  left: -100px;
+  animation-delay: 0s;
+}
+
+/* Bottom-right blob */
+.hero-section::after {
+  width: clamp(200px, 35vw, 450px);
+  height: clamp(200px, 35vw, 450px);
+  background: radial-gradient(circle, rgba(103, 65, 217, 0.12), transparent 70%);
+  bottom: -80px;
+  right: -80px;
+  animation-delay: 3s;
+}
+
+/* Dark mode blobs */
+[data-theme="dark"] .hero-section::before {
+  background: radial-gradient(circle, rgba(121, 80, 242, 0.28), transparent 70%);
+}
+
+[data-theme="dark"] .hero-section::after {
+  background: radial-gradient(circle, rgba(103, 65, 217, 0.22), transparent 70%);
+}
+
+@keyframes blobFloat {
+  0%, 100% { transform: translate(0px, 0px) scale(1); }
+  33%       { transform: translate(20px, -20px) scale(1.05); }
+  66%       { transform: translate(-15px, 15px) scale(0.97); }
+}
+
+/* HERO CONTAINER */
+.hero-container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: var(--space-24);
   max-width: var(--container-width-lg);
-margin:0 auto;
-width:90%;
-overflow: visible;
-
+  margin: 0 auto;
+  width: 90%;
 }
 
-
-
-
-
-
-/*HERO-HEADING*/
-.hero-heading{
-  font-size:clamp(2.8rem, 5vw, 4.2rem);
-   margin-bottom: var(--space-32);
+/* HERO BADGE */
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-8);
+  background-color: rgba(121, 80, 242, 0.08);
+  border: 1px solid rgba(121, 80, 242, 0.25);
+  color: var(--primary-600);
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-medium);
+  padding: var(--space-4) var(--space-12);
+  border-radius: 100px;
+  margin-bottom: var(--space-16);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 }
 
-
-/*HERO-PARAGRAPH*/
-.hero-paragraph{
-font-size:clamp(1.4rem ,2vw, 2rem);
-margin-bottom: var(--space-32);
+.badge-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #22c55e;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
 }
-  .hero-heading {
-word-wrap: break-word;
-overflow-wrap: break-word;
-  }
 
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.5; transform: scale(0.8); }
+}
+
+/* HERO HEADING */
+.hero-heading {
+  font-size: clamp(2.8rem, 5vw, 4.2rem);
+  margin-bottom: var(--space-32);
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* HERO PARAGRAPH */
+.hero-paragraph {
+  font-size: clamp(1.4rem, 2vw, 2rem);
+  margin-bottom: var(--space-32);
+}
+
+/* TYPING TEXT */
 .typing-text {
   color: var(--primary-600);
   font-weight: var(--font-weight-medium);
-   font-family: var(--font-merriweather);
-  font-size:clamp(2.8rem, 5vw, 4.2rem);
+  font-family: var(--font-merriweather);
+  font-size: clamp(2.8rem, 5vw, 4.2rem);
   position: relative;
   display: block;
 }
@@ -708,36 +778,35 @@ overflow-wrap: break-word;
   50% { opacity: 0; }
 }
 
-/*HERO__BTN__CONTAINER*/
-.hero-btn-container{
-display:flex;
-  justify-content:center;
-flex-direction:column;
-gap:var(--space-24);
+/* HERO BUTTONS */
+.hero-btn-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: var(--space-24);
 }
 
-/*HERO__IMG__CONTAINER*/
-.hero-img-container{
-width:100%;
-   max-width:500px;
-display:flex;
-justify-content:center;
-align-items: flex-start;
-aspect-ratio: 1;
-overflow:hidden;
-border-radius:50%;
+/* HERO IMAGE CONTAINER */
+.hero-img-container {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  aspect-ratio: 1;
+  overflow: hidden;
+  border-radius: 50%;
 }
 
-/*HERO__IMG*/
-.hero-image{
-width:100%;
-object-fit: cover;
-display:block;
-height:100%;
-border: 4px solid var(--primary-500);
+/* HERO IMAGE */
+.hero-image {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  height: 100%;
+  border: 4px solid var(--primary-500);
   box-shadow: var(--shadow-lg);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-
 }
 
 .hero-image:hover {
@@ -745,30 +814,26 @@ border: 4px solid var(--primary-500);
   box-shadow: var(--shadow-xl);
 }
 
-/* HERO__WAVING__HAND */
+/* WAVING HAND */
 .wave {
   display: inline-block;
   animation: wave 2.5s infinite;
-  transform-origin: 70% 70%;  /* Makes it wave from the wrist */
-  font-size: inherit;          /* Matches your heading size */
+  transform-origin: 70% 70%;
+  font-size: inherit;
 }
 
 @keyframes wave {
-  0% { transform: rotate(0deg); }
-  10% { transform: rotate(14deg); }
-  20% { transform: rotate(-8deg); }
-  30% { transform: rotate(14deg); }
-  40% { transform: rotate(-4deg); }
-  50% { transform: rotate(10deg); }
-  60% { transform: rotate(0deg); }
+  0%   { transform: rotate(0deg); }
+  10%  { transform: rotate(14deg); }
+  20%  { transform: rotate(-8deg); }
+  30%  { transform: rotate(14deg); }
+  40%  { transform: rotate(-4deg); }
+  50%  { transform: rotate(10deg); }
+  60%  { transform: rotate(0deg); }
   100% { transform: rotate(0deg); }
 }
 
-
-.wave:hover {
-  animation: none;
-}
-
+.wave:hover { animation: none; }
 
 
 
