@@ -869,7 +869,7 @@ border-top: 1px solid var(--border-color);
 .about-section{
 margin-bottom: var(--space-48);
    background-color:var(--about-bg);
-   padding:var(--space-32);
+   padding:var(--space-24);
 }
 
 /*ABOUT__CONTAINER*/
