@@ -1126,7 +1126,7 @@ flex-direction:column;
 }
 /*CTA-PARAGRAPH*/
 .cta-paragraph{
-font-size:var(--text-3xl);
+font-size:var(--text-2xl);
 text-align:center;
 }
 /*CTA-HEADING*/
