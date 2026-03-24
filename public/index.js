@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
       navLinksContainer.classList.toggle('active');
 
       if (menuIcon) {
-        // Swaps the FontAwesome icons
         if (menuIcon.classList.contains('fa-bars')) {
           menuIcon.classList.replace('fa-bars', 'fa-xmark');
         } else {
@@ -21,12 +20,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  /* --- 2. DARK MODE TOGGLE (data-theme="dark") --- */
+  /* --- 2. DARK MODE TOGGLE --- */
   const themeToggleBtn = document.getElementById('darkModeToggle');
-  const rootElement = document.documentElement; // This is the <html> tag
+  const rootElement = document.documentElement;
 
   if (themeToggleBtn) {
-    // A. Page Load: Check localStorage or existing HTML attribute
     const savedTheme = localStorage.getItem('theme');
     const isCurrentlyDark = rootElement.getAttribute('data-theme') === 'dark';
 
@@ -38,44 +36,65 @@ document.addEventListener('DOMContentLoaded', () => {
       themeToggleBtn.textContent = '🌙';
     }
 
-    // B. Toggle Event: What happens when you click
     themeToggleBtn.addEventListener('click', () => {
-      // Always check the attribute directly from the HTML tag
       const currentTheme = rootElement.getAttribute('data-theme');
 
       if (currentTheme === 'dark') {
-        // Switch to Light Mode
         rootElement.removeAttribute('data-theme');
         localStorage.setItem('theme', 'light');
         themeToggleBtn.textContent = '🌙';
       } else {
-        // Switch to Dark Mode
         rootElement.setAttribute('data-theme', 'dark');
         localStorage.setItem('theme', 'dark');
         themeToggleBtn.textContent = '☀️';
       }
     });
   }
+
+  /* --- 3. EMAILJS --- */
+  emailjs.init("zq2MRKabh5XCRysUG");
+
+  const contactForm = document.getElementById("contact-form");
+
+  if (contactForm) {
+    contactForm.addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      const btn = document.getElementById("submit-btn");
+      const successMsg = document.getElementById("success-msg");
+      const errorMsg = document.getElementById("error-msg");
+
+      btn.textContent = "Sending...";
+      btn.disabled = true;
+
+      emailjs.sendForm("service_4tigw68", "template_spb0c0f", this)
+        .then(() => {
+          successMsg.style.display = "block";
+          errorMsg.style.display = "none";
+          btn.textContent = "Send Message 📩";
+          btn.disabled = false;
+          this.reset();
+        })
+        .catch(() => {
+          errorMsg.style.display = "block";
+          successMsg.style.display = "none";
+          btn.textContent = "Send Message 📩";
+          btn.disabled = false;
+        });
+    });
+  }
+
 });
 
-
-
-                          
-
-
- 
-  
-// Find all carousel tracks
+/* --- 4. CAROUSEL --- */
 const allTracks = document.querySelectorAll('.carousel-track');
 
 allTracks.forEach((track) => {
-  // Walk forward from the track to find the nearest .carousel-indicators
   let indicatorContainer = track.nextElementSibling;
   while (indicatorContainer && !indicatorContainer.classList.contains('carousel-indicators')) {
     indicatorContainer = indicatorContainer.nextElementSibling;
   }
 
-  // Safety: if we didn't find it, skip this carousel (and log for debug)
   if (!indicatorContainer || !indicatorContainer.classList.contains('carousel-indicators')) {
     console.warn('No carousel-indicators found after this track:', track);
     return;
@@ -84,7 +103,6 @@ allTracks.forEach((track) => {
   const slides = Array.from(track.children);
   let autoPlayTimer;
 
-  // Create dots only if container is empty
   if (indicatorContainer.children.length === 0) {
     slides.forEach((_, i) => {
       const dot = document.createElement('div');
@@ -92,10 +110,9 @@ allTracks.forEach((track) => {
       if (i === 0) dot.classList.add('active');
       indicatorContainer.appendChild(dot);
 
-      // Click to jump to slide
       dot.addEventListener('click', () => {
         stopAutoPlay();
-        const slideWidth = slides[0].offsetWidth + 16; // card + gap
+        const slideWidth = slides[0].offsetWidth + 16;
         track.scrollTo({
           left: i * slideWidth,
           behavior: 'smooth'
@@ -107,7 +124,6 @@ allTracks.forEach((track) => {
 
   const indicators = indicatorContainer.querySelectorAll('.carousel-indicator');
 
-  // Update active dot on scroll
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
@@ -120,7 +136,6 @@ allTracks.forEach((track) => {
 
   slides.forEach(slide => observer.observe(slide));
 
-  // Auto-swipe
   function startAutoPlay() {
     autoPlayTimer = setInterval(() => {
       const activeDot = indicatorContainer.querySelector('.active');
@@ -141,16 +156,14 @@ allTracks.forEach((track) => {
 
   startAutoPlay();
 
-  // Pause on hover/touch
   track.addEventListener('mouseenter', stopAutoPlay);
   track.addEventListener('mouseleave', startAutoPlay);
   track.addEventListener('touchstart', stopAutoPlay);
   track.addEventListener('touchend', startAutoPlay);
 });
 
-
-
-      const phrases = [
+/* --- 5. TYPING ANIMATION --- */
+const phrases = [
   "Frontend Dev",
   "Tech Consultant",
   "Web Developer"
@@ -162,131 +175,83 @@ let charIndex = 0;
 let isDeleting = false;
 
 function type() {
+  if (!typingElement) return;
   const currentPhrase = phrases[phraseIndex];
-  const speed = isDeleting ? 50 : 100; // faster delete, slower type
+  const speed = isDeleting ? 50 : 100;
 
   if (!isDeleting && charIndex <= currentPhrase.length) {
-    // Typing
     typingElement.textContent = currentPhrase.substring(0, charIndex);
     charIndex++;
     setTimeout(type, speed);
   } else if (isDeleting && charIndex > 0) {
-    // Deleting
     typingElement.textContent = currentPhrase.substring(0, charIndex);
     charIndex--;
     setTimeout(type, speed);
   } else {
-    // Finished typing or deleting — switch state
     isDeleting = !isDeleting;
-
     if (!isDeleting) {
-      // Move to next phrase
       phraseIndex = (phraseIndex + 1) % phrases.length;
     }
-
-    // Small pause before next action
-    setTimeout(type, 1500); // 1.5s pause after typing full phrase
+    setTimeout(type, 1500);
   }
 }
 
-// Start the animation
 type();
 
-
-
-// HERO PARTICLES
+/* --- 6. HERO PARTICLES --- */
 const canvas = document.getElementById('hero-canvas');
-const ctx = canvas.getContext('2d');
 
-function resize() {
-  canvas.width = canvas.offsetWidth;
-  canvas.height = canvas.offsetHeight;
-}
-resize();
-window.addEventListener('resize', resize);
+if (canvas) {
+  const ctx = canvas.getContext('2d');
 
-const particles = Array.from({ length: 60 }, () => ({
-  x: Math.random() * canvas.width,
-  y: Math.random() * canvas.height,
-  vx: (Math.random() - 0.5) * 0.5,
-  vy: (Math.random() - 0.5) * 0.5,
-  r: Math.random() * 2 + 1,
-}));
+  function resize() {
+    canvas.width = canvas.offsetWidth;
+    canvas.height = canvas.offsetHeight;
+  }
+  resize();
+  window.addEventListener('resize', resize);
 
-function draw() {
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  const particles = Array.from({ length: 60 }, () => ({
+    x: Math.random() * canvas.width,
+    y: Math.random() * canvas.height,
+    vx: (Math.random() - 0.5) * 0.5,
+    vy: (Math.random() - 0.5) * 0.5,
+    r: Math.random() * 2 + 1,
+  }));
 
-  // Draw connections
-  for (let i = 0; i < particles.length; i++) {
-    for (let j = i + 1; j < particles.length; j++) {
-      const dx = particles[i].x - particles[j].x;
-      const dy = particles[i].y - particles[j].y;
-      const dist = Math.sqrt(dx * dx + dy * dy);
-      if (dist < 120) {
-        ctx.beginPath();
-        ctx.strokeStyle = `rgba(121, 80, 242, ${(1 - dist / 120) * 0.3})`;
-        ctx.lineWidth = 0.5;
-        ctx.moveTo(particles[i].x, particles[i].y);
-        ctx.lineTo(particles[j].x, particles[j].y);
-        ctx.stroke();
+  function draw() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    for (let i = 0; i < particles.length; i++) {
+      for (let j = i + 1; j < particles.length; j++) {
+        const dx = particles[i].x - particles[j].x;
+        const dy = particles[i].y - particles[j].y;
+        const dist = Math.sqrt(dx * dx + dy * dy);
+        if (dist < 120) {
+          ctx.beginPath();
+          ctx.strokeStyle = `rgba(121, 80, 242, ${(1 - dist / 120) * 0.3})`;
+          ctx.lineWidth = 0.5;
+          ctx.moveTo(particles[i].x, particles[i].y);
+          ctx.lineTo(particles[j].x, particles[j].y);
+          ctx.stroke();
+        }
       }
     }
+
+    particles.forEach(p => {
+      p.x += p.vx;
+      p.y += p.vy;
+      if (p.x < 0 || p.x > canvas.width) p.vx *= -1;
+      if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
+
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+      ctx.fillStyle = 'rgba(121, 80, 242, 0.5)';
+      ctx.fill();
+    });
+
+    requestAnimationFrame(draw);
   }
 
-  // Draw dots
-  particles.forEach(p => {
-    p.x += p.vx;
-    p.y += p.vy;
-
-    // Bounce off edges
-    if (p.x < 0 || p.x > canvas.width)  p.vx *= -1;
-    if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
-
-    ctx.beginPath();
-    ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-    ctx.fillStyle = 'rgba(121, 80, 242, 0.5)';
-    ctx.fill();
-  });
-
-  requestAnimationFrame(draw);
-}
-
-draw();
-
-
-
-
-
-
-  // EmailJS - only runs if contact form exists on the page
-emailjs.init("zq2MRKabh5XCRysUG");
-
-const contactForm = document.getElementById("contact-form");
-
-if (contactForm) {
-  contactForm.addEventListener("submit", function(e) {
-    e.preventDefault();
-
-    const btn = document.getElementById("submit-btn");
-    const successMsg = document.getElementById("success-msg");
-    const errorMsg = document.getElementById("error-msg");
-
-    btn.textContent = "Sending...";
-    btn.disabled = true;
-
-    emailjs.sendForm("service_4tigw68", "template_spb0c0f", this)
-      .then(() => {
-        successMsg.style.display = "block";
-        errorMsg.style.display = "none";
-        btn.textContent = "Send Message 📩";
-        btn.disabled = false;
-        this.reset();
-      })
-      .catch(() => {
-        errorMsg.style.display = "block";
-        successMsg.style.display = "none";
-        btn.textContent = "Send Message 📩";
-        btn.disabled = false;
-      });
-  });
-        }
+  draw();
+                               }
