@@ -256,34 +256,37 @@ draw();
 
 
 
-// EmailJS
+
+
+  // EmailJS - only runs if contact form exists on the page
 emailjs.init("zq2MRKabh5XCRysUG");
 
-document.getElementById("contact-form").addEventListener("submit", function(e) {
-  e.preventDefault();
+const contactForm = document.getElementById("contact-form");
 
-  const btn = document.getElementById("submit-btn");
-  const successMsg = document.getElementById("success-msg");
-  const errorMsg = document.getElementById("error-msg");
+if (contactForm) {
+  contactForm.addEventListener("submit", function(e) {
+    e.preventDefault();
 
-  // Change button text while sending
-  btn.textContent = "Sending...";
-  btn.disabled = true;
+    const btn = document.getElementById("submit-btn");
+    const successMsg = document.getElementById("success-msg");
+    const errorMsg = document.getElementById("error-msg");
 
-  emailjs.sendForm("service_4tigw68", "template_spb0c0f", this)
-    .then(() => {
-      // Success
-      successMsg.style.display = "block";
-      errorMsg.style.display = "none";
-      btn.textContent = "Send Message 📩";
-      btn.disabled = false;
-      this.reset();
-    })
-    .catch(() => {
-      // Error
-      errorMsg.style.display = "block";
-      successMsg.style.display = "none";
-      btn.textContent = "Send Message 📩";
-      btn.disabled = false;
-    });
-});
+    btn.textContent = "Sending...";
+    btn.disabled = true;
+
+    emailjs.sendForm("service_4tigw68", "template_spb0c0f", this)
+      .then(() => {
+        successMsg.style.display = "block";
+        errorMsg.style.display = "none";
+        btn.textContent = "Send Message 📩";
+        btn.disabled = false;
+        this.reset();
+      })
+      .catch(() => {
+        errorMsg.style.display = "block";
+        successMsg.style.display = "none";
+        btn.textContent = "Send Message 📩";
+        btn.disabled = false;
+      });
+  });
+        }
