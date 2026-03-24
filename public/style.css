@@ -1165,6 +1165,7 @@ font-size:var(--text-5xl);
      max-width:45ch;
      font-size:var(--text-2xl);
    margin-bottom:var(--space-16);
+   text-align: center;
 }
 
 /* TOAST POPUP */
