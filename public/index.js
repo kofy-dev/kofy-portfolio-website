@@ -68,7 +68,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
       emailjs.sendForm("service_4tigw68", "template_spb0c0f", this)
         .then(() => {
-          // Success toast
           btn.textContent = "Send Message 📩";
           btn.disabled = false;
           this.reset();
@@ -82,7 +81,6 @@ document.addEventListener('DOMContentLoaded', () => {
           }, 4000);
         })
         .catch(() => {
-          // Error toast
           btn.textContent = "Send Message 📩";
           btn.disabled = false;
 
@@ -92,7 +90,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
           setTimeout(() => {
             toast.classList.remove("show");
-            // Reset toast back to green for next time
             toast.style.background = "#22c55e";
             toast.textContent = "✅ Message sent! I'll get back to you soon.";
           }, 4000);
@@ -270,8 +267,9 @@ if (canvas) {
   }
 
   draw();
+}
 
-  /* --- 7. SCROLL ANIMATIONS --- */
+/* --- 7. SCROLL ANIMATIONS --- */
 const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
 
 const revealObserver = new IntersectionObserver((entries) => {
@@ -286,5 +284,3 @@ const revealObserver = new IntersectionObserver((entries) => {
 });
 
 revealElements.forEach(el => revealObserver.observe(el));
-  
-    }
