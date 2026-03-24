@@ -61,25 +61,41 @@ document.addEventListener('DOMContentLoaded', () => {
       e.preventDefault();
 
       const btn = document.getElementById("submit-btn");
-      const successMsg = document.getElementById("success-msg");
-      const errorMsg = document.getElementById("error-msg");
+      const toast = document.getElementById("toast");
 
       btn.textContent = "Sending...";
       btn.disabled = true;
 
       emailjs.sendForm("service_4tigw68", "template_spb0c0f", this)
         .then(() => {
-          successMsg.style.display = "block";
-          errorMsg.style.display = "none";
+          // Success toast
           btn.textContent = "Send Message 📩";
           btn.disabled = false;
           this.reset();
+
+          toast.style.background = "#22c55e";
+          toast.textContent = "✅ Message sent! I'll get back to you soon.";
+          toast.classList.add("show");
+
+          setTimeout(() => {
+            toast.classList.remove("show");
+          }, 4000);
         })
         .catch(() => {
-          errorMsg.style.display = "block";
-          successMsg.style.display = "none";
+          // Error toast
           btn.textContent = "Send Message 📩";
           btn.disabled = false;
+
+          toast.style.background = "#ef4444";
+          toast.textContent = "❌ Something went wrong. Please try again.";
+          toast.classList.add("show");
+
+          setTimeout(() => {
+            toast.classList.remove("show");
+            // Reset toast back to green for next time
+            toast.style.background = "#22c55e";
+            toast.textContent = "✅ Message sent! I'll get back to you soon.";
+          }, 4000);
         });
     });
   }
@@ -254,4 +270,4 @@ if (canvas) {
   }
 
   draw();
-                               }
+    }
