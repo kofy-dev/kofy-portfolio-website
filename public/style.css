@@ -1161,6 +1161,11 @@ font-size:var(--text-5xl);
    margin-bottom:var(--space-24);
 }
 
+.contact-description{
+     max-width:45ch;
+     font-sizs:var(--text-2xl);
+}
+
 /* TOAST POPUP */
 .toast {
   position: fixed;
