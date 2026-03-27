@@ -169,9 +169,7 @@
      
    --contact-bg:rgba(121,80,242,0.05);
    
-  /* Forms & Inputs */
-  --input-bg:          var(--neutral-800);
-  --input-text:        var(--neutral-100);
+  
 
   /* Buttons */
   --btn-primary-outline-bg: transparent;
@@ -308,7 +306,7 @@ a {
 
  .text-input,
 .form-input{
-   background-color:var(--input-bg);
+   background-color:var(--surface-color);
    border: 1px solid var(--border-color);
    text-align:left;
 }
@@ -1198,9 +1196,9 @@ font-size:var(--text-5xl);
 /* ===== FOOTER ===== */
 /*FOOTER-MAIN-SECTION*/
 .footer-section{
- margin-bottom: var(--space-48);
+ /*margin-bottom: var(--space-48);*/
  border-top:1px solid  var(--border-color);
- padding-top:30px;
+ padding:30px;
    background-color:var(--footer-bg)
 }
 
