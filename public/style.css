@@ -88,7 +88,7 @@
 
     --text-secondary:   var(--neutral-800);
     --text-primary:     var(--neutral-700);
-    --text-placeholder: var(--neutral-400);
+    --text-placeholder: var(--neutral-700);
     --hero-bg:var(--neutral-50);
     --portfolio-bg:var(--neutral-50);
     --tech-bg:var(--neutral-50);
@@ -100,8 +100,7 @@
      --resume-bg:var(--primary-50);
      --contact-bg:var(--primary-50);
 
-    --input-bg:         var(--white);
-    --input-text:       var(--neutral-900);
+    
 
     --btn-primary-bg:           var(--primary-600);
     --btn-primary-text:         var(--white);
