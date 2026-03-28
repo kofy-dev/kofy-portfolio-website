@@ -152,7 +152,7 @@
 
   --text-secondary:    var(--neutral-100);
   --text-primary:      var(--neutral-200);
-  --text-placeholder:  var(--neutral-700);
+  --text-placeholder:  var(--neutral-100);
   --hero-bg: var(--neutral-950);
   --tech-bg:var(--neutral-950);
   --portfolio-bg:var(--neutral-950);
@@ -1162,7 +1162,7 @@ font-size:var(--text-5xl);
 }
 
 .contact-description{
-     max-width:45ch;
+     max-width:40ch;
      font-size:var(--text-2xl);
    margin-bottom:var(--space-24);
    text-align: center;
