@@ -1158,13 +1158,13 @@ font-size:var(--text-5xl);
 .contact-heading{
    text-align:center;
   font-size:clamp(2.8rem, 5vw, 4.2rem);
-   margin-bottom:var(--space-24);
+   margin-bottom:var(--space-32);
 }
 
 .contact-description{
      max-width:45ch;
      font-size:var(--text-2xl);
-   margin-bottom:var(--space-16);
+   margin-bottom:var(--space-24);
    text-align: center;
 }
 
