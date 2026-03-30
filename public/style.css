@@ -491,7 +491,7 @@ align-items: center;
 .brand-logo {
 font-family: var(--font-merriweather);
 font-weight: var(--font-weight-bold);
-font-size: var(--text-3xl);
+font-size: var(--text-5xl);
 color: var(--primary-600);
 display: flex;
 align-items: center;
@@ -519,7 +519,7 @@ background: transparent;
 cursor: pointer;
 z-index: 1001;
 color:var(--primary-400);
-font-size:var(--text-3xl);
+font-size:var(--text-5xl);
 }
 
 
@@ -1232,7 +1232,7 @@ justify-content:center;
 
 /*FOOTER-LINKS*/
 .social-links  {
-font-size: var(--text-4xl);
+font-size: var(--text-5xl);
 color: var(--primary-500);
 display: inline-flex;
 justify-content: center;
