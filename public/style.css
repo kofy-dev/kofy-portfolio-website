@@ -1144,7 +1144,7 @@ font-size:var(--text-5xl);
 .contact-section{
    padding-top:var(--space-64);
    min-height:100vh;
-   background-color:var(--contact-bg);
+  /* background-color:var(--contact-bg);*/
 }
 
    
