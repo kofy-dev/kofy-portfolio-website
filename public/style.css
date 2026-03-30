@@ -1147,9 +1147,7 @@ font-size:var(--text-5xl);
    background-color:var(--contact-bg);
 }
 
-   .contact-section .form-group{
-       margin-bottom:50px;
-   }
+   
 
 /*CTA-CONTAINER*/
 .contact-container{
