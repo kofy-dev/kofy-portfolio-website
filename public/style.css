@@ -311,7 +311,7 @@ a {
    text-align:left;
    color:var(--text-primary);
    font-weight:300;
-   font-size:10px;
+   font-size:14px;
 }
 .text-input:focus,
 .form-input:focus {
