@@ -491,7 +491,7 @@ align-items: center;
 .brand-logo {
 font-family: var(--font-merriweather);
 font-weight: var(--font-weight-bold);
-font-size: var(--text-5xl);
+font-size: var(--text-4xl);
 color: var(--primary-600);
 display: flex;
 align-items: center;
