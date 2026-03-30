@@ -1127,6 +1127,7 @@ flex-direction:column;
 .cta-btn-container .btn-primary{
    justify-content: center;
 }
+
 /*CTA-PARAGRAPH*/
 .cta-paragraph{
 font-size:var(--text-2xl);
@@ -1145,6 +1146,10 @@ font-size:var(--text-5xl);
    min-height:100vh;
    background-color:var(--contact-bg);
 }
+
+   .contact-section .form-group{
+       margin-bottom:50px;
+   }
 
 /*CTA-CONTAINER*/
 .contact-container{
