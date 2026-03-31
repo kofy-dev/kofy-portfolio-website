@@ -118,6 +118,9 @@
 		 min-height:400px;
 	}
 
+	  .about-img-container{
+		   max-height:400px;
+
 	  .resume-btn-container .btn-primary{
 		  align-items:center;
 		  display:block;
