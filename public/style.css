@@ -777,7 +777,7 @@ border-top: 1px solid var(--border-color);
 /* HERO IMAGE CONTAINER */
 .hero-img-container {
   width: 100%;
-  max-width: 500px;
+  max-width: 350px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -858,7 +858,7 @@ display: flex;
 /*justify-content:center;*/
 align-items:center;
 width:100%;
-max-width:500px;
+max-width:350px;
 aspect-ratio: 1;
 overflow: hidden;
 border-radius: var(--radius-xl);
