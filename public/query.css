@@ -130,6 +130,10 @@
     padding-bottom: clamp(4rem, 8vw, 8rem);
   }
 
+	  .contact-description{
+		  max-width:55ch;
+	  }
+
   .footer-container {
     flex-direction: row;
     justify-content: space-between;
