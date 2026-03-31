@@ -120,13 +120,24 @@
 		 min-height:400px;
 	}
 
-	  .about-img-container,.hero-img-container{
+	 /* .about-img-container,.hero-img-container{
 		  min-width:350px;
 	  }
 
 	.about-img-container{
 		  max-height:400px;
-	}
+	}*/
+
+	.about-container {
+    align-items: flex-start; /* both start from top, natural height */
+  }
+
+  .about-img-container {
+    aspect-ratio: 4/5; /* fixed portrait ratio always */
+    max-width: 400px;
+    align-self: flex-start;
+    flex-shrink: 0; /* prevents image from shrinking */
+  }
 
 	  .resume-btn-container .btn-primary{
 		  align-items:center;
