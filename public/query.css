@@ -114,12 +114,19 @@
     text-align: left;
 	  max-width:var(--container-width-xl);
   }
+
+	  
 	.about-content{
 		 min-height:400px;
 	}
 
-	  .about-img-container{
-		   max-height:400px;
+	  .about-img-container,.hero-img-container{
+		  flex-shrink:0;
+	  }
+
+	.about-img-container{
+		  max-height:400px;
+	}
 
 	  .resume-btn-container .btn-primary{
 		  align-items:center;
