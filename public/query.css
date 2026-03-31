@@ -114,6 +114,10 @@
     text-align: left;
 	  max-width:var(--container-width-xl);
   }
+	.about-img-container,.hero-img-container {
+          aspect-ratio: unset;
+          align-self: stretch;
+	}
 
 	  .resume-btn-container .btn-primary{
 		  align-items:center;
