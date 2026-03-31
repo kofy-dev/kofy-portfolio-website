@@ -115,9 +115,8 @@
 	  max-width:var(--container-width-xl);
   }
 	.about-img-container,.hero-img-container {
-          aspect-ratio: unset;
-          align-self: stretch;
-		  max-height:550px;
+          
+		  max-width:400px;
 		aspect-ratio:4/5;
 	}
 
