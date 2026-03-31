@@ -133,7 +133,7 @@
   }
 
   .about-img-container {
-    aspect-ratio: 4/5; /* fixed portrait ratio always */
+    aspect-ratio: 3/4; /* fixed portrait ratio always */
     max-width: 400px;
     align-self: flex-start;
     flex-shrink: 0; /* prevents image from shrinking */
