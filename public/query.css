@@ -121,7 +121,7 @@
 	}
 
 	  .about-img-container,.hero-img-container{
-		  flex-shrink:0;
+		  min-width:350px;
 	  }
 
 	.about-img-container{
