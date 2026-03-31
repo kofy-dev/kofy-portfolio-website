@@ -1145,6 +1145,7 @@ font-size:var(--text-5xl);
    padding-top:var(--space-64);
    min-height:100vh;
   /* background-color:var(--contact-bg);*/
+   margin-bottom:var(--space-32);
 }
 
    
@@ -1158,7 +1159,7 @@ font-size:var(--text-5xl);
     
     margin:0 auto;
     width:90%;
-    max-width:var(--container-width-md);
+    max-width:650px;
 }
 
 .contact-heading{
