@@ -60,7 +60,7 @@
    880 px (55rem) – Switch to row (comfortable, balanced)
    ========================================================================== */
 
-@media (min-width: 60rem) {
+@media (min-width: 62rem) {
     .hamburger-btn {
     display: none;
   }
