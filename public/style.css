@@ -1158,7 +1158,7 @@ font-size:var(--text-5xl);
     
     margin:0 auto;
     width:90%;
-    max-width:var(--container-width-xl);
+    max-width:var(--container-width-md);
 }
 
 .contact-heading{
