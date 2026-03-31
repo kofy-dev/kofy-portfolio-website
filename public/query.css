@@ -114,10 +114,8 @@
     text-align: left;
 	  max-width:var(--container-width-xl);
   }
-	.about-img-container,.hero-img-container {
-          
-		  max-width:400px;
-		aspect-ratio:4/5;
+	.about-content{
+		 min-height:400px;
 	}
 
 	  .resume-btn-container .btn-primary{
