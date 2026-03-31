@@ -141,7 +141,7 @@
 
 	  .hero-img-container{
 		  max-width:400px;
-		  max-height:468px;
+		  min-height:468px;
 		  flex-shrink:0;
 	  }
 
