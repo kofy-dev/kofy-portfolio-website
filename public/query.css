@@ -118,6 +118,7 @@
           aspect-ratio: unset;
           align-self: stretch;
 		  max-height:550px;
+		aspect-ratio:4/5;
 	}
 
 	  .resume-btn-container .btn-primary{
