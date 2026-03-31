@@ -117,6 +117,7 @@
 	.about-img-container,.hero-img-container {
           aspect-ratio: unset;
           align-self: stretch;
+		  max-height:550px;
 	}
 
 	  .resume-btn-container .btn-primary{
