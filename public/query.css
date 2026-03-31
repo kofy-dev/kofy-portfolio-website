@@ -25,7 +25,7 @@
     display: none;
   }
 
-  /* Hero & About – stay column but feel open */
+  
   .hero-container,
   .about-container {
     gap: var(--space-48);
@@ -40,9 +40,7 @@
     gap: var(--space-16);
   }
 
- /* .resume-btn-container {
-    width: fit-content;
-  }*/
+ 
 
   .cta-btn-container {
     flex-direction: row;
@@ -50,10 +48,9 @@
     gap: var(--space-16);
   }
 
-  .container {
-    padding-left: var(--space-24);
-    padding-right: var(--space-24);
-  }
+	.nav-btn-container{
+		 flex-direction:row;
+	}
 }
 
 /* ==========================================================================
@@ -62,8 +59,8 @@
 
 @media (min-width: 62rem) {
     .hamburger-btn {
-    display: none;
-  }
+        display: none;
+    }
 
   .brand-logo {
     white-space: nowrap;
@@ -110,42 +107,13 @@
     justify-content: space-between;
     align-items: center;
     gap: clamp(3rem, 8vw, 6rem);
-    padding: 0;  /* NO inner padding – outer handles space */
+    padding: 0;  
     text-align: left;
-	  max-width:var(--container-width-xl);
+	max-width:var(--container-width-xl);
   }
 
 	  
-	.about-content{
-		 min-height:400px;
-	}
-
-	 /* .about-img-container,.hero-img-container{
-		  min-width:350px;
-	  }
-
-	.about-img-container{
-		  max-height:400px;
-	}*/
-
-	.about-container {
-    align-items: flex-start; /* both start from top, natural height */
-  }
-
-  .about-img-container {
-    aspect-ratio: 3/4; /* fixed portrait ratio always */
-    max-width: 400px;
-    align-self: flex-start;
-    flex-shrink: 0; /* prevents image from shrinking */
-  }
-
-	  .hero-img-container{
-		  max-width:400px;
-		  min-height:468px;
-		  flex-shrink:0;
-	  }
-
-	  .resume-btn-container .btn-primary{
+    .resume-btn-container .btn-primary{
 		  align-items:center;
 		  display:block;
 	  }
@@ -160,24 +128,14 @@
     padding-bottom: clamp(4rem, 8vw, 8rem);
   }
 
-	  .contact-description{
+ .contact-description{
 		  max-width:none;
-	  }
+ }
 
   .footer-container {
     flex-direction: row;
     justify-content: space-between;
     gap: var(--space-32);
   }
+	
 }
-
-/* ==========================================================================
-   992 px (62rem) – Larger desktops – refine spacing & nav
-   ========================================================================== */
-
-@media (min-width: 62rem) {
-
-  .footer-container {
-    padding: var(--space-48) var(--space-32);
-  }
-	  }
