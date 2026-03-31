@@ -112,6 +112,10 @@
 	max-width:var(--container-width-xl);
   }
 
+	  .hero-img-container,.about-img-container{
+		   flex-shrink:0;
+	  }
+
 	  
     .resume-btn-container .btn-primary{
 		  align-items:center;
