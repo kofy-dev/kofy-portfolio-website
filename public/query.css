@@ -30,7 +30,9 @@
 	}
 
 	
-	service-container:first-child{
+	
+	
+	.service-container:first-child{
 		  grid-column:1/2;
 	}
 		
