@@ -2,6 +2,7 @@
 	 .hero-section,.about-section{
 		 padding:var(--space-48);
 	 }
+}
 	
 @media (min-width: 48rem) {
   .carousel-track {
