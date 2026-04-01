@@ -38,6 +38,7 @@
 
 	.service-container .card:last-child{
 		 grid-column:1/3;
+		grid-row:2/3;
 	}
 		
 
