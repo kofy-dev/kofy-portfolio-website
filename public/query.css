@@ -32,7 +32,7 @@
 	
 	
 	
-	.service-container:first-child{
+	.service-container .card:first-child{
 		  grid-column:1/3;
 	}
 		
