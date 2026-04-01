@@ -734,15 +734,11 @@ border-top: 1px solid var(--border-color);
 
 /* HERO HEADING */
 .hero-heading {
-  font-size: clamp(1.8rem, 2.5vw, 3rem);
   margin-bottom: var(--space-32);
-  word-wrap: break-word;
-  overflow-wrap: break-word;
 }
 
 /* HERO PARAGRAPH */
 .hero-paragraph {
-  font-size: clamp(1.4rem, 2vw, 2rem);
   margin-bottom: var(--space-32);
 }
 
@@ -751,7 +747,6 @@ border-top: 1px solid var(--border-color);
   color: var(--primary-600);
   font-weight: var(--font-weight-medium);
   font-family: var(--font-merriweather);
-  font-size: clamp(2.8rem, 5vw, 4.2rem);
   position: relative;
   display: block;
 }
