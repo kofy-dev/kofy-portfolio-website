@@ -735,6 +735,7 @@ border-top: 1px solid var(--border-color);
 /* HERO HEADING */
 .hero-heading {
   margin-bottom: var(--space-32);
+   word-wrap: nowrap;
 }
 
 /* HERO PARAGRAPH */
