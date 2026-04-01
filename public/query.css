@@ -31,7 +31,7 @@
 	
 	
 	.service-container .card:first-child{
-		  grid-column: span 2;
+		  grid-column: span 3;
 	}
 
 	.service-container .card:last-child{
