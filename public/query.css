@@ -113,7 +113,8 @@
   }
 
 	  .hero-img-container,.about-img-container{
-		   flex-shrink:0;
+		  max-width:400px;
+		  flex-shrink:0;
 	  }
 
 	  
