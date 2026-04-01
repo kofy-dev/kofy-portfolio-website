@@ -30,31 +30,9 @@
 	}
 	
 	
-	.service-container .card:first-child{
-		  grid-column: span 2;
-	}
-
-	.service-container .card:last-child{
-		 grid-column:2 / span 2;
-		grid-row: 2/3;
-	}
-
-	/* The First Project (Hero) */
-.portfolio-container .card:first-child {
-    grid-column: span 2;
-}
-
-/* The Fourth Project (The "Stagger" Card) */
-.portfolio-container .card:nth-child(4) {
-    grid-column: 2 / span 2;
-}
-
-/* The Fifth Project (The "Full Width" Finale) */
-.portfolio-container .card:last-child {
-    grid-column: 1 / -1;
-}
 	
-
+  .
+	
 	
 	
 
