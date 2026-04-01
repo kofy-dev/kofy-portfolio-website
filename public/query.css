@@ -24,7 +24,7 @@
 	.portfolio-container,.service-container,.tech-container{
 		  display: grid;
           grid-template-columns: repeat(3, 1fr); 
-		  grid-template-rows:300px 300px;
+		  grid-template-rows: minmax(300px, auto);
           justify-items: center;
       /*  align-items: stretch;*/
         gap: var(--space-24);
