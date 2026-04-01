@@ -740,6 +740,7 @@ border-top: 1px solid var(--border-color);
 /* HERO PARAGRAPH */
 .hero-paragraph {
   margin-bottom: var(--space-32);
+   font-size:var(--text-2xl);
 }
 
 /* TYPING TEXT */
