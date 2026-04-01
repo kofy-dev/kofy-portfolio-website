@@ -1,4 +1,4 @@
-@media(min-width:576px){
+@media(min-width:576px and max-width:768px){
 	 .hero-section,.about-section{
 		 padding:var(--space-48);
 	 }
@@ -126,9 +126,7 @@
 
 @media (min-width: 62rem) {
 
-	  .hero-section,.about-section{
-		   padding:0;
-	  }
+	  
   .hero-container,
   .about-container {
     flex-direction: row;
