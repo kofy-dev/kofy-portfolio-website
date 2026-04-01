@@ -853,6 +853,7 @@ width: 90%;
 .about-img-container {
 display: flex;
 /*justify-content:center;*/
+   
 align-items:center;
 width:100%;
 max-width:400px;
