@@ -21,17 +21,51 @@
     display: none;
   }
 
-	.portfolio-container,.service-container,.tech-container{
-		  display: grid;
-          grid-template-columns: repeat(3, 1fr); 
-      /*  align-items: stretch;*/
-        gap: var(--space-24);
-		max-width:800px;
-	}
 	
 	
 	
-  .
+/* 1. THE GRID SKELETON */
+.portfolio-container {
+    display: grid;
+    /* 3 Columns: Each ~315px wide at 1000px max-width */
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: 220px auto auto;
+    gap: var(--space-24);
+    max-width: 1000px; /* Bumping to 1000px = No more 'slim' cards */
+    margin: 4rem auto;
+    
+    grid-template-areas: 
+        "first first second"
+        "third fourth fourth"
+        "last  last   last";
+}
+
+/* 2. THE CONDITIONAL PSEUDO-CLASSES */
+
+/* Card 1: Starmedical (The Top Header) */
+.portfolio-container .card:first-child { 
+    grid-area: first; 
+}
+
+/* Card 2: Yumix (The Top-Right 'Single' Cell) */
+.portfolio-container .card:nth-child(2) { 
+    grid-area: second; 
+}
+
+/* Card 3: Moores (The Middle-Left 'Single' Cell) */
+.portfolio-container .card:nth-child(3) { 
+    grid-area: third; 
+}
+
+/* Card 4: Wearix (The Middle-Right Banner) */
+.portfolio-container .card:nth-child(4) { 
+    grid-area: fourth; 
+}
+
+/* Card 5: Renovix (The Big Bottom Footer) */
+.portfolio-container .card:last-child { 
+    grid-area: last; 
+}
 	
 	
 	
