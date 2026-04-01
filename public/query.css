@@ -29,7 +29,7 @@
   .hero-container,
   .about-container {
     gap: var(--space-48);
-    padding: var(--space-32) var(--space-24);
+   /* padding: var(--space-32) var(--space-24);*/
     text-align: left;
     align-items: flex-start;
   }
@@ -125,6 +125,10 @@
 
 
 @media (min-width: 62rem) {
+
+	  .hero-section,.about-section{
+		   padding:0;
+	  }
   .hero-container,
   .about-container {
     flex-direction: row;
