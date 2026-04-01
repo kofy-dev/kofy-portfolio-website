@@ -21,7 +21,7 @@
     display: none;
   }
 
-	.portfolio-container,.service-container{
+	.portfolio-container,.service-container,.tech-container{
 		  display: grid;
           grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
           justify-items: center;
