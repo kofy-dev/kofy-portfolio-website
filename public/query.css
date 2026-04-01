@@ -1,8 +1,8 @@
-/* ==========================================================================
-   768 px (48rem) – Tablet & small laptop
-   – Keep column, but make it spacious & ready for row
-   ========================================================================== */
-
+@media(min-width:576px){
+	 .hero-section,.about-section{
+		 padding:var(--space-48);
+	 }
+	
 @media (min-width: 48rem) {
   .carousel-track {
     display: grid;
