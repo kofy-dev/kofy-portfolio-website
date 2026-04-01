@@ -890,6 +890,8 @@ font-size: var(--text-xl);
 }
 
 .tech-container{
+   display: flex;
+   gap: var(--space-16);
     margin: 0 auto;
     width:90%;
     max-width:var(--container-width-xl);
