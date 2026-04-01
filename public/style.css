@@ -777,7 +777,7 @@ border-top: 1px solid var(--border-color);
 /* HERO IMAGE CONTAINER */
 .hero-img-container {
   width: 100%;
-  max-width: 450px;
+  max-width: 400px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -847,10 +847,7 @@ margin: 0 auto;
 width: 90%;
 }
 
-/*.about-content{
-   flex:1 1 700px;
-   max-width:700px;
-}*/
+
 
 /*ABOUT-IMG-CONTAINER*/
 .about-img-container {
@@ -858,7 +855,7 @@ display: flex;
 /*justify-content:center;*/
 align-items:center;
 width:100%;
-max-width:450px;
+max-width:400px;
 aspect-ratio: 1;
 overflow: hidden;
 border-radius: var(--radius-xl);
