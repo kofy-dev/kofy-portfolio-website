@@ -605,10 +605,8 @@ border-top: 1px solid var(--border-color);
 
    /*CAROUSEL-COMPONENTS*/
 .carousel-track{
-  display: flex;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
-  gap: var(--space-16);
   padding: var(--space-16) var(--space-8);
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;  /* Hide scrollbar Firefox */
@@ -987,12 +985,15 @@ font-size:var(--text-xl);
 margin-bottom: var(--space-64);
    background-color:var(--service-bg);
    padding:var(--space-32);
+   
 }
 
 .service-container{
     margin: 0 auto;
    width:90%;
    max-width:var(--container-width-xl);
+   display: flex;
+   gap: var(--space-16);
 }
 
 .service-container .card{
@@ -1050,6 +1051,8 @@ margin-bottom: var(--space-64);
 
 
 .portfolio-container{
+   display: flex;
+   gap: var(--space-16);
     margin: 0 auto;
    width:90%;
    max-width:var(--container-width-xl);
