@@ -777,7 +777,7 @@ border-top: 1px solid var(--border-color);
   max-width: 400px;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: stretch;
   aspect-ratio: 1;
   overflow: hidden;
   border-radius: 50%;
