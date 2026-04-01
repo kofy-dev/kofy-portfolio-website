@@ -740,7 +740,7 @@ border-top: 1px solid var(--border-color);
 /* HERO PARAGRAPH */
 .hero-paragraph {
   margin-bottom: var(--space-32);
-   font-size:var(--text-2xl);
+   font-size:var(--text-xl);
 }
 
 /* TYPING TEXT */
@@ -748,6 +748,7 @@ border-top: 1px solid var(--border-color);
   color: var(--primary-600);
   font-weight: var(--font-weight-medium);
   font-family: var(--font-merriweather);
+   font-size:var(--text-xl);
   position: relative;
   display: block;
 }
