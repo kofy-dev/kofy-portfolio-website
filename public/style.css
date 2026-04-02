@@ -690,7 +690,7 @@ border-top: 1px solid var(--border-color);
     width: 100%;
     height: 100%;
     /* This creates the soft mint/cyan glow behind the rings */
-    background: radial-gradient(circle, rgba(45, 212, 191, 0.4) 0%, rgba(0,0,0,0) 75%);
+    background: radial-gradient(circle, rgba(45, 212, 191, 0.12) 0%, rgba(0,0,0,0) 75%);
     filter: blur(80px);
     z-index: -1; /* Sits behind the canvas rings */
     pointer-events: none;
