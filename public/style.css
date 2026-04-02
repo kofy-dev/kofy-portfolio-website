@@ -1033,8 +1033,7 @@ margin-bottom: var(--space-64);
     margin: 0 auto;
    width:90%;
    max-width:var(--container-width-xl);
-   display: grid;
-   grid-auto-flow: column;
+   display: flex;
    gap: var(--space-16);
 }
 
@@ -1140,7 +1139,7 @@ margin-bottom: var(--space-64);
 
 
 .portfolio-container{
-   display: grid;
+   display: flex;
    gap: var(--space-16);
     margin: 0 auto;
    width:90%;
