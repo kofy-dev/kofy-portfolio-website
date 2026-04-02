@@ -726,6 +726,21 @@ border-top: 1px solid var(--border-color);
   width: 90%;
 }
 
+.hero-img-container{
+    overflow:hidden;
+     width:100%;
+    aspect-ratio:1;
+   border-radius:50%;
+   max-width:400px;
+}
+
+.hero-img{
+    width:100%;
+    height:100%;
+    display:block;
+    object-fit:cover;
+}
+
 /* HERO BADGE */
 .hero-badge {
   display: inline-flex;
