@@ -1043,38 +1043,7 @@ text-align: center;
    margin-top:var(--space-12);
 }
 
-.service-container .card {
-    position: relative; /* Anchor for the image */
-    padding: var(--space-16);
-    height: 120px; /* Base height for mobile/tablet */
-    background: var(--deep-glass); /* Your glassmorphism */
-    overflow: hidden;
-    border-radius: 12px;
-}
 
-/* THE FLOATING IMAGE */
-.service-container .service-img {
-    position: absolute;
-    bottom: -15px; /* Partially peeking off the edge */
-    right: -10px;
-    width: 120px; /* Larger than an icon so you can see the 'project' */
-    height: 80px;
-    object-fit: cover;
-    border-radius: 8px;
-    
-    /* THE TRICK: Make it subtle so text is 100% readable */
-    opacity: 0.2; 
-    filter: grayscale(100%) blur(1px); 
-    z-index: 1;
-    pointer-events: none;
-    transform: rotate(-5deg); /* Slight tilt for that 'sturdy' design look */
-}
-
-/* THE TEXT (TOP LAYER) */
-.service-container .card-content {
-    position: relative;
-    z-index: 2; /* Sits firmly on top of the image */
-   }
 
 /* ===== WORK / PORTFOLIO SECTION ===== */
 /*WORK-MAIN-SECTION*/
