@@ -1103,7 +1103,7 @@ text-align: center;
    }
 .portfolio-container .card {
     position: relative;
-    height: 180px; /* Short, sturdy height for all screens */
+    /*height: 180px; */
     border-radius: 12px;
     overflow: hidden;
     background: #000; /* Solid base for contrast */
