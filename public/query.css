@@ -21,6 +21,27 @@
     display: none;
   }
 
+	.tech-container{
+		 display:grid;
+		 grid-template-column: 1fr 1fr 1fr;
+		 max-width:800px;
+		 grid-template-areas:
+		 "first first second"
+	     "third third  second";
+	}
+
+	.tech-container .card:first-child{
+		   grid-area:first;
+	}
+
+	.tech-container .card:nth-child(2){
+		 grid-area:second;
+	}
+
+	.tech-container .card:last-child{
+		 grid-area:third;
+	}
+
 	
 	.service-container{
 		display: grid;
