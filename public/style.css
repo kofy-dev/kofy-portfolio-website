@@ -1105,7 +1105,7 @@ text-align: center;
 /* 1. THE PORTFOLIO CARD (THE ANCHOR) */
 .portfolio-container .card {
     position: relative; /* This lets the image float inside */
-    height: 130px;      /* The "Nice" short height you wanted */
+    min-height: 130px;      /* The "Nice" short height you wanted */
     overflow: hidden;   /* Keeps the project image from bleeding out */
     display: block; 
 }
