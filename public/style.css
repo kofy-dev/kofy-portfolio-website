@@ -1043,6 +1043,31 @@ text-align: center;
    margin-top:var(--space-12);
 }
 
+/* BASE STYLES (Applies to everything) */
+.service-container .card {
+    position: relative;
+    padding: 1.25rem;
+    min-height: 120px; /* Slightly taller for mobile comfort */
+    overflow: hidden;
+}
+
+.service-container .service-icon {
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    width: 50px; /* Smaller for mobile */
+    height: 50px;
+    opacity: 0.1; /* Very faint so it doesn't distract from small text */
+    z-index: 1;
+    pointer-events: none;
+    transform: rotate(-10deg);
+}
+
+.service-container .card-content {
+    position: relative;
+    z-index: 2; /* Ensures text is ALWAYS on top and readable */
+}
+
 /* ===== WORK / PORTFOLIO SECTION ===== */
 /*WORK-MAIN-SECTION*/
 .work-section{
