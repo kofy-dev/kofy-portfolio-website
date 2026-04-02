@@ -1138,9 +1138,6 @@ text-align: center;
     z-index: 2; /* Ensures text is always on top of the dark tint */
     padding: 1.5rem;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
 }
 
 /* 4. FORCE TEXT COLOR */
