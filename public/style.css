@@ -1017,6 +1017,51 @@ margin-bottom: var(--space-64);
    object-fit:cover;
 }
 
+.service-container .card {
+    position: relative;
+    /*height: 180px; */
+    border-radius: 12px;
+    overflow: hidden;
+    background: #000; /* Solid base for contrast */
+}
+
+    /* 1. THE WRAPPER OVERLAY */
+.service-img-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    /* This adds a dark tint directly to the wrapper background */
+    background-color: rgba(0, 0, 0, 0.6); 
+}
+
+/* 2. THE IMAGE (Sits behind the tint) */
+.service-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    /* This mixes the image with the dark background above */
+    mix-blend-mode: overlay; 
+    opacity: 0.8;
+}
+
+/* 3. THE TEXT CONTENT */
+.card-content {
+    position: relative;
+    z-index: 2; /* Ensures text is always on top of the dark tint */
+    padding: 1.5rem;
+    height: 100%;
+}
+
+/* 4. FORCE TEXT COLOR */
+.card-heading, .card-paragraph {
+    color: #ffffff; /* Essential for contrast on dark images */
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5); /* Extra safety for readability */
+   }
+
 
 /*SERVICE-HEADING*/
 .service-heading {
