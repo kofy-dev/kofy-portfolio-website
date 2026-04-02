@@ -1034,6 +1034,7 @@ margin-bottom: var(--space-64);
    width:90%;
    max-width:var(--container-width-xl);
    display: grid;
+   grid-auto-flow: column;
    gap: var(--space-16);
 }
 
