@@ -1102,16 +1102,7 @@ text-align: center;
       display:block;
    }
 
-   /* 1. THE CARD */
-.portfolio-container .card {
-    position: relative;
-    height: 180px; /* Short, sturdy height for all screens */
-    border-radius: 12px;
-    overflow: hidden;
-    background: #000; /* Solid base for contrast */
-}
-
-/* 2. THE IMAGE WRAPPER (THE BACKGROUND) */
+    /* 1. THE WRAPPER OVERLAY */
 .screenshot-wrapper {
     position: absolute;
     top: 0;
@@ -1119,46 +1110,37 @@ text-align: center;
     width: 100%;
     height: 100%;
     z-index: 1;
+    /* This adds a dark tint directly to the wrapper background */
+    background-color: rgba(0, 0, 0, 0.6); 
 }
 
-/* THE DARK TINT: This is what makes the text readable */
-.screenshot-wrapper::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    /* Darkens the image enough for the text to pop */
-    background: rgba(0, 0, 0, 0.65); 
-    z-index: 2;
-}
-
+/* 2. THE IMAGE (Sits behind the tint) */
 .project-screenshot {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
+    /* This mixes the image with the dark background above */
+    mix-blend-mode: overlay; 
+    opacity: 0.8;
 }
 
-/* 3. THE TEXT CONTENT (THE FOREGROUND) */
+/* 3. THE TEXT CONTENT */
 .card-content {
     position: relative;
-    z-index: 3; /* Must be higher than the tint */
+    z-index: 2; /* Ensures text is always on top of the dark tint */
+    padding: 1.5rem;
     height: 100%;
-    padding: 1.25rem;
-    
-    /* Alignment: Keeps text at the top so the 'View Study' link fits */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 }
 
-/* Ensure global link color doesn't get lost */
-.card-link {
-    margin-top: auto; /* Pushes the arrow link to the bottom of the card */
-    font-weight: 600;
-   }
+/* 4. FORCE TEXT COLOR */
+.card-heading, .card-paragraph {
+    color: #ffffff; /* Essential for contrast on dark images */
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5); /* Extra safety for readability */
+}
 
 /*CTA__SECTION*/
 /*CTA-MAIN-SECTION*/
