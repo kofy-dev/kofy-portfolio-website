@@ -1102,35 +1102,41 @@ text-align: center;
       display:block;
    }
 
-/* 1. THE PORTFOLIO CARD (THE ANCHOR) */
+/* 1. THE CARD (THE ANCHOR) */
 .portfolio-container .card {
-    position: relative; /* This lets the image float inside */
-    min-height: 130px;      /* The "Nice" short height you wanted */
-    overflow: hidden;   /* Keeps the project image from bleeding out */
-    display: block; 
+    position: relative; 
+    min-height: 140px; /* Short but safe height */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
 }
 
-/* 2. THE FLOATING PROJECT IMAGE (BACKGROUND) */
-/* This moves the image to the background so it doesn't push the text */
-.portfolio-container .portfolio-screenshot {
+/* 2. THE IMAGE WRAPPER (THE CULPRIT) */
+/* We must tell the wrapper to stop acting like a block */
+.portfolio-img-wrapper {
     position: absolute;
-    bottom: -10px;
-    right: -10px;
-    width: 120px;       /* Fixed size so it doesn't fill the card */
-    height: 90px;
-    object-fit: cover;
-    opacity: 0.15;      /* Faded so your project title is easy to read */
-    z-index: 1;         /* Puts it UNDER the text */
-    pointer-events: none; /* Important for your mobile swipe! */
-    transform: rotate(-5deg);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Puts the whole wrapper behind the text */
 }
 
-/* 3. THE PORTFOLIO TEXT (TOP LAYER) */
+/* 3. THE IMAGE (INSIDE THE WRAPPER) */
+.portfolio-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.2; /* Very faint so your global text pops */
+    filter: grayscale(100%);
+}
+
+/* 4. THE TEXT (THE TOP LAYER) */
 .portfolio-container .card-content {
     position: relative;
-    z-index: 2;         /* Forces your project title/desc ON TOP of the image */
+    z-index: 10; /* Forces it to stay ABOVE the wrapper and image */
+    padding: 1.5rem;
 }
-
 /*CTA__SECTION*/
 /*CTA-MAIN-SECTION*/
 .cta-section{
