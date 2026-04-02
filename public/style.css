@@ -1101,6 +1101,13 @@ text-align: center;
           object-fit:cover;
       display:block;
    }
+.portfolio-container .card {
+    position: relative;
+    height: 180px; /* Short, sturdy height for all screens */
+    border-radius: 12px;
+    overflow: hidden;
+    background: #000; /* Solid base for contrast */
+}
 
     /* 1. THE WRAPPER OVERLAY */
 .screenshot-wrapper {
