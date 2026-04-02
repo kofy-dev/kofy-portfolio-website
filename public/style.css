@@ -107,7 +107,7 @@
     --btn-primary-hover-bg:     var(--primary-700);
     --btn-primary-hover-border: var(--primary-700);
 
-    --btn-primary-outline-bg:           var(--white);
+    --btn-primary-outline-bg:           transparent;
     --btn-primary-outline-text:         var(--primary-600);
     --btn-primary-outline-border:       var(--primary-600);
     --btn-primary-outline-hover-bg:     var(--primary-700);
