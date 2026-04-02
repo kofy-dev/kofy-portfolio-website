@@ -1102,6 +1102,37 @@ text-align: center;
       display:block;
    }
 
+   /* 1. THE CARD (THE ANCHOR) */
+.portfolio-container .card {
+    position: relative; /* This is the floor */
+    height: 150px;      /* The "Nice" short height you wanted */
+    overflow: hidden;
+}
+
+/* 2. THE IMAGE WRAPPER (THE DIV INSIDE) */
+.portfolio-img-wrapper {
+    position: absolute; /* This stops it from pushing the text down */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;         /* Puts the image at the bottom layer */
+}
+
+/* 3. THE IMAGE (INSIDE THE WRAPPER) */
+.portfolio-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.3;       /* Faint so your global text styles are easy to read */
+}
+
+/* 4. THE TEXT CONTENT */
+.portfolio-container .card-content {
+    position: relative; 
+    z-index: 2;         /* Forces the text to sit ON TOP of the image */
+}
+
 
 /*CTA__SECTION*/
 /*CTA-MAIN-SECTION*/
