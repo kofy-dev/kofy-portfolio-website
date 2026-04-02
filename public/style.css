@@ -1102,6 +1102,35 @@ text-align: center;
       display:block;
    }
 
+/* 1. THE PORTFOLIO CARD (THE ANCHOR) */
+.portfolio-container .card {
+    position: relative; /* This lets the image float inside */
+    height: 130px;      /* The "Nice" short height you wanted */
+    overflow: hidden;   /* Keeps the project image from bleeding out */
+    display: block; 
+}
+
+/* 2. THE FLOATING PROJECT IMAGE (BACKGROUND) */
+/* This moves the image to the background so it doesn't push the text */
+.portfolio-container .portfolio-screenshot {
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    width: 120px;       /* Fixed size so it doesn't fill the card */
+    height: 90px;
+    object-fit: cover;
+    opacity: 0.15;      /* Faded so your project title is easy to read */
+    z-index: 1;         /* Puts it UNDER the text */
+    pointer-events: none; /* Important for your mobile swipe! */
+    transform: rotate(-5deg);
+}
+
+/* 3. THE PORTFOLIO TEXT (TOP LAYER) */
+.portfolio-container .card-content {
+    position: relative;
+    z-index: 2;         /* Forces your project title/desc ON TOP of the image */
+}
+
 /*CTA__SECTION*/
 /*CTA-MAIN-SECTION*/
 .cta-section{
