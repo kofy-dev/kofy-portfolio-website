@@ -1051,17 +1051,7 @@ text-align: center;
     overflow: hidden;
 }
 
-.service-container .service-icon {
-    position: absolute;
-    bottom: -5px;
-    right: -5px;
-    width: 50px; /* Smaller for mobile */
-    height: 50px;
-    opacity: 0.1; /* Very faint so it doesn't distract from small text */
-    z-index: 1;
-    pointer-events: none;
-    transform: rotate(-10deg);
-}
+
 
 .service-container .card-content {
     position: relative;
