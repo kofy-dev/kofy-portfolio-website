@@ -966,7 +966,7 @@ font-size:var(--text-xl);
    text-align:center;
 }
 
-.resume-btn-container{
+.resume-btn-container .btn{
   display:flex;
   flex-direction:column;
 }
