@@ -886,7 +886,7 @@ font-size: var(--text-xl);
 /*TECH-SECTION*/
 .tech-section{
     background-color:var(--tech-bg);
-    padding:var(--space-32);
+    padding:var(--space-16);
 }
 
 .tech-container{
@@ -919,19 +919,58 @@ font-size: var(--text-xl);
     margin-inline: auto;
 }
 
-.tech-icon{
-   font-weight:var(--font-weight-medium);
-   font-size:5rem;
+.tech-img-wrapper{
+    overflow:hidden;
+    width:100%;
 }
 
-.tech-container .card{
-   display:flex;
-   justfify-content:center;
-   align-items:center;
-   flex-direction:column;
-   gap:var(--space-16);
-   text-align:center;
+.tech-img{
+       width:100%;
+       height:100%;
+       object-fit:cover;
+        display:block;
+   mix-blend-mode: overlay; 
+    opacity: 0.8;
+
 }
+
+.tech-container .card {
+    position: relative;
+    /*height: 180px; */
+    border-radius: 12px;
+    overflow: hidden;
+    background: #000; /* Solid base for contrast */
+}
+
+    /* 1. THE WRAPPER OVERLAY */
+.tech-img-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    /* This adds a dark tint directly to the wrapper background */
+    background-color: rgba(0, 0, 0, 0.6); 
+}
+
+
+
+/* 3. THE TEXT CONTENT */
+.card-content {
+    position: relative;
+    z-index: 2; /* Ensures text is always on top of the dark tint */
+    padding: 1.5rem;
+    height: 100%;
+}
+
+/* 4. FORCE TEXT COLOR */
+.card-heading, .card-paragraph {
+    color: #ffffff; /* Essential for contrast on dark images */
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5); /* Extra safety for readability */
+}
+
+
 
 
 
