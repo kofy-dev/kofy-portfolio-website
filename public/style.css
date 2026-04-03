@@ -745,23 +745,31 @@ background: radial-gradient(circle, rgba(45, 212, 191, 0.3) 0%, rgba(0, 0, 0, 0)
   border-radius: 50%;
   animation: pulse 2s infinite;
 }
-/* THE WAVE ANIMATION */
-.wave {
-  display:inline-block; /* Required for transform to work */
-  animation: wave-animation 2.5s infinite;
-  transform-origin: 70% 70%; /* Makes it rotate from the wrist, not the center */
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.5; transform: scale(0.8); }
 }
 
-@keyframes wave-animation {
-    0% { transform: rotate( 0.0deg) }
-   10% { transform: rotate(14.0deg) } /* The "Hi!" move */
-   20% { transform: rotate(-8.0deg) }
-   30% { transform: rotate(14.0deg) }
-   40% { transform: rotate(-4.0deg) }
-   50% { transform: rotate(10.0deg) }
-   60% { transform: rotate( 0.0deg) } /* Pause */
-  100% { transform: rotate( 0.0deg) }
+.wave {
+  display: inline-block;
+  animation: wave 2.5s infinite;
+  transform-origin: 70% 70%;
+  font-size: inherit;
 }
+
+@keyframes wave {
+  0%   { transform: rotate(0deg); }
+  10%  { transform: rotate(14deg); }
+  20%  { transform: rotate(-8deg); }
+  30%  { transform: rotate(14deg); }
+  40%  { transform: rotate(-4deg); }
+  50%  { transform: rotate(10deg); }
+  60%  { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.wave:hover { animation: none; }
 
    .hero-btn-container{
        display:flex;
@@ -782,12 +790,25 @@ background: radial-gradient(circle, rgba(45, 212, 191, 0.3) 0%, rgba(0, 0, 0, 0)
    font-size:var(--text-2xl);
 }
 
-/* TYPING TEXT */
+
+
 .typing-text {
   color: var(--primary-600);
-   display:block;
-   min-height: 1.2em; 
-                           
+  font-weight: var(--font-weight-medium);
+  font-family: var(--font-merriweather);
+  font-size: clamp(2.8rem, 5vw, 4.2rem);
+  position: relative;
+  display: block;
+}
+
+.typing-text::after {
+  content: "|";
+  color: var(--primary-600);
+  animation: blink 0.8s step-end infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
 }
 .hero-content {
   position: relative;
