@@ -747,7 +747,7 @@ background: radial-gradient(circle, rgba(45, 212, 191, 0.3) 0%, rgba(0, 0, 0, 0)
 }
 /* THE WAVE ANIMATION */
 .wave {
-  display: inline-block; /* Required for transform to work */
+  display: block; /* Required for transform to work */
   animation: wave-animation 2.5s infinite;
   transform-origin: 70% 70%; /* Makes it rotate from the wrist, not the center */
 }
