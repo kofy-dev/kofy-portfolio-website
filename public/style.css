@@ -437,7 +437,7 @@ margin-bottom: var(--space-8);
 font-size:var(--text-xl);
 color:var(--primary-500);
 }
-
+ 
 .card-link{
 text-decoration: underline solid var(--primary-600) 2px;
                                }
