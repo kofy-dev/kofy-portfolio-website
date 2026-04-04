@@ -505,8 +505,9 @@ gap: var(--space-4);
 /* --- FULL WIDTH BOTTOM NAVIGATION --- */
 .mobile-bottom-nav {
   position: fixed;
-  bottom: 0;            /* Pinned flat to the bottom edge */
-  left: 0;
+  bottom: 25px;         /* Distance from the bottom edge */
+  left: 50%;
+  transform: translateX(-50%);/* Pinned flat to the bottom edge */
   width: 100%;          /* Edge-to-edge */
   z-index: 9999;
   
