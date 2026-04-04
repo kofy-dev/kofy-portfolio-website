@@ -500,31 +500,49 @@ gap: var(--space-4);
 
 
 
-/* 2. THE LINKS: The Floating Pill */
-.nav-link-groups {
+
+
+/* --- FULL WIDTH BOTTOM NAVIGATION --- */
+.mobile-bottom-nav {
   position: fixed;
-  bottom: 20px;          /* Distance from bottom */
-  left: 50%;             /* Center it */
-  transform: translateX(-50%); /* Perfect centering */
-  width: 90%;
-  max-width: 400px;
+  bottom: 0;            /* Pinned flat to the bottom edge */
+  left: 0;
+  width: 100%;          /* Edge-to-edge */
+  z-index: 9999;
   
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  
-  padding: 0.8rem 1.2rem;
-  background: var(--navbar-bg);
+  background: var(--navbar-bg); /* Use your glass background variable */
   backdrop-filter: var(--navbar-backdrop);
   -webkit-backdrop-filter: var(--navbar-backdrop);
-  
-  /* Make it look like a floating PILL, not a flat bar */
-  border: 1px solid rgba(255, 255, 255, 0.1); 
-  border-radius: 100px; 
-  
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-  z-index: 9999;         /* High Z-index to stay on top */
+  border-top: var(--navbar-border); /* Border at the top of the bar */
+  box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.3); /* Shadow going UP */
+}
+
+.nav-link-groups {
+  display: flex;
+  justify-content: space-around; /* Spreads links evenly across the width */
+  align-items: center;
+  padding: 0.8rem 0;     /* Vertical padding for height */
+  max-width: 600px;      /* Keeps it from getting too wide on tablets */
+  margin: 0 auto;        /* Centers the inner content */
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column; /* Icon on top, Text on bottom */
+  align-items: center;
+  gap: 4px;
+  text-decoration: none;
+  color: var(--text-main);
+  font-size: 0.75rem;    /* Small, clean label text */
+  transition: color 0.3s ease;
+}
+
+.nav-links i {
+  font-size: 1.2rem;     /* Make the icons stand out */
+}
+
+.nav-links:hover {
+  color: var(--primary-500);
 }
 
 
