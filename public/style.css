@@ -1334,7 +1334,7 @@ font-size:var(--text-5xl);
 .footer-section{
  /*margin-bottom: var(--space-48);*/
  border-top:1px solid  var(--border-color);
- padding:50px;
+ padding:40px;
    background-color:var(--footer-bg)
 }
 
