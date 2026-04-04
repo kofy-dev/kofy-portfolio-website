@@ -653,7 +653,7 @@ border-top: 1px solid var(--border-color);
     position: relative;
     overflow: hidden;
     margin-bottom: var(--space-48);
-    padding-top:var(--space-24);
+    padding-top:var(--space-48);
     background-color: var(--hero-bg);
     /* Add this to ensure the glow doesn't overlap other sections */
     z-index: 1; 
