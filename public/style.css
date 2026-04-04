@@ -534,7 +534,7 @@ overflow-y: auto;
 
 .nav-link-groups {
   position: fixed;
-  bottom: 0;
+  bottom: 20px;
   left: 0;
   right: 0;
   display: flex;
