@@ -512,7 +512,7 @@ transform: rotate(-45deg) translate(7px,-6px);
 }
 
 /*NAVBAR-LINKS-CONTAINER*/
-.nav-links-container {
+/*.nav-links-container {
 display: block;
 position: static;
 top: 100%;
@@ -524,15 +524,15 @@ padding: var(--space-12) var(--space-16);
 gap: var(--space-4);
  background: var(--nav-menu-bg);
   backdrop-filter: var(--nav-menu-backdrop);
-  -webkit-backdrop-filter: var(--nav-menu-backdrop);  /* Safari support */
+  -webkit-backdrop-filter: var(--nav-menu-backdrop); 
   border-bottom: var(--nav-menu-border);
   box-shadow: var(--nav-menu-shadow);
 z-index: 999;
 max-height: calc(100vh - 70px);
 overflow-y: auto;
-}
+}*/
 
-.nav-link-groups {
+/*.nav-link-groups {
   position: fixed;
   bottom: 20px;
   left: 0;
@@ -547,11 +547,57 @@ overflow-y: auto;
   border-top: var(--navbar-border);
   box-shadow: 0 -4px 20px rgba(0,0,0,0.08);
   z-index: 999;
+}*/
+
+/* 1. THE CONTAINER: Strip all the "Menu" styles */
+.nav-links-container {
+  display: block;
+  position: static;      /* This is good, keep it */
+  width: auto;           /* Change from 100% to auto */
+  background: none;      /* REMOVE THE BACKGROUND - This kills the dark box */
+  backdrop-filter: none; /* REMOVE THE BLUR */
+  border: none;          /* REMOVE THE BORDERS */
+  box-shadow: none;      /* REMOVE THE SHADOW */
+  padding: 0;            /* Remove the extra padding */
+  max-height: none;      /* Let the content breathe */
+  overflow: visible;
 }
 
-.nav-links-container.active {
-display: flex;
+/* 2. THE LINKS: The Floating Pill */
+.nav-link-groups {
+  position: fixed;
+  bottom: 20px;          /* Distance from bottom */
+  left: 50%;             /* Center it */
+  transform: translateX(-50%); /* Perfect centering */
+  width: 90%;
+  max-width: 400px;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  
+  padding: 0.8rem 1.2rem;
+  background: var(--navbar-bg);
+  backdrop-filter: var(--navbar-backdrop);
+  -webkit-backdrop-filter: var(--navbar-backdrop);
+  
+  /* Make it look like a floating PILL, not a flat bar */
+  border: 1px solid rgba(255, 255, 255, 0.1); 
+  border-radius: 100px; 
+  
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  z-index: 9999;         /* High Z-index to stay on top */
 }
+
+/* 3. THE BUTTONS: Hide them if they are making the top messy */
+.nav-btn-container {
+  display: none;
+}
+
+/*.nav-links-container.active {
+display: flex;
+}*/
 
 /*NAVBAR-LINKS*/
 .nav-links {
