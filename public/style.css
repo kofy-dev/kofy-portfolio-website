@@ -396,9 +396,9 @@ a {
    /* Only update the floating button to use the new shadow var */
 .whatsapp-float {
   position: fixed;
-  bottom: 25px;
+  bottom: 90px;
   right: 20px;
-  z-index: 1000;
+  z-index: 10001;
   background-color: #25D366;
    padding:var(--space-12);
   color: white;
