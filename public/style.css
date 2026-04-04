@@ -442,7 +442,7 @@ color:var(--primary-500);
 text-decoration: underline solid var(--primary-600) 2px;
                                }
 
-   .navbar-container{
+  .navbar-container{
   position: fixed;
   top: 0;
   width: 100%;
@@ -484,7 +484,20 @@ gap: var(--space-4);
     gap:var(--space-16);
 } 
 
+.nav-links-container {
+  display: block;
+  position: static;      /* This is good, keep it */
+  width: auto;           /* Change from 100% to auto */
+  background: none;      /* REMOVE THE BACKGROUND - This kills the dark box */
+  backdrop-filter: none; /* REMOVE THE BLUR */
+  border: none;          /* REMOVE THE BORDERS */
+  box-shadow: none;      /* REMOVE THE SHADOW */
+  padding: 0;            /* Remove the extra padding */
+  max-height: none;      /* Let the content breathe */
+  overflow: visible;
+}
 
+/* 2. THE LINKS: The Floating
 
 
 /* 2. THE LINKS: The Floating Pill */
