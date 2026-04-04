@@ -497,7 +497,7 @@ gap: var(--space-4);
   overflow: visible;
 }
 
-/* 2. THE LINKS: The Floating
+
 
 
 /* 2. THE LINKS: The Floating Pill */
@@ -527,34 +527,10 @@ gap: var(--space-4);
   z-index: 9999;         /* High Z-index to stay on top */
 }
 
-/* 3. THE BUTTONS: Hide them if they are making the top messy */
-.nav-btn-container {
-  display: none;
-}
 
-/*.nav-links-container.active {
-display: flex;
-}*/
 
-/*NAVBAR-LINKS*/
-.nav-links {
-display: block;
-margin-bottom: 0.2em;
-font-weight: 500;
-font-size: var(--text-xl);
-text-align: center;
 
- }
-
-   .nav-btn-container {
-display: flex;
-flex-direction: column;
-gap: 0.75rem;
-width: 100%;
-margin-top: 1rem;
-padding-top: 1rem;
-border-top: 1px solid var(--border-color);
-}
+   
 
 /* NAVBAR-TOGGLE-BTN */
 
