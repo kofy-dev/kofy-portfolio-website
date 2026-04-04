@@ -396,7 +396,7 @@ a {
    /* Only update the floating button to use the new shadow var */
 .whatsapp-float {
   position: fixed;
-  bottom: 20px;
+  bottom: 25px;
   right: 20px;
   z-index: 1000;
   background-color: #25D366;
@@ -550,7 +550,7 @@ gap: var(--space-4);
 }
 
 .nav-links i {
-  font-size: 1.2rem;     /* Larger icons for thumb targets */
+  /*font-size: 1.2rem;*/     /* Larger icons for thumb targets */
 }
 
 
