@@ -782,6 +782,7 @@ background: radial-gradient(circle, rgba(45, 212, 191, 0.3) 0%, rgba(0, 0, 0, 0)
 /* HERO HEADING */
 .hero-heading {
   margin-bottom: var(--space-32);
+ white-space:nowrap;
 }
 
 /* HERO PARAGRAPH */
