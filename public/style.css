@@ -526,10 +526,10 @@ gap: var(--space-4);
   display: flex;
   justify-content:center; 
   align-items: center;
-   gap:var(--space-4);
+   gap:var(--space-12);
   padding: 0.6rem 0;     /* Balanced vertical space */
   width: 100%;
-  max-width: 500px;      /* Stops it from spreading too far on wide phones */
+  max-width: 800px;      /* Stops it from spreading too far on wide phones */
   margin: 0 auto;        /* Centers the icons within the bar */
 }
 
