@@ -182,6 +182,42 @@
     gap: var(--space-16);
     flex-shrink: 0;
   }
+	
+  /* 1. Teleport the container to the top middle */
+  .mobile-bottom-nav {
+    position: absolute; 
+    top: 35px; /* Tweak this until it lines up with your Kofy logo */
+    left: 50%;
+    transform: translateX(-50%); /* Keeps it perfectly dead-center */
+    
+    /* Turn off the mobile styles */
+    bottom: auto; 
+    width: auto;
+    background: transparent;
+    backdrop-filter: none;
+    box-shadow: none;
+    z-index: 1001; /* Ensure it stays above your hero canvas */
+  }
+
+  /* 2. Force the links into a horizontal row */
+  .nav-link-groups {
+    display: flex;
+    flex-direction: row; /* This is the magic line that makes it a row */
+    gap: 2.5rem;         /* Adds breathing room between the links */
+  }
+
+  /* 3. Style the individual links for a clean desktop look */
+  .nav-links {
+    display: flex;
+    flex-direction: row; /* Puts the icon and text side-by-side */
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-color); /* Make sure this matches your theme */
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+	
 
   .hero-heading,
   .hero-paragraph {
