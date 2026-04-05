@@ -482,7 +482,7 @@ gap: var(--space-4);
     display:flex;
     align-items:center;
       justify-content:center;
-    gap:var(--space-16);
+    gap:var(--space-8);
 } 
 
 .nav-links-container {
