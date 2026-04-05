@@ -565,7 +565,7 @@ gap: var(--space-4);
   background: transparent;
   border: none;
   cursor: pointer;
-  font-size: var(--text-2xl);
+  font-size: var(--text-4xl);
   padding: var(--space-4);
   border-radius: 50%;
   width: 40px;
