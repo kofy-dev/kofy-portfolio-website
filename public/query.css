@@ -203,7 +203,10 @@
   .nav-link-groups {
     display: flex;
     flex-direction: row; /* This is the magic line that makes it a row */
-    gap: 2.5rem;         /* Adds breathing room between the links */
+    gap: 2.5rem;   
+	  justify-content:center;
+	  align-items: center;
+	  /* Adds breathing room between the links */
   }
 
   /* 3. Style the individual links for a clean desktop look */
