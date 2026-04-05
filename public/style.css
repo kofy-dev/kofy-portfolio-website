@@ -524,8 +524,9 @@ gap: var(--space-4);
 
 .nav-link-groups {
   display: flex;
-  justify-content: space-around; 
+  justify-content:center; 
   align-items: center;
+   gap:var(--space-4);
   padding: 0.6rem 0;     /* Balanced vertical space */
   width: 100%;
   max-width: 500px;      /* Stops it from spreading too far on wide phones */
