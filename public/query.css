@@ -185,7 +185,7 @@
 	
   /* 1. Teleport the container to the top middle */
   .mobile-bottom-nav {
-    position: absolute; 
+    position: fixed; 
     top: 35px; /* Tweak this until it lines up with your Kofy logo */
     left: 50%;
     transform: translateX(-50%); /* Keeps it perfectly dead-center */
