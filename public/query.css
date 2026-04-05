@@ -188,7 +188,7 @@
     position: fixed; 
     top: 35px; /* Tweak this until it lines up with your Kofy logo */
     left: 50%;
-    transform: translateX(-50%); /* Keeps it perfectly dead-center */
+    transform: translate(-50%, -50%);
     
     /* Turn off the mobile styles */
     bottom: auto; 
