@@ -163,12 +163,7 @@
 	  border-bottom:none;
   }
 
-  .nav-link-groups {
-    display: flex;
-    flex-direction: row;
-    gap: var(--space-16);
-    margin: 0 auto;
-  }
+  
 
   .nav-btn-container {
     display: flex;
@@ -203,7 +198,6 @@
   .nav-link-groups {
     display: flex;
     flex-direction: row; /* This is the magic line that makes it a row */
-    gap: 2.5rem;   
 	  justify-content:center;
 	  align-items: center;
 	  /* Adds breathing room between the links */
