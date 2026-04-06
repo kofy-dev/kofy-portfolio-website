@@ -1019,6 +1019,7 @@ font-size:var(--text-xl);
 .resume-btn-container{
   display:flex;
   flex-direction:column;
+   width:100%;
 }
 
 /*.resume-btn-container .btn-primary{
