@@ -314,7 +314,7 @@ a {
  .text-input,
 .form-input{
    background-color:var(--surface-color);
-   border: 1px solid var(--border-color);
+   border: 1px solid var(--border-primary);
    text-align:left;
    color:var(--text-primary);
    font-weight:300;
