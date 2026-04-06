@@ -84,11 +84,13 @@
     /* LIGHT MODE SEMANTICS */
     --bg-page:          var(--neutral-50);
     --surface-color:    var(--white);
-    --border-color:     var(--neutral-200);
+    --border-primary:     var(--neutral-200);
+    --border-secondary: var(--neutral-300);
+    --border-secondary:var(--neutral-400);
 
     --text-secondary:   var(--neutral-800);
     --text-primary:     var(--neutral-700);
-    --text-placeholder: var(--neutral-700);
+    --text-tertiary: var(--neutral-700);
     --hero-bg:var(--neutral-50);
     --portfolio-bg:var(--neutral-50);
     --tech-bg:var(--neutral-50);
@@ -327,7 +329,7 @@ a {
 
 .text-input::placeholder,
 .form-input::placeholder {
-  color: var(--text-placeholder);
+  color: var(--text-tertiary);
   opacity: 0.7;
  }
    
@@ -374,7 +376,7 @@ a {
 .card,
 .form-container {
   background-color: var(--surface-color);
-  border: 1px solid var(--border-color);
+  border: 1px solid var(--border-primary);
   border-radius: 16px;
   padding: 1.5rem 1.25rem;
   box-shadow: var(--surface-shadow);
@@ -513,12 +515,12 @@ gap: var(--space-4);
   z-index: 9999;
   
   /* Glassmorphism */
-  background: var(--navbar-bg); 
-  backdrop-filter: var(--navbar-backdrop);
-  -webkit-backdrop-filter: var(--navbar-backdrop);
+  background: var(--nav-menu-bg); 
+  backdrop-filter: var(--nav-menu-backdrop);
+  -webkit-backdrop-filter: var(--nav-menu-backdrop);
   
   /* Border only on the top to separate from content */
-  border-top: var(--navbar-border); 
+  border-top: var(--nav-menu-border); 
   box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.3);
 }
 
@@ -539,7 +541,7 @@ gap: var(--space-4);
   align-items: center;
   gap: 4px;
   text-decoration: none;
-  color: red;
+  color: white;
   font-size: var(--text-2xl);     /* Small and clean labels */
   transition: all 0.3s ease;
   opacity: 0.7;          /* Dimmer when not active */
