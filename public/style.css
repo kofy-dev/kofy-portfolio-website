@@ -1016,7 +1016,7 @@ font-size:var(--text-xl);
    text-align:center;
 }
 
-.resume-btn-container .btn{
+.resume-btn-container{
   display:flex;
   flex-direction:column;
 }
