@@ -54,6 +54,11 @@
     --radius-lg: clamp(0.6rem, 1.5vw, 1rem);
     --radius-xl: clamp(0.8rem, 2vw,   1.2rem);
 
+     --shadow-xs: 0 1px 2px rgba(0,0,0,0.06);
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+    --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
+    --shadow-lg: 0 10px 25px rgba(0,0,0,0.10);
+    --shadow-xl: 0 16px 40px rgba(0,0,0,0.14);
     /* COLORS */
     --primary-50:  #f3f0ff;
     --primary-100: #e5dbff;
@@ -108,7 +113,8 @@
     --btn-primary-border:       var(--primary-600);
     --btn-primary-hover-bg:     var(--primary-700);
     --btn-primary-hover-border: var(--primary-700);
-
+    --button-shadow:          0 4px 14px rgba(121, 80, 242, 0.25);
+    --button-shadow-hover:    0 8px 24px rgba(121, 80, 242, 0.35);
     --btn-primary-outline-bg:           transparent;
     --btn-primary-outline-text:         var(--primary-600);
     --btn-primary-outline-border:       var(--primary-600);
@@ -120,6 +126,7 @@
     --navbar-backdrop:   blur(12px);
     --navbar-border:     1px solid rgba(255, 255, 255, 0.18);
     --navbar-text:       var(--text-secondary);
+    --navbar-shadow:          var(--shadow-lg);
 
     --nav-menu-bg:       rgba(255, 255, 255, 0.88);
     --nav-menu-backdrop: blur(20px);
@@ -127,18 +134,15 @@
     --nav-menu-shadow:   0 16px 48px rgba(0, 0, 0, 0.25);
 
     /* Shadows – light mode primitives */
-    --shadow-xs: 0 1px 2px rgba(0,0,0,0.06);
-    --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
-    --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
-    --shadow-lg: 0 10px 25px rgba(0,0,0,0.10);
-    --shadow-xl: 0 16px 40px rgba(0,0,0,0.14);
+    
 
-    --surface-shadow:         var(--shadow-md);
-    --surface-shadow-hover:   var(--shadow-xl);
-    --navbar-shadow:          var(--shadow-lg);
+    --shadow-primary:         var(--shadow-md);
+    --shadow-primary-hover: var(--shadow-xl);
+    --shadow-secondary:var(--shadow-lg);
+    --shadow-secondary-hover:var(--shadow-xl);
+    
     --floating-action-shadow: var(--shadow-xl);
-    --button-shadow:          0 4px 14px rgba(121, 80, 242, 0.25);
-    --button-shadow-hover:    0 8px 24px rgba(121, 80, 242, 0.35);
+    
   }
 
 
@@ -150,11 +154,11 @@
   /* Page & text */
   --bg-page:           var(--neutral-950);
   --surface-color:     var(--neutral-900);
-  --border-color:      var(--neutral-700);
+  --border-primary:      var(--neutral-700);
 
   --text-secondary:    var(--neutral-100);
   --text-primary:      var(--neutral-200);
-  --text-placeholder:  var(--neutral-100);
+  --text-secondary:  var(--neutral-100);
   --hero-bg: var(--neutral-950);
   --tech-bg:var(--neutral-950);
   --portfolio-bg:var(--neutral-950);
@@ -181,6 +185,7 @@
   --navbar-backdrop:   blur(16px);
   --navbar-border:     1px solid rgba(255, 255, 255, 0.08);
   --navbar-text:       var(--neutral-100);
+   --navbar-shadow:          var(--shadow-lg);
 
   --nav-menu-bg:       rgba(30, 30, 30, 0.65);
   --nav-menu-backdrop: blur(20px);
@@ -188,9 +193,9 @@
   --nav-menu-shadow:   var(--shadow-xl);  /* reuse dark primitive */
 
   /* Shadows – use dark-adjusted primitives (no hard-coding) */
-  --surface-shadow:         var(--shadow-md);
-  --surface-shadow-hover:   var(--shadow-xl);
-  --navbar-shadow:          var(--shadow-lg);
+  --shadow-primary:         var(--shadow-md);
+  --shadow-primary-hover:   var(--shadow-xl);
+  
   --floating-action-shadow: var(--shadow-xl);
   --button-shadow:          0 4px 14px rgba(121, 80, 242, 0.20);
   --button-shadow-hover:    0 8px 24px rgba(121, 80, 242, 0.30);
@@ -379,7 +384,7 @@ a {
   border: 1px solid var(--border-primary);
   border-radius: 16px;
   padding: 1.5rem 1.25rem;
-  box-shadow: var(--surface-shadow);
+  box-shadow: var(--shadow-primary);
   transition:
     transform 0.25s ease,
     box-shadow 0.3s ease,
@@ -391,7 +396,7 @@ a {
 .card:focus-within,
 .form-container:hover {
   transform: translateY(-6px);
-  box-shadow: var(--surface-shadow-hover);
+  box-shadow: var(--shadow-primary-hover);
   border-color: var(--primary-400);
  }
 
