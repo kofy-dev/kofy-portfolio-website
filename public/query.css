@@ -139,7 +139,7 @@
 	}
 }
 
-@media(min-width:900px){
+@media(min-width:850px){
 	.hamburger-btn {
 	    display: none;
     }
