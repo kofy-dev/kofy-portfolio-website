@@ -268,6 +268,14 @@ if (canvas) {
 
   draw();
 }
+window.onscroll = function() { moveProgressBar() };
+
+function moveProgressBar() {
+  const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  const scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+      }
 
 /* --- 7. SCROLL ANIMATIONS --- */
 const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
