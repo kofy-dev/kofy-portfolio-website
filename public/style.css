@@ -1422,6 +1422,26 @@ text-decoration:none;
   transform: translateX(0);
    }
 
+/* The container: fixed at the top, full width */
+.progress-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px; /* Thin and elegant */
+  background: transparent; /* Invisible until the bar moves */
+  z-index: 2000; /* Stays above everything else */
+}
+
+/* The actual bar: This is what grows */
+.progress-bar {
+  height: 4px;
+  background: #7b55f7; /* Your brand purple */
+  width: 0%; /* Starts at nothing */
+  box-shadow: 0 0 10px rgba(123, 85, 247, 0.7); /* Adds a 'light' effect */
+  transition: width 0.1s ease-out; /* Makes it smooth as you scroll */
+}
+
 
 
 
