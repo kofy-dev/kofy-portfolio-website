@@ -663,7 +663,7 @@ gap: var(--space-4);
     position: relative;
     overflow: hidden;
     margin-bottom: var(--space-48);
-    padding-top:var(--space-48);
+    padding-top:var(--space-64);
     background-color: var(--hero-bg);
     /* Add this to ensure the glow doesn't overlap other sections */
     z-index: 1; 
